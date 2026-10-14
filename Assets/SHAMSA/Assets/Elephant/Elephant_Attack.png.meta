@@ -1,37 +1,58 @@
 fileFormatVersion: 2
-guid: a9662533dae6e4440a79ca2a6ab94d05
+guid: 7f67b41d01b624d4999b90ed42ccfb40
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7008412969330441016
-    second: Attack_0
+      213: -2768420684618372772
+    second: Elephant_Attack_0
   - first:
-      213: -7763475090823894447
-    second: Attack_1
+      213: -2881312624376700184
+    second: Elephant_Attack_1
   - first:
-      213: 302641331129538988
-    second: Attack_2
+      213: -53271022495291002
+    second: Elephant_Attack_2
   - first:
-      213: -6329420634031446844
-    second: Attack_3
+      213: 6377005671885650320
+    second: Elephant_Attack_3
   - first:
-      213: -910092549403018386
-    second: Attack_4
+      213: -6840286971009203248
+    second: Elephant_Attack_4
   - first:
-      213: 221524225039350300
-    second: Attack_5
+      213: 7355862827615494774
+    second: Elephant_Attack_5
   - first:
-      213: 1290532464073988732
-    second: Attack_6
+      213: -2773720815145385581
+    second: Elephant_Attack_6
   - first:
-      213: 4780903288873104255
-    second: Attack_7
+      213: 5540343215375197493
+    second: Elephant_Attack_7
   - first:
-      213: -2238382357930459393
-    second: Attack_8
+      213: 5110017658641097213
+    second: Elephant_Attack_8
   - first:
-      213: -297473348006037033
-    second: Attack_9
+      213: -7215066006454648040
+    second: Elephant_Attack_9
+  - first:
+      213: 5413410435118648064
+    second: Elephant_Attack_10
+  - first:
+      213: 7120155009919411146
+    second: Elephant_Attack_11
+  - first:
+      213: 5597631174807928604
+    second: Elephant_Attack_12
+  - first:
+      213: 6417419895217879530
+    second: Elephant_Attack_13
+  - first:
+      213: 5246181379020341674
+    second: Elephant_Attack_14
+  - first:
+      213: 3907515191986533192
+    second: Elephant_Attack_15
+  - first:
+      213: 6598979566830934695
+    second: Elephant_Attack_16
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -127,57 +148,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack_0
+      name: Elephant_Attack_0
       rect:
         serializedVersion: 2
-        x: 130
-        y: 15
-        width: 261
-        height: 406
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8c481db598d1dbe90800000000000000
-      internalID: -7008412969330441016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack_2
-      rect:
-        serializedVersion: 2
-        x: 637
-        y: 23
-        width: 261
-        height: 426
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ca9d35cefa2333400800000000000000
-      internalID: 302641331129538988
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack_3
-      rect:
-        serializedVersion: 2
-        x: 1153
+        x: 14
         y: 7
-        width: 264
-        height: 432
+        width: 326
+        height: 629
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,64 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4c42782d7716928a0800000000000000
-      internalID: -6329420634031446844
+      spriteID: c596a781e089499d0800000000000000
+      internalID: -2768420684618372772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_5
+      name: Elephant_Attack_1
       rect:
         serializedVersion: 2
-        x: 2185
-        y: 8
-        width: 256
-        height: 415
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c1a3d96eb13031300800000000000000
-      internalID: 221524225039350300
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack_6
-      rect:
-        serializedVersion: 2
-        x: 2697
-        y: 7
-        width: 261
-        height: 393
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 3, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c7a5d344074e8e110800000000000000
-      internalID: 1290532464073988732
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack_7
-      rect:
-        serializedVersion: 2
-        x: 1672
+        x: 352
         y: 10
-        width: 268
-        height: 324
+        width: 345
+        height: 614
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,8 +185,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f7337cef53e295240800000000000000
-      internalID: 4780903288873104255
+      spriteID: 8e2ad291f658308d0800000000000000
+      internalID: -2881312624376700184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elephant_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 8
+        width: 313
+        height: 705
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 689a85b894eb24ff0800000000000000
+      internalID: -53271022495291002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elephant_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 9
+        width: 477
+        height: 699
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 099356b2fdcaf7850800000000000000
+      internalID: 6377005671885650320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elephant_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 0
+        width: 319
+        height: 705
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d38343cd3b6211a0800000000000000
+      internalID: -6840286971009203248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elephant_Attack_12
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 9
+        width: 324
+        height: 577
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1f341e55e7cead40800000000000000
+      internalID: 5597631174807928604
       vertices: []
       indices: 
       edges: []
@@ -262,7 +283,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 994b1ffa59c0ad94c87a0bd6944de828
+    spriteID: cf38de9f2c5106c45b4c03b1bfd41b01
     internalID: 0
     vertices: []
     indices: 
@@ -272,16 +293,23 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Attack_0: -7008412969330441016
-      Attack_1: -7763475090823894447
-      Attack_2: 302641331129538988
-      Attack_3: -6329420634031446844
-      Attack_4: -910092549403018386
-      Attack_5: 221524225039350300
-      Attack_6: 1290532464073988732
-      Attack_7: 4780903288873104255
-      Attack_8: -2238382357930459393
-      Attack_9: -297473348006037033
+      Elephant_Attack_0: -2768420684618372772
+      Elephant_Attack_1: -2881312624376700184
+      Elephant_Attack_10: 5413410435118648064
+      Elephant_Attack_11: 7120155009919411146
+      Elephant_Attack_12: 5597631174807928604
+      Elephant_Attack_13: 6417419895217879530
+      Elephant_Attack_14: 5246181379020341674
+      Elephant_Attack_15: 3907515191986533192
+      Elephant_Attack_16: 6598979566830934695
+      Elephant_Attack_2: -53271022495291002
+      Elephant_Attack_3: 6377005671885650320
+      Elephant_Attack_4: -6840286971009203248
+      Elephant_Attack_5: 7355862827615494774
+      Elephant_Attack_6: -2773720815145385581
+      Elephant_Attack_7: 5540343215375197493
+      Elephant_Attack_8: 5110017658641097213
+      Elephant_Attack_9: -7215066006454648040
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

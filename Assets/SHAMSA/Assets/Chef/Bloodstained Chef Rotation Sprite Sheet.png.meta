@@ -1,0 +1,345 @@
+fileFormatVersion: 2
+guid: 208d02ce0824d4841b6dacafd857e49b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1127131868068807994
+    second: Bloodstained Chef Rotation Sprite Sheet_0
+  - first:
+      213: -31370626082208178
+    second: Bloodstained Chef Rotation Sprite Sheet_1
+  - first:
+      213: 805757931842083901
+    second: Bloodstained Chef Rotation Sprite Sheet_2
+  - first:
+      213: -7412632928510104998
+    second: Bloodstained Chef Rotation Sprite Sheet_3
+  - first:
+      213: 6039865800889192663
+    second: Bloodstained Chef Rotation Sprite Sheet_4
+  - first:
+      213: 6750595139135041034
+    second: Bloodstained Chef Rotation Sprite Sheet_5
+  - first:
+      213: 5669225867651924650
+    second: Bloodstained Chef Rotation Sprite Sheet_6
+  - first:
+      213: -4343487422558327319
+    second: Bloodstained Chef Rotation Sprite Sheet_7
+  - first:
+      213: -1110786987462223070
+    second: Bloodstained Chef Rotation Sprite Sheet_8
+  - first:
+      213: -7662053546447954609
+    second: Bloodstained Chef Rotation Sprite Sheet_9
+  - first:
+      213: -3438836001863837759
+    second: Bloodstained Chef Rotation Sprite Sheet_10
+  - first:
+      213: -3806489600042864183
+    second: Bloodstained Chef Rotation Sprite Sheet_11
+  - first:
+      213: -7874424713032745012
+    second: Bloodstained Chef Rotation Sprite Sheet_12
+  - first:
+      213: -1851898530269000687
+    second: Bloodstained Chef Rotation Sprite Sheet_13
+  - first:
+      213: 2839075486493217820
+    second: Bloodstained Chef Rotation Sprite Sheet_14
+  - first:
+      213: -4257157977311243835
+    second: Bloodstained Chef Rotation Sprite Sheet_15
+  - first:
+      213: 884977329525255991
+    second: Bloodstained Chef Rotation Sprite Sheet_16
+  - first:
+      213: 1629303005458627812
+    second: Bloodstained Chef Rotation Sprite Sheet_17
+  - first:
+      213: 8041053363490319028
+    second: Bloodstained Chef Rotation Sprite Sheet_18
+  - first:
+      213: 1442337950431088500
+    second: Bloodstained Chef Rotation Sprite Sheet_19
+  - first:
+      213: -4064998341929635839
+    second: Bloodstained Chef Rotation Sprite Sheet_20
+  - first:
+      213: 3715254409081437781
+    second: Bloodstained Chef Rotation Sprite Sheet_21
+  - first:
+      213: -1226696803642097554
+    second: Bloodstained Chef Rotation Sprite Sheet_22
+  - first:
+      213: 6859383691839787787
+    second: Bloodstained Chef Rotation Sprite Sheet_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bloodstained Chef Rotation Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 15
+        width: 349
+        height: 691
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a358343567064af00800000000000000
+      internalID: 1127131868068807994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloodstained Chef Rotation Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 18
+        width: 368
+        height: 635
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e460dffe49c809ff0800000000000000
+      internalID: -31370626082208178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloodstained Chef Rotation Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 15
+        width: 311
+        height: 582
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c9666e190ae2b00800000000000000
+      internalID: 805757931842083901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloodstained Chef Rotation Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 59
+        width: 364
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5aaac510a9012990800000000000000
+      internalID: -7412632928510104998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloodstained Chef Rotation Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 17
+        width: 367
+        height: 592
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0e6f9a438eeead50800000000000000
+      internalID: 6750595139135041034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloodstained Chef Rotation Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 0
+        width: 362
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa249d8c3e22dae40800000000000000
+      internalID: 5669225867651924650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a6d595862fa5bdc4ea7c3c026f16a3ce
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bloodstained Chef Rotation Sprite Sheet_0: 1127131868068807994
+      Bloodstained Chef Rotation Sprite Sheet_1: -31370626082208178
+      Bloodstained Chef Rotation Sprite Sheet_10: -3438836001863837759
+      Bloodstained Chef Rotation Sprite Sheet_11: -3806489600042864183
+      Bloodstained Chef Rotation Sprite Sheet_12: -7874424713032745012
+      Bloodstained Chef Rotation Sprite Sheet_13: -1851898530269000687
+      Bloodstained Chef Rotation Sprite Sheet_14: 2839075486493217820
+      Bloodstained Chef Rotation Sprite Sheet_15: -4257157977311243835
+      Bloodstained Chef Rotation Sprite Sheet_16: 884977329525255991
+      Bloodstained Chef Rotation Sprite Sheet_17: 1629303005458627812
+      Bloodstained Chef Rotation Sprite Sheet_18: 8041053363490319028
+      Bloodstained Chef Rotation Sprite Sheet_19: 1442337950431088500
+      Bloodstained Chef Rotation Sprite Sheet_2: 805757931842083901
+      Bloodstained Chef Rotation Sprite Sheet_20: -4064998341929635839
+      Bloodstained Chef Rotation Sprite Sheet_21: 3715254409081437781
+      Bloodstained Chef Rotation Sprite Sheet_22: -1226696803642097554
+      Bloodstained Chef Rotation Sprite Sheet_23: 6859383691839787787
+      Bloodstained Chef Rotation Sprite Sheet_3: -7412632928510104998
+      Bloodstained Chef Rotation Sprite Sheet_4: 6039865800889192663
+      Bloodstained Chef Rotation Sprite Sheet_5: 6750595139135041034
+      Bloodstained Chef Rotation Sprite Sheet_6: 5669225867651924650
+      Bloodstained Chef Rotation Sprite Sheet_7: -4343487422558327319
+      Bloodstained Chef Rotation Sprite Sheet_8: -1110786987462223070
+      Bloodstained Chef Rotation Sprite Sheet_9: -7662053546447954609
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

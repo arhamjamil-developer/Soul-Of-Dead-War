@@ -1,43 +1,25 @@
 fileFormatVersion: 2
-guid: 257f901573d07344b8e2ef12d3286f20
+guid: c278d3c67d9534944a296cee5a8772ce
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2048800907179887802
-    second: Hurt_0
+      213: 3331012749490196308
+    second: Train_Ideal_0
   - first:
-      213: 490842205202310979
-    second: Hurt_1
+      213: 7999957317070825922
+    second: Train_Ideal_1
   - first:
-      213: -3720053754089064719
-    second: Hurt_2
+      213: -7467559565359629019
+    second: Train_Ideal_2
   - first:
-      213: 5649970053243570431
-    second: Hurt_3
+      213: 4613883138321163532
+    second: Train_Ideal_3
   - first:
-      213: -371187646486735994
-    second: Hurt_4
+      213: 3692998188186386752
+    second: Train_Ideal_4
   - first:
-      213: 1177448812329152706
-    second: Hurt_5
-  - first:
-      213: 7933592967420663305
-    second: Hurt_6
-  - first:
-      213: 7273187483062910031
-    second: Hurt_7
-  - first:
-      213: -1817361991890795262
-    second: Hurt_8
-  - first:
-      213: -2270139407860209000
-    second: Hurt_9
-  - first:
-      213: -1530035385177744352
-    second: Hurt_10
-  - first:
-      213: -1594775402449041300
-    second: Hurt_11
+      213: 1670299744902518946
+    second: Train_Ideal_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -133,133 +115,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hurt_0
+      name: Train_Ideal_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 79
-        width: 344
-        height: 611
+        x: 62
+        y: 22
+        width: 309
+        height: 688
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6437b001e623193e0800000000000000
-      internalID: -2048800907179887802
+      spriteID: 45f09ab72722a3e20800000000000000
+      internalID: 3331012749490196308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt_3
+      name: Train_Ideal_1
       rect:
         serializedVersion: 2
-        x: 737
-        y: 78
-        width: 408
-        height: 638
+        x: 415
+        y: 21
+        width: 278
+        height: 689
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ff88d2f14d9b86e40800000000000000
-      internalID: 5649970053243570431
+      spriteID: 2c92b465bce850f60800000000000000
+      internalID: 7999957317070825922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt_5
+      name: Train_Ideal_2
       rect:
         serializedVersion: 2
-        x: 376
-        y: 31
-        width: 380
-        height: 643
+        x: 775
+        y: 19
+        width: 322
+        height: 691
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c0b518d473275010800000000000000
-      internalID: 1177448812329152706
+      spriteID: 52d3bafd326ed5890800000000000000
+      internalID: -7467559565359629019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt_7
+      name: Train_Ideal_3
       rect:
         serializedVersion: 2
-        x: 1762
-        y: 79
-        width: 396
-        height: 571
+        x: 1140
+        y: 19
+        width: 317
+        height: 697
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f4c38c81b7d8fe460800000000000000
-      internalID: 7273187483062910031
+      spriteID: c052cc6d44ec70040800000000000000
+      internalID: 4613883138321163532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt_10
+      name: Train_Ideal_4
       rect:
         serializedVersion: 2
-        x: 1133
-        y: 81
-        width: 356
-        height: 436
+        x: 1496
+        y: 22
+        width: 339
+        height: 688
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 02cd3b47ce834cae0800000000000000
-      internalID: -1530035385177744352
+      spriteID: 041c20b294a204330800000000000000
+      internalID: 3692998188186386752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt_11
+      name: Train_Ideal_5
       rect:
         serializedVersion: 2
-        x: 1475
-        y: 79
-        width: 346
-        height: 478
+        x: 1863
+        y: 19
+        width: 274
+        height: 691
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c688e7098383ed9e0800000000000000
-      internalID: -1594775402449041300
+      spriteID: 2a81753b4c81e2710800000000000000
+      internalID: 1670299744902518946
       vertices: []
       indices: 
       edges: []
@@ -268,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ee336af6befb71b4aaf93be0f1fcc31c
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -278,18 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Hurt_0: -2048800907179887802
-      Hurt_1: 490842205202310979
-      Hurt_10: -1530035385177744352
-      Hurt_11: -1594775402449041300
-      Hurt_2: -3720053754089064719
-      Hurt_3: 5649970053243570431
-      Hurt_4: -371187646486735994
-      Hurt_5: 1177448812329152706
-      Hurt_6: 7933592967420663305
-      Hurt_7: 7273187483062910031
-      Hurt_8: -1817361991890795262
-      Hurt_9: -2270139407860209000
+      Train_Ideal_0: 3331012749490196308
+      Train_Ideal_1: 7999957317070825922
+      Train_Ideal_2: -7467559565359629019
+      Train_Ideal_3: 4613883138321163532
+      Train_Ideal_4: 3692998188186386752
+      Train_Ideal_5: 1670299744902518946
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

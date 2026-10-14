@@ -1,52 +1,19 @@
 fileFormatVersion: 2
-guid: cc319e0112c97b148aa1341dd909712d
+guid: c548e60c9e1d5654a976a8f6c5c9541f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1951259032769554342
-    second: Death 1_0
+      213: -541991214293273831
+    second: Elephant_Move_0
   - first:
-      213: 6368471167873036717
-    second: Death 1_1
+      213: 973172116366409353
+    second: Elephant_Move_1
   - first:
-      213: -4050960299198443346
-    second: Death 1_2
+      213: 1196207167233596553
+    second: Elephant_Move_2
   - first:
-      213: -4785202142234672720
-    second: Death 1_3
-  - first:
-      213: 5880965733233872669
-    second: Death 1_4
-  - first:
-      213: -2986269308058033583
-    second: Death 1_5
-  - first:
-      213: -3406983991291595268
-    second: Death 1_6
-  - first:
-      213: 8193842770867440933
-    second: Death 1_7
-  - first:
-      213: -8434574280758464949
-    second: Death 1_8
-  - first:
-      213: 8430489023643425973
-    second: Death 1_9
-  - first:
-      213: -8911391897055416501
-    second: Death 1_10
-  - first:
-      213: -267973853555587496
-    second: Death 1_11
-  - first:
-      213: 7198345161516552211
-    second: Death 1_12
-  - first:
-      213: -3849931001915120301
-    second: Death 1_13
-  - first:
-      213: 1351434146693076353
-    second: Death 1_14
+      213: -6759557582692281937
+    second: Elephant_Move_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -142,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Death 1_0
+      name: Elephant_Move_0
       rect:
         serializedVersion: 2
-        x: 142
-        y: 11
-        width: 210
-        height: 482
+        x: 0
+        y: 31
+        width: 349
+        height: 679
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a7600980c3441b10800000000000000
-      internalID: 1951259032769554342
+      spriteID: 913baa8bcd57a78f0800000000000000
+      internalID: -541991214293273831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death 1_1
+      name: Elephant_Move_1
       rect:
         serializedVersion: 2
-        x: 649
-        y: 71
-        width: 238
-        height: 422
+        x: 706
+        y: 41
+        width: 363
+        height: 654
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,42 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da1b36b19ca516850800000000000000
-      internalID: 6368471167873036717
+      spriteID: 98eb55d32e6618d00800000000000000
+      internalID: 973172116366409353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death 1_2
+      name: Elephant_Move_2
       rect:
         serializedVersion: 2
-        x: 1094
-        y: 13
-        width: 353
-        height: 362
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ea0111f121918c7c0800000000000000
-      internalID: -4050960299198443346
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Death 1_9
-      rect:
-        serializedVersion: 2
-        x: 1603
-        y: 11
+        x: 1071
+        y: 19
         width: 362
-        height: 411
+        height: 674
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,20 +168,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5bc9811b91d1ff470800000000000000
-      internalID: 8430489023643425973
+      spriteID: 98c1cb0b418c99010800000000000000
+      internalID: 1196207167233596553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death 1_3
+      name: Elephant_Move_3
       rect:
         serializedVersion: 2
-        x: 2113
-        y: 39
-        width: 411
-        height: 320
+        x: 1811
+        y: 24
+        width: 361
+        height: 671
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa114d4313a3132a0800000000000000
+      internalID: -6759557582692281937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elephant_Move_4
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 27
+        width: 349
+        height: 679
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,20 +212,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1fc47dcbd859fb40b955f4eda174376
-      internalID: -4785202142234672720
+      spriteID: 2906997587db6664cb2cdd82d2cc2501
+      internalID: -469095053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death 1_4
+      name: Elephant_Move_5
       rect:
         serializedVersion: 2
-        x: 2563
-        y: 0
-        width: 501
-        height: 320
+        x: 1436
+        y: 8
+        width: 362
+        height: 674
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,8 +234,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b405de82d34fb444c8a1a89cf2f47f93
-      internalID: 5880965733233872669
+      spriteID: 3d47cb288c9b44f4caf01082294ff9a7
+      internalID: -252051647
       vertices: []
       indices: 
       edges: []
@@ -277,7 +244,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 01858a9bc9d4e5646827e7d0859522b1
+    spriteID: 70a6932c36cd037409dfe1f6b52a7790
     internalID: 0
     vertices: []
     indices: 
@@ -287,21 +254,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Death 1_0: 1951259032769554342
-      Death 1_1: 6368471167873036717
-      Death 1_10: -8911391897055416501
-      Death 1_11: -267973853555587496
-      Death 1_12: 7198345161516552211
-      Death 1_13: -3849931001915120301
-      Death 1_14: 1351434146693076353
-      Death 1_2: -4050960299198443346
-      Death 1_3: -4785202142234672720
-      Death 1_4: 5880965733233872669
-      Death 1_5: -2986269308058033583
-      Death 1_6: -3406983991291595268
-      Death 1_7: 8193842770867440933
-      Death 1_8: -8434574280758464949
-      Death 1_9: 8430489023643425973
+      Elephant_Move_0: -541991214293273831
+      Elephant_Move_1: 973172116366409353
+      Elephant_Move_2: 1196207167233596553
+      Elephant_Move_3: -6759557582692281937
+      Elephant_Move_4: -469095053
+      Elephant_Move_5: -252051647
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

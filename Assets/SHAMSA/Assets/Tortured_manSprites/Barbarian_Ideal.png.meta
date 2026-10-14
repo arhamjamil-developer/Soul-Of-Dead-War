@@ -1,13 +1,52 @@
 fileFormatVersion: 2
-guid: 7304c79a294ca5d4f8ea73a86772587f
+guid: fc42f7c901e81244c914ff79c632a700
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7894308883384308476
-    second: Strike_0
+      213: -5776866802868706732
+    second: Barbarian_Ideal_0
   - first:
-      213: 8716443635218818940
-    second: Strike_1
+      213: -3542199460019273342
+    second: Barbarian_Ideal_1
+  - first:
+      213: 958064027053988030
+    second: Barbarian_Ideal_2
+  - first:
+      213: 1475453159304242906
+    second: Barbarian_Ideal_3
+  - first:
+      213: -786724977399321365
+    second: Barbarian_Ideal_4
+  - first:
+      213: 5159055402903112447
+    second: Barbarian_Ideal_5
+  - first:
+      213: 6016473357654005885
+    second: Barbarian_Ideal_6
+  - first:
+      213: 2557141075320015404
+    second: Barbarian_Ideal_7
+  - first:
+      213: 1486819809626586963
+    second: Barbarian_Ideal_8
+  - first:
+      213: 1569568802010668562
+    second: Barbarian_Ideal_9
+  - first:
+      213: -1555990878699383209
+    second: Barbarian_Ideal_10
+  - first:
+      213: 5216362533116172667
+    second: Barbarian_Ideal_11
+  - first:
+      213: 5559659026558649334
+    second: Barbarian_Ideal_12
+  - first:
+      213: 7938007007523333373
+    second: Barbarian_Ideal_13
+  - first:
+      213: -3346203362671351695
+    second: Barbarian_Ideal_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +142,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Strike_0
+      name: Barbarian_Ideal_0
       rect:
         serializedVersion: 2
-        x: 385
-        y: 85
-        width: 342
-        height: 536
+        x: 13
+        y: 23
+        width: 360
+        height: 659
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +157,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cf215558a183e8d60800000000000000
-      internalID: 7894308883384308476
+      spriteID: 452a34cff3274dfa0800000000000000
+      internalID: -5776866802868706732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Strike_1
+      name: Barbarian_Ideal_1
       rect:
         serializedVersion: 2
-        x: 6
-        y: 24
-        width: 377
-        height: 519
+        x: 375
+        y: 17
+        width: 353
+        height: 659
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,96 +179,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c77aee5fd4707f870800000000000000
-      internalID: 8716443635218818940
+      spriteID: 28188f5cb5497dec0800000000000000
+      internalID: -3542199460019273342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Strike_2
+      name: Barbarian_Ideal_2
       rect:
         serializedVersion: 2
-        x: 725
-        y: 74
-        width: 368
-        height: 536
+        x: 1089
+        y: 19
+        width: 363
+        height: 667
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ecbb94c59e127a84586b057f14bac952
-      internalID: 605093471
+      spriteID: eb812a4182abb4d00800000000000000
+      internalID: 958064027053988030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Strike_3
+      name: Barbarian_Ideal_3
       rect:
         serializedVersion: 2
-        x: 1085
-        y: 44
-        width: 380
-        height: 393
+        x: 732
+        y: 21
+        width: 353
+        height: 659
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8a5bb365333fcc6478f8e1b152dc674d
-      internalID: 887330621
+      spriteID: ad6ae03c4dcd97410800000000000000
+      internalID: 1475453159304242906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Strike_4
+      name: Barbarian_Ideal_4
       rect:
         serializedVersion: 2
-        x: 1463
-        y: 53
-        width: 395
-        height: 393
+        x: 1453
+        y: 23
+        width: 358
+        height: 667
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: fe223efafbbd1f44a86d35fab3f231d2
-      internalID: 844622741
+      spriteID: becaf222dcdf415f0800000000000000
+      internalID: -786724977399321365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Strike_5
+      name: Barbarian_Ideal_5
       rect:
         serializedVersion: 2
-        x: 1857
-        y: 77
-        width: 315
-        height: 453
+        x: 1811
+        y: 25
+        width: 361
+        height: 667
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 59cd8d31fd7ca5c408c736e937f52a03
-      internalID: 1932341005
+      spriteID: ffa899a1e85a89740800000000000000
+      internalID: 5159055402903112447
       vertices: []
       indices: 
       edges: []
@@ -238,7 +277,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b586c90a679cf6d42b927c9914344ef8
+    spriteID: 4de3c59d961e8cb469377ac1cbb2b9a1
     internalID: 0
     vertices: []
     indices: 
@@ -248,12 +287,21 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Strike_0: 7894308883384308476
-      Strike_1: 8716443635218818940
-      Strike_2: 605093471
-      Strike_3: 887330621
-      Strike_4: 844622741
-      Strike_5: 1932341005
+      Barbarian_Ideal_0: -5776866802868706732
+      Barbarian_Ideal_1: -3542199460019273342
+      Barbarian_Ideal_10: -1555990878699383209
+      Barbarian_Ideal_11: 5216362533116172667
+      Barbarian_Ideal_12: 5559659026558649334
+      Barbarian_Ideal_13: 7938007007523333373
+      Barbarian_Ideal_14: -3346203362671351695
+      Barbarian_Ideal_2: 958064027053988030
+      Barbarian_Ideal_3: 1475453159304242906
+      Barbarian_Ideal_4: -786724977399321365
+      Barbarian_Ideal_5: 5159055402903112447
+      Barbarian_Ideal_6: 6016473357654005885
+      Barbarian_Ideal_7: 2557141075320015404
+      Barbarian_Ideal_8: 1486819809626586963
+      Barbarian_Ideal_9: 1569568802010668562
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

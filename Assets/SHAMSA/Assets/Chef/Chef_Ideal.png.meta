@@ -1,31 +1,64 @@
 fileFormatVersion: 2
-guid: aa2f8b37b6ea7b9459c59b22eadce541
+guid: 3c5ed11d8aa41fd47bd7a37f66284455
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4723107735738678597
-    second: Idle_0
+      213: -4564556589458484578
+    second: Chef_Ideal_0
   - first:
-      213: -7385789195546760866
-    second: Idle_1
+      213: -327700222448277295
+    second: Chef_Ideal_1
   - first:
-      213: 3234629978573100161
-    second: Idle_2
+      213: -3445163256190454828
+    second: Chef_Ideal_2
   - first:
-      213: 6373048116405451881
-    second: Idle_3
+      213: 8614212073925619220
+    second: Chef_Ideal_3
   - first:
-      213: 7264182050183361747
-    second: Idle_4
+      213: 4851922966673531330
+    second: Chef_Ideal_4
   - first:
-      213: -2834552850196481573
-    second: Idle_5
+      213: -7852244102534673662
+    second: Chef_Ideal_5
   - first:
-      213: 3278449094680734212
-    second: Idle_6
+      213: 926667334511340291
+    second: Chef_Ideal_6
   - first:
-      213: 3384493420599841878
-    second: Idle_7
+      213: 5498202207581165989
+    second: Chef_Ideal_7
+  - first:
+      213: 6512722023829602406
+    second: Chef_Ideal_8
+  - first:
+      213: -1556990506702867024
+    second: Chef_Ideal_9
+  - first:
+      213: -3828302606243238184
+    second: Chef_Ideal_10
+  - first:
+      213: -1364108786531572032
+    second: Chef_Ideal_11
+  - first:
+      213: 4990657554006578504
+    second: Chef_Ideal_12
+  - first:
+      213: -6384900622999031605
+    second: Chef_Ideal_13
+  - first:
+      213: 25244670355084703
+    second: Chef_Ideal_14
+  - first:
+      213: 1990536883298911983
+    second: Chef_Ideal_15
+  - first:
+      213: 5651897253549594145
+    second: Chef_Ideal_16
+  - first:
+      213: -5472167609664341987
+    second: Chef_Ideal_17
+  - first:
+      213: -58030119543742712
+    second: Chef_Ideal_18
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,13 +154,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle_0
+      name: Chef_Ideal_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 53
-        width: 356
-        height: 640
+        x: 16
+        y: 65
+        width: 359
+        height: 604
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,20 +169,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 54d7a982679db8140800000000000000
-      internalID: 4723107735738678597
+      spriteID: e92982847ff67a0c0800000000000000
+      internalID: -4564556589458484578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_1
+      name: Chef_Ideal_2
       rect:
         serializedVersion: 2
-        x: 377
-        y: 39
-        width: 348
-        height: 633
+        x: 724
+        y: 34
+        width: 342
+        height: 606
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,86 +191,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e596485bbd7608990800000000000000
-      internalID: -7385789195546760866
+      spriteID: 4d33a8195425030d0800000000000000
+      internalID: -3445163256190454828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_3
+      name: Chef_Ideal_3
       rect:
         serializedVersion: 2
-        x: 1090
-        y: 29
-        width: 361
-        height: 673
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 96cb1dafe7d917850800000000000000
-      internalID: 6373048116405451881
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_4
-      rect:
-        serializedVersion: 2
-        x: 1480
-        y: 27
-        width: 344
-        height: 641
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3d4b2fc561f8fc460800000000000000
-      internalID: 7264182050183361747
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_5
-      rect:
-        serializedVersion: 2
-        x: 1839
-        y: 66
-        width: 333
-        height: 636
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bd9b7fa6335a9a8d0800000000000000
-      internalID: -2834552850196481573
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_6
-      rect:
-        serializedVersion: 2
-        x: 739
+        x: 1082
         y: 25
-        width: 345
-        height: 597
+        width: 363
+        height: 609
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,8 +213,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 40a65a6e4146f7d20800000000000000
-      internalID: 3278449094680734212
+      spriteID: 41ea73ebd34db8770800000000000000
+      internalID: 8614212073925619220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef_Ideal_6
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 81
+        width: 311
+        height: 532
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ba182f70f2cdc00800000000000000
+      internalID: 926667334511340291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef_Ideal_7
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 45
+        width: 361
+        height: 520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9d42ee6c98d4c40800000000000000
+      internalID: 5498202207581165989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef_Ideal_12
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 35
+        width: 375
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8459e2e8a90624540800000000000000
+      internalID: 4990657554006578504
       vertices: []
       indices: 
       edges: []
@@ -256,7 +289,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d0713d37cdb36954ea393109d901e3a9
+    spriteID: 5f6e986a82a1faf439344a593ddba5d0
     internalID: 0
     vertices: []
     indices: 
@@ -266,14 +299,26 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Idle_0: 4723107735738678597
-      Idle_1: -7385789195546760866
-      Idle_2: 3234629978573100161
-      Idle_3: 6373048116405451881
-      Idle_4: 7264182050183361747
-      Idle_5: -2834552850196481573
-      Idle_6: 3278449094680734212
-      Idle_7: 3384493420599841878
+      Chef_Ideal_0: -4564556589458484578
+      Chef_Ideal_1: -327700222448277295
+      Chef_Ideal_10: -3828302606243238184
+      Chef_Ideal_11: -1364108786531572032
+      Chef_Ideal_12: 4990657554006578504
+      Chef_Ideal_13: -6384900622999031605
+      Chef_Ideal_14: 25244670355084703
+      Chef_Ideal_15: 1990536883298911983
+      Chef_Ideal_16: 5651897253549594145
+      Chef_Ideal_17: -5472167609664341987
+      Chef_Ideal_18: -58030119543742712
+      Chef_Ideal_19: 1183192654
+      Chef_Ideal_2: -3445163256190454828
+      Chef_Ideal_3: 8614212073925619220
+      Chef_Ideal_4: 4851922966673531330
+      Chef_Ideal_5: -7852244102534673662
+      Chef_Ideal_6: 926667334511340291
+      Chef_Ideal_7: 5498202207581165989
+      Chef_Ideal_8: 6512722023829602406
+      Chef_Ideal_9: -1556990506702867024
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

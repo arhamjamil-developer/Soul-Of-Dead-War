@@ -1,0 +1,369 @@
+fileFormatVersion: 2
+guid: 0104eb6848786b648bc6a6520313ae6b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6374566408372899017
+    second: Train_Attack_0
+  - first:
+      213: 3779930416082869450
+    second: Train_Attack_1
+  - first:
+      213: 817504238876526271
+    second: Train_Attack_2
+  - first:
+      213: 6827571069610593703
+    second: Train_Attack_3
+  - first:
+      213: 7491990107561211025
+    second: Train_Attack_4
+  - first:
+      213: 8437426281724140227
+    second: Train_Attack_5
+  - first:
+      213: 5454654390115399904
+    second: Train_Attack_6
+  - first:
+      213: 4871279454670630360
+    second: Train_Attack_7
+  - first:
+      213: 1244371385657838318
+    second: Train_Attack_8
+  - first:
+      213: 4827824466964656365
+    second: Train_Attack_9
+  - first:
+      213: 7307822929374042054
+    second: Train_Attack_10
+  - first:
+      213: -6894764047823697536
+    second: Train_Attack_11
+  - first:
+      213: 5254274493774851566
+    second: Train_Attack_12
+  - first:
+      213: 2354677425182367819
+    second: Train_Attack_13
+  - first:
+      213: 8175336647510479697
+    second: Train_Attack_14
+  - first:
+      213: 7103103579799512733
+    second: Train_Attack_15
+  - first:
+      213: 101228842772859025
+    second: Train_Attack_16
+  - first:
+      213: 5044640094249273618
+    second: Train_Attack_17
+  - first:
+      213: -1916968320007925362
+    second: Train_Attack_18
+  - first:
+      213: -1568157170834284344
+    second: Train_Attack_19
+  - first:
+      213: -7458784911758608114
+    second: Train_Attack_20
+  - first:
+      213: 8687060582277546353
+    second: Train_Attack_21
+  - first:
+      213: 5281481680313188830
+    second: Train_Attack_22
+  - first:
+      213: 8417004657809738728
+    second: Train_Attack_23
+  - first:
+      213: 6284737526896446690
+    second: Train_Attack_24
+  - first:
+      213: 1548904885812045628
+    second: Train_Attack_25
+  - first:
+      213: -4812686454104509080
+    second: Train_Attack_26
+  - first:
+      213: 1267398643868790423
+    second: Train_Attack_27
+  - first:
+      213: -1614967551686952519
+    second: Train_Attack_28
+  - first:
+      213: -4298752220418219999
+    second: Train_Attack_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Train_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 0
+        width: 323
+        height: 724
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1943dedfe45e8f760800000000000000
+      internalID: 7491990107561211025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Train_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 0
+        width: 437
+        height: 724
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca56b4ff72c71570800000000000000
+      internalID: 8437426281724140227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Train_Attack_6
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 9
+        width: 333
+        height: 685
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e87a5f8443d2bb40800000000000000
+      internalID: 5454654390115399904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Train_Attack_9
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 0
+        width: 365
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de03e5716c0eff240800000000000000
+      internalID: 4827824466964656365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Train_Attack_13
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 0
+        width: 351
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4060a084ae7da020800000000000000
+      internalID: 2354677425182367819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Train_Attack_16
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 10
+        width: 263
+        height: 624
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 198008e9813a76100800000000000000
+      internalID: 101228842772859025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2014a2c9c396aa041817a1a061399d2f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Train_Attack_0: 6374566408372899017
+      Train_Attack_1: 3779930416082869450
+      Train_Attack_10: 7307822929374042054
+      Train_Attack_11: -6894764047823697536
+      Train_Attack_12: 5254274493774851566
+      Train_Attack_13: 2354677425182367819
+      Train_Attack_14: 8175336647510479697
+      Train_Attack_15: 7103103579799512733
+      Train_Attack_16: 101228842772859025
+      Train_Attack_17: 5044640094249273618
+      Train_Attack_18: -1916968320007925362
+      Train_Attack_19: -1568157170834284344
+      Train_Attack_2: 817504238876526271
+      Train_Attack_20: -7458784911758608114
+      Train_Attack_21: 8687060582277546353
+      Train_Attack_22: 5281481680313188830
+      Train_Attack_23: 8417004657809738728
+      Train_Attack_24: 6284737526896446690
+      Train_Attack_25: 1548904885812045628
+      Train_Attack_26: -4812686454104509080
+      Train_Attack_27: 1267398643868790423
+      Train_Attack_28: -1614967551686952519
+      Train_Attack_29: -4298752220418219999
+      Train_Attack_3: 6827571069610593703
+      Train_Attack_4: 7491990107561211025
+      Train_Attack_5: 8437426281724140227
+      Train_Attack_6: 5454654390115399904
+      Train_Attack_7: 4871279454670630360
+      Train_Attack_8: 1244371385657838318
+      Train_Attack_9: 4827824466964656365
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

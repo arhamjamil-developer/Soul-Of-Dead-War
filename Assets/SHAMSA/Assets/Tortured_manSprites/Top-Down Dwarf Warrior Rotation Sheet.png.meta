@@ -1,0 +1,425 @@
+fileFormatVersion: 2
+guid: f14b6e251818e2749898dd8aa582133f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2542545033598006659
+    second: Top-Down Dwarf Warrior Rotation Sheet_0
+  - first:
+      213: 8435337541455591444
+    second: Top-Down Dwarf Warrior Rotation Sheet_1
+  - first:
+      213: 3533540800935247981
+    second: Top-Down Dwarf Warrior Rotation Sheet_2
+  - first:
+      213: -8135974012714030550
+    second: Top-Down Dwarf Warrior Rotation Sheet_3
+  - first:
+      213: 432228861874317994
+    second: Top-Down Dwarf Warrior Rotation Sheet_4
+  - first:
+      213: 8274477931997961680
+    second: Top-Down Dwarf Warrior Rotation Sheet_5
+  - first:
+      213: -3241988526644759022
+    second: Top-Down Dwarf Warrior Rotation Sheet_6
+  - first:
+      213: -6402385355155601372
+    second: Top-Down Dwarf Warrior Rotation Sheet_7
+  - first:
+      213: -5324649543718680117
+    second: Top-Down Dwarf Warrior Rotation Sheet_8
+  - first:
+      213: 7711390321694791463
+    second: Top-Down Dwarf Warrior Rotation Sheet_9
+  - first:
+      213: 3980755825697000156
+    second: Top-Down Dwarf Warrior Rotation Sheet_10
+  - first:
+      213: -6834613911467396805
+    second: Top-Down Dwarf Warrior Rotation Sheet_11
+  - first:
+      213: 255401847696922814
+    second: Top-Down Dwarf Warrior Rotation Sheet_12
+  - first:
+      213: -4814450468960372336
+    second: Top-Down Dwarf Warrior Rotation Sheet_13
+  - first:
+      213: 4808273233627344255
+    second: Top-Down Dwarf Warrior Rotation Sheet_14
+  - first:
+      213: -5309133224434882678
+    second: Top-Down Dwarf Warrior Rotation Sheet_15
+  - first:
+      213: -6899395095392659946
+    second: Top-Down Dwarf Warrior Rotation Sheet_16
+  - first:
+      213: 1802075036218283258
+    second: Top-Down Dwarf Warrior Rotation Sheet_17
+  - first:
+      213: -3706172325172821320
+    second: Top-Down Dwarf Warrior Rotation Sheet_18
+  - first:
+      213: -5640207374845246338
+    second: Top-Down Dwarf Warrior Rotation Sheet_19
+  - first:
+      213: -2628341842306484474
+    second: Top-Down Dwarf Warrior Rotation Sheet_20
+  - first:
+      213: -3790783837389999007
+    second: Top-Down Dwarf Warrior Rotation Sheet_21
+  - first:
+      213: -2829411529703673736
+    second: Top-Down Dwarf Warrior Rotation Sheet_22
+  - first:
+      213: -866268911401466723
+    second: Top-Down Dwarf Warrior Rotation Sheet_23
+  - first:
+      213: -3499557024015467629
+    second: Top-Down Dwarf Warrior Rotation Sheet_24
+  - first:
+      213: -2354063282470981848
+    second: Top-Down Dwarf Warrior Rotation Sheet_25
+  - first:
+      213: -2454984039095565468
+    second: Top-Down Dwarf Warrior Rotation Sheet_26
+  - first:
+      213: 911491712014834984
+    second: Top-Down Dwarf Warrior Rotation Sheet_27
+  - first:
+      213: 2110856791144217485
+    second: Top-Down Dwarf Warrior Rotation Sheet_28
+  - first:
+      213: -3124737873525124162
+    second: Top-Down Dwarf Warrior Rotation Sheet_29
+  - first:
+      213: 462378033576440644
+    second: Top-Down Dwarf Warrior Rotation Sheet_30
+  - first:
+      213: -8188934386793425328
+    second: Top-Down Dwarf Warrior Rotation Sheet_31
+  - first:
+      213: 4168896119220551761
+    second: Top-Down Dwarf Warrior Rotation Sheet_32
+  - first:
+      213: -7208276106138937311
+    second: Top-Down Dwarf Warrior Rotation Sheet_33
+  - first:
+      213: -3773513258366422805
+    second: Top-Down Dwarf Warrior Rotation Sheet_34
+  - first:
+      213: 4445344804837278584
+    second: Top-Down Dwarf Warrior Rotation Sheet_35
+  - first:
+      213: 7837576171406058318
+    second: Top-Down Dwarf Warrior Rotation Sheet_36
+  - first:
+      213: 8565759851516690631
+    second: Top-Down Dwarf Warrior Rotation Sheet_37
+  - first:
+      213: 1077125990750337457
+    second: Top-Down Dwarf Warrior Rotation Sheet_38
+  - first:
+      213: -7114179323904041791
+    second: Top-Down Dwarf Warrior Rotation Sheet_39
+  - first:
+      213: 6497218296103470006
+    second: Top-Down Dwarf Warrior Rotation Sheet_40
+  - first:
+      213: 4452239324565784076
+    second: Top-Down Dwarf Warrior Rotation Sheet_41
+  - first:
+      213: 2700034509663211449
+    second: Top-Down Dwarf Warrior Rotation Sheet_42
+  - first:
+      213: -3317147857910202480
+    second: Top-Down Dwarf Warrior Rotation Sheet_43
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Top-Down Dwarf Warrior Rotation Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 112
+        width: 366
+        height: 501
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a05fe43c017bcd0800000000000000
+      internalID: -2542545033598006659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top-Down Dwarf Warrior Rotation Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 106
+        width: 353
+        height: 511
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4183af63dc6501570800000000000000
+      internalID: 8435337541455591444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top-Down Dwarf Warrior Rotation Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 97
+        width: 322
+        height: 511
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d60481f03a8a90130800000000000000
+      internalID: 3533540800935247981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top-Down Dwarf Warrior Rotation Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 117
+        width: 360
+        height: 511
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2aee5eddb6371f80800000000000000
+      internalID: -8135974012714030550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top-Down Dwarf Warrior Rotation Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1808
+        y: 121
+        width: 360
+        height: 511
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaaa0bd1cd59ff500800000000000000
+      internalID: 432228861874317994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top-Down Dwarf Warrior Rotation Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 112
+        width: 356
+        height: 501
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b31fa0edbd29621a0800000000000000
+      internalID: -6834613911467396805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fa4bb15bdd31bd44aa382bfdaa5d7b90
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Top-Down Dwarf Warrior Rotation Sheet_0: -2542545033598006659
+      Top-Down Dwarf Warrior Rotation Sheet_1: 8435337541455591444
+      Top-Down Dwarf Warrior Rotation Sheet_10: 3980755825697000156
+      Top-Down Dwarf Warrior Rotation Sheet_11: -6834613911467396805
+      Top-Down Dwarf Warrior Rotation Sheet_12: 255401847696922814
+      Top-Down Dwarf Warrior Rotation Sheet_13: -4814450468960372336
+      Top-Down Dwarf Warrior Rotation Sheet_14: 4808273233627344255
+      Top-Down Dwarf Warrior Rotation Sheet_15: -5309133224434882678
+      Top-Down Dwarf Warrior Rotation Sheet_16: -6899395095392659946
+      Top-Down Dwarf Warrior Rotation Sheet_17: 1802075036218283258
+      Top-Down Dwarf Warrior Rotation Sheet_18: -3706172325172821320
+      Top-Down Dwarf Warrior Rotation Sheet_19: -5640207374845246338
+      Top-Down Dwarf Warrior Rotation Sheet_2: 3533540800935247981
+      Top-Down Dwarf Warrior Rotation Sheet_20: -2628341842306484474
+      Top-Down Dwarf Warrior Rotation Sheet_21: -3790783837389999007
+      Top-Down Dwarf Warrior Rotation Sheet_22: -2829411529703673736
+      Top-Down Dwarf Warrior Rotation Sheet_23: -866268911401466723
+      Top-Down Dwarf Warrior Rotation Sheet_24: -3499557024015467629
+      Top-Down Dwarf Warrior Rotation Sheet_25: -2354063282470981848
+      Top-Down Dwarf Warrior Rotation Sheet_26: -2454984039095565468
+      Top-Down Dwarf Warrior Rotation Sheet_27: 911491712014834984
+      Top-Down Dwarf Warrior Rotation Sheet_28: 2110856791144217485
+      Top-Down Dwarf Warrior Rotation Sheet_29: -3124737873525124162
+      Top-Down Dwarf Warrior Rotation Sheet_3: -8135974012714030550
+      Top-Down Dwarf Warrior Rotation Sheet_30: 462378033576440644
+      Top-Down Dwarf Warrior Rotation Sheet_31: -8188934386793425328
+      Top-Down Dwarf Warrior Rotation Sheet_32: 4168896119220551761
+      Top-Down Dwarf Warrior Rotation Sheet_33: -7208276106138937311
+      Top-Down Dwarf Warrior Rotation Sheet_34: -3773513258366422805
+      Top-Down Dwarf Warrior Rotation Sheet_35: 4445344804837278584
+      Top-Down Dwarf Warrior Rotation Sheet_36: 7837576171406058318
+      Top-Down Dwarf Warrior Rotation Sheet_37: 8565759851516690631
+      Top-Down Dwarf Warrior Rotation Sheet_38: 1077125990750337457
+      Top-Down Dwarf Warrior Rotation Sheet_39: -7114179323904041791
+      Top-Down Dwarf Warrior Rotation Sheet_4: 432228861874317994
+      Top-Down Dwarf Warrior Rotation Sheet_40: 6497218296103470006
+      Top-Down Dwarf Warrior Rotation Sheet_41: 4452239324565784076
+      Top-Down Dwarf Warrior Rotation Sheet_42: 2700034509663211449
+      Top-Down Dwarf Warrior Rotation Sheet_43: -3317147857910202480
+      Top-Down Dwarf Warrior Rotation Sheet_5: 8274477931997961680
+      Top-Down Dwarf Warrior Rotation Sheet_6: -3241988526644759022
+      Top-Down Dwarf Warrior Rotation Sheet_7: -6402385355155601372
+      Top-Down Dwarf Warrior Rotation Sheet_8: -5324649543718680117
+      Top-Down Dwarf Warrior Rotation Sheet_9: 7711390321694791463
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

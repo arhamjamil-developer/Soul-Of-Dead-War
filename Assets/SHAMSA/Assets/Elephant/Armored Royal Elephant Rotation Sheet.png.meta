@@ -1,25 +1,16 @@
 fileFormatVersion: 2
-guid: b3ee4050ec246b640ad0f861f7430429
+guid: 017e884a2e0ad7c4fbbd6fe3d52c7144
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 265709771365302700
-    second: walking1_0
+      213: 583389813421395637
+    second: Armored Royal Elephant Rotation Sheet_0
   - first:
-      213: 2702048672784883812
-    second: walking1_1
+      213: -7191429903151967962
+    second: Armored Royal Elephant Rotation Sheet_1
   - first:
-      213: -5920084103651266566
-    second: walking1_2
-  - first:
-      213: 1677518288825513387
-    second: walking1_3
-  - first:
-      213: -3141982357180408099
-    second: walking1_4
-  - first:
-      213: 1406754331540355289
-    second: walking1_5
+      213: -6932365715192006494
+    second: Armored Royal Elephant Rotation Sheet_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walking1_0
+      name: Armored Royal Elephant Rotation Sheet_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 81
-        width: 356
-        height: 623
+        x: 0
+        y: 30
+        width: 351
+        height: 649
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,86 +121,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ca1449711adffa300800000000000000
-      internalID: 265709771365302700
+      spriteID: 5be4092c1fd981800800000000000000
+      internalID: 583389813421395637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking1_1
+      name: Armored Royal Elephant Rotation Sheet_1
       rect:
         serializedVersion: 2
-        x: 738
+        x: 1084
+        y: 38
+        width: 335
+        height: 641
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 621518bda98e23c90800000000000000
+      internalID: -7191429903151967962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Royal Elephant Rotation Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1840
         y: 23
-        width: 354
-        height: 632
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 460a82ba3fa9f7520800000000000000
-      internalID: 2702048672784883812
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking1_3
-      rect:
-        serializedVersion: 2
-        x: 1107
-        y: 31
-        width: 342
-        height: 623
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ba57aadeefdb74710800000000000000
-      internalID: 1677518288825513387
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking1_4
-      rect:
-        serializedVersion: 2
-        x: 1458
-        y: 79
-        width: 373
-        height: 571
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dde97bd61bf6564d0800000000000000
-      internalID: -3141982357180408099
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking1_5
-      rect:
-        serializedVersion: 2
-        x: 1825
-        y: 78
         width: 332
-        height: 527
+        height: 657
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d874b97c9bc58310800000000000000
-      internalID: 1406754331540355289
+      spriteID: 2a832ec7c1a4bcf90800000000000000
+      internalID: -6932365715192006494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking1_6
+      name: Armored Royal Elephant Rotation Sheet_3
       rect:
         serializedVersion: 2
-        x: 381
-        y: 24
-        width: 357
-        height: 632
+        x: 349
+        y: 30
+        width: 314
+        height: 649
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +187,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d704dd40a718ef1438a5cd8228de7a60
-      internalID: 411220726
+      spriteID: b24148f6a20aa114eabe4c6d2c7cdd36
+      internalID: -1108583839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Royal Elephant Rotation Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 33
+        width: 406
+        height: 649
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f349cf13e8ce72543bb5140200f64c4f
+      internalID: -195967454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Royal Elephant Rotation Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 34
+        width: 405
+        height: 657
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba16171b018011409e8dd418efedcdd
+      internalID: 283531199
       vertices: []
       indices: 
       edges: []
@@ -250,7 +241,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3f9c278dfed26c44180afbb22d93cc28
+    spriteID: d75289c7c886e6a4481f5453895a54bc
     internalID: 0
     vertices: []
     indices: 
@@ -260,13 +251,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      walking1_0: 265709771365302700
-      walking1_1: 2702048672784883812
-      walking1_2: -5920084103651266566
-      walking1_3: 1677518288825513387
-      walking1_4: -3141982357180408099
-      walking1_5: 1406754331540355289
-      walking1_6: 411220726
+      Armored Royal Elephant Rotation Sheet_0: 583389813421395637
+      Armored Royal Elephant Rotation Sheet_1: -7191429903151967962
+      Armored Royal Elephant Rotation Sheet_2: -6932365715192006494
+      Armored Royal Elephant Rotation Sheet_3: -1108583839
+      Armored Royal Elephant Rotation Sheet_4: -195967454
+      Armored Royal Elephant Rotation Sheet_5: 283531199
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

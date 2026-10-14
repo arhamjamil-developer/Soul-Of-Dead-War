@@ -1,0 +1,289 @@
+fileFormatVersion: 2
+guid: fe6a4093c6794494fa7172f3d9ae56ed
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1736211512092524672
+    second: Barbarian_Move_0
+  - first:
+      213: -634191143993002203
+    second: Barbarian_Move_1
+  - first:
+      213: 4150353875154328659
+    second: Barbarian_Move_2
+  - first:
+      213: -939977391656123679
+    second: Barbarian_Move_3
+  - first:
+      213: -2038605555903899951
+    second: Barbarian_Move_4
+  - first:
+      213: 5666639677071833033
+    second: Barbarian_Move_5
+  - first:
+      213: -5576259997684174972
+    second: Barbarian_Move_6
+  - first:
+      213: -1358442388058172282
+    second: Barbarian_Move_7
+  - first:
+      213: 4468887139314545549
+    second: Barbarian_Move_8
+  - first:
+      213: 4970399616619493632
+    second: Barbarian_Move_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Barbarian_Move_0
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 23
+        width: 356
+        height: 578
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ff7ce14dcb7e7e0800000000000000
+      internalID: -1736211512092524672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barbarian_Move_1
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 27
+        width: 344
+        height: 578
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 527399eb386e237f0800000000000000
+      internalID: -634191143993002203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barbarian_Move_2
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 27
+        width: 357
+        height: 578
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35c5db42cd4099930800000000000000
+      internalID: 4150353875154328659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barbarian_Move_3
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 25
+        width: 357
+        height: 578
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e24071ea8784f2f0800000000000000
+      internalID: -939977391656123679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barbarian_Move_7
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 21
+        width: 352
+        height: 578
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68495fb68d7d52de0800000000000000
+      internalID: -1358442388058172282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barbarian_Move_9
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 17
+        width: 365
+        height: 581
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 009b754fd186af440800000000000000
+      internalID: 4970399616619493632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: aba17ad1b49d7e14084e686bd3c8dd33
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Barbarian_Move_0: -1736211512092524672
+      Barbarian_Move_1: -634191143993002203
+      Barbarian_Move_2: 4150353875154328659
+      Barbarian_Move_3: -939977391656123679
+      Barbarian_Move_4: -2038605555903899951
+      Barbarian_Move_5: 5666639677071833033
+      Barbarian_Move_6: -5576259997684174972
+      Barbarian_Move_7: -1358442388058172282
+      Barbarian_Move_8: 4468887139314545549
+      Barbarian_Move_9: 4970399616619493632
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
