@@ -201,7 +201,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ceacb4d6fa8d5e4796da2aa8f9d2260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoulCrystalDefense.Units.UnitAnimationPlayer
-  targetRenderer: {fileID: 0}
+  targetRenderer: {fileID: 1705439575274518450}
+  idleFrames: []
+  idleFps: 8
   walkFrames:
   - {fileID: 1402741397776972852, guid: 0f78e76faad5e7f4b810088a35becb59, type: 3}
   - {fileID: 1892297136751529559, guid: 0f78e76faad5e7f4b810088a35becb59, type: 3}
@@ -211,7 +213,7 @@ MonoBehaviour:
   - {fileID: -715822169681225485, guid: 0f78e76faad5e7f4b810088a35becb59, type: 3}
   - {fileID: 617514227896004439, guid: 0f78e76faad5e7f4b810088a35becb59, type: 3}
   - {fileID: 8264386589974596224, guid: 0f78e76faad5e7f4b810088a35becb59, type: 3}
-  walkFps: 10
+  walkFps: 11
   attackFrames:
   - {fileID: -5084732224091372605, guid: 0f78e76faad5e7f4b810088a35becb59, type: 3}
   - {fileID: -1346945922408973288, guid: 0f78e76faad5e7f4b810088a35becb59, type: 3}
@@ -221,7 +223,7 @@ MonoBehaviour:
   - {fileID: 818915752738102191, guid: 0f78e76faad5e7f4b810088a35becb59, type: 3}
   - {fileID: 1685453316357249953, guid: 0f78e76faad5e7f4b810088a35becb59, type: 3}
   - {fileID: -6722774109034803418, guid: 0f78e76faad5e7f4b810088a35becb59, type: 3}
-  attackFps: 12
+  attackFps: 14
   deathFrames:
   - {fileID: -6732195746901553649, guid: 0f78e76faad5e7f4b810088a35becb59, type: 3}
   - {fileID: 8156211619240499080, guid: 0f78e76faad5e7f4b810088a35becb59, type: 3}
@@ -244,7 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6770eb4ccd00ced4aa0659cf64e92ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoulCrystalDefense.Units.EnemyUnit
-  enemyData: {fileID: 0}
-  animPlayer: {fileID: 0}
-  spriteRenderer: {fileID: 0}
-  healthBar: {fileID: 0}
+  enemyData: {fileID: 11400000, guid: 2bad57b87cf3c0c4daa07a570ca6e39c, type: 2}
+  animPlayer: {fileID: 8670186358549234897}
+  spriteRenderer: {fileID: 1705439575274518450}
+  healthBar: {fileID: 9060112817232279477}

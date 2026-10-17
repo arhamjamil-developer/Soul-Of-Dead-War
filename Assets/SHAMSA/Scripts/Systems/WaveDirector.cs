@@ -18,12 +18,17 @@ namespace SoulCrystalDefense.Systems
         [SerializeField] private bool isWaveActive = false;
         [SerializeField] private bool isCountingDown = false;
         [SerializeField] private float countdownRemaining = 2.0f;
+        [SerializeField] private int maxActiveEnemies = 16;
+        [SerializeField] private float currentHpMultiplier = 1.0f;
+        [SerializeField] private float currentSpeedMultiplier = 1.0f;
 
         [Header("Enemy Prefab Lookups")]
         [SerializeField] private GameObject boneRaiderPrefab;
         [SerializeField] private GameObject soulReaperPrefab;
+        [SerializeField] private GameObject armoredElephantPrefab;
         [SerializeField] private EnemyData boneRaiderData;
         [SerializeField] private EnemyData soulReaperData;
+        [SerializeField] private EnemyData armoredElephantData;
 
         [Header("Portals")]
         [SerializeField] private PortalVisual[] portals = new PortalVisual[BoardGrid.LANE_COUNT];
@@ -38,6 +43,9 @@ namespace SoulCrystalDefense.Systems
         public bool IsWaveActive => isWaveActive;
         public float WaveTimer => waveTimer;
         public float CountdownRemaining => countdownRemaining;
+        public int ActiveEnemiesCount => activeEnemies.Count;
+        public int CompletedSpawnsCount => completedSpawnsCount;
+        public int TotalSpawnsInWave => totalSpawnsInWave;
 
         private List<EnemySpawnEntry> pendingSpawns = new List<EnemySpawnEntry>();
         private HashSet<EnemySpawnEntry> telegraphedSpawns = new HashSet<EnemySpawnEntry>();
@@ -49,6 +57,21 @@ namespace SoulCrystalDefense.Systems
         {
             if (Instance == null) Instance = this;
             else Destroy(gameObject);
+
+            #if UNITY_EDITOR
+            if (boneRaiderPrefab == null)
+                boneRaiderPrefab = UnityEditor.AssetDatabase.LoadAssetAtPath<GameObject>("Assets/SHAMSA/Prefabs/BoneRaider.prefab");
+            if (soulReaperPrefab == null)
+                soulReaperPrefab = UnityEditor.AssetDatabase.LoadAssetAtPath<GameObject>("Assets/SHAMSA/Prefabs/SoulReaper.prefab");
+            if (armoredElephantPrefab == null)
+                armoredElephantPrefab = UnityEditor.AssetDatabase.LoadAssetAtPath<GameObject>("Assets/SHAMSA/Prefabs/ArmoredElephant.prefab");
+            if (boneRaiderData == null)
+                boneRaiderData = UnityEditor.AssetDatabase.LoadAssetAtPath<EnemyData>("Assets/SHAMSA/GameplayData/BoneRaider_Data.asset");
+            if (soulReaperData == null)
+                soulReaperData = UnityEditor.AssetDatabase.LoadAssetAtPath<EnemyData>("Assets/SHAMSA/GameplayData/SoulReaper_Data.asset");
+            if (armoredElephantData == null)
+                armoredElephantData = UnityEditor.AssetDatabase.LoadAssetAtPath<EnemyData>("Assets/SHAMSA/GameplayData/ArmoredElephant_Data.asset");
+            #endif
         }
 
         public void RegisterPortals(PortalVisual[] lanePortals)
@@ -56,9 +79,11 @@ namespace SoulCrystalDefense.Systems
             portals = lanePortals;
         }
 
-        public void StartWave(WaveData waveData)
+        public void StartWave(WaveData waveData, float hpMultiplier = 1.0f, float speedMultiplier = 1.0f)
         {
             currentWaveData = waveData;
+            currentHpMultiplier = hpMultiplier;
+            currentSpeedMultiplier = speedMultiplier;
             pendingSpawns = new List<EnemySpawnEntry>(waveData.spawns);
             telegraphedSpawns.Clear();
             activeEnemies.Clear();
@@ -112,11 +137,14 @@ namespace SoulCrystalDefense.Systems
                     }
                 }
 
-                // Execute spawn
+                // Execute spawn (throttled by maxActiveEnemies cap)
                 if (waveTimer >= entry.spawnTime)
                 {
-                    SpawnEnemy(entry);
-                    pendingSpawns.RemoveAt(i);
+                    if (activeEnemies.Count < maxActiveEnemies)
+                    {
+                        SpawnEnemy(entry);
+                        pendingSpawns.RemoveAt(i);
+                    }
                 }
             }
 
@@ -148,6 +176,10 @@ namespace SoulCrystalDefense.Systems
                     prefabToUse = soulReaperPrefab;
                     dataToUse = soulReaperData;
                     break;
+                case EnemyType.ArmoredElephant:
+                    prefabToUse = armoredElephantPrefab;
+                    dataToUse = armoredElephantData;
+                    break;
                 default:
                     prefabToUse = boneRaiderPrefab;
                     dataToUse = boneRaiderData;
@@ -172,7 +204,7 @@ namespace SoulCrystalDefense.Systems
 
             if (dataToUse != null)
             {
-                enemyUnit.Initialize(dataToUse, entry.laneIndex);
+                enemyUnit.Initialize(dataToUse, entry.laneIndex, currentHpMultiplier, currentSpeedMultiplier, entry.isElite);
             }
 
             // Portal flash

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 312728187513003033}
   - component: {fileID: 6770030410740965226}
   - component: {fileID: 3089626654858774595}
+  - component: {fileID: 6050033330362666264}
   m_Layer: 0
   m_Name: DwarfGuardian
   m_TagString: Untagged
@@ -152,10 +153,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a2521d02dd2398418e398bc620c6337, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoulCrystalDefense.Units.DefenderUnit
-  defenderData: {fileID: 0}
-  spriteRenderer: {fileID: 0}
-  healthBar: {fileID: 0}
+  defenderData: {fileID: 11400000, guid: ee8ff72b266ecc749b6a6ea377f21981, type: 2}
+  spriteRenderer: {fileID: 312728187513003033}
+  animPlayer: {fileID: 6050033330362666264}
+  healthBar: {fileID: 4879834554231520052}
   attackOrigin: {fileID: 0}
+--- !u!114 &6050033330362666264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3988263755522584316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ceacb4d6fa8d5e4796da2aa8f9d2260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoulCrystalDefense.Units.UnitAnimationPlayer
+  targetRenderer: {fileID: 312728187513003033}
+  idleFrames:
+  - {fileID: -5776866802868706732, guid: fc42f7c901e81244c914ff79c632a700, type: 3}
+  - {fileID: -3542199460019273342, guid: fc42f7c901e81244c914ff79c632a700, type: 3}
+  - {fileID: 1475453159304242906, guid: fc42f7c901e81244c914ff79c632a700, type: 3}
+  - {fileID: 958064027053988030, guid: fc42f7c901e81244c914ff79c632a700, type: 3}
+  - {fileID: -786724977399321365, guid: fc42f7c901e81244c914ff79c632a700, type: 3}
+  - {fileID: 5159055402903112447, guid: fc42f7c901e81244c914ff79c632a700, type: 3}
+  idleFps: 8
+  walkFrames:
+  - {fileID: -939977391656123679, guid: fe6a4093c6794494fa7172f3d9ae56ed, type: 3}
+  - {fileID: 4150353875154328659, guid: fe6a4093c6794494fa7172f3d9ae56ed, type: 3}
+  - {fileID: -634191143993002203, guid: fe6a4093c6794494fa7172f3d9ae56ed, type: 3}
+  - {fileID: -1736211512092524672, guid: fe6a4093c6794494fa7172f3d9ae56ed, type: 3}
+  - {fileID: -1358442388058172282, guid: fe6a4093c6794494fa7172f3d9ae56ed, type: 3}
+  - {fileID: 4970399616619493632, guid: fe6a4093c6794494fa7172f3d9ae56ed, type: 3}
+  walkFps: 10
+  attackFrames:
+  - {fileID: 2827594612876764756, guid: a295c1973e7cb6d4ab9123f00f30ea0d, type: 3}
+  - {fileID: -1808475134894431794, guid: a295c1973e7cb6d4ab9123f00f30ea0d, type: 3}
+  - {fileID: -4873157458484676300, guid: a295c1973e7cb6d4ab9123f00f30ea0d, type: 3}
+  - {fileID: 2501713793518172792, guid: a295c1973e7cb6d4ab9123f00f30ea0d, type: 3}
+  - {fileID: -1101361689, guid: a295c1973e7cb6d4ab9123f00f30ea0d, type: 3}
+  - {fileID: -869139857, guid: a295c1973e7cb6d4ab9123f00f30ea0d, type: 3}
+  attackFps: 14
+  deathFrames: []
+  deathFps: 10
 --- !u!1 &8180807750157067738
 GameObject:
   m_ObjectHideFlags: 0

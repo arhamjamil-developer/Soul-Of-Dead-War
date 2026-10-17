@@ -60,6 +60,7 @@ GameObject:
   - component: {fileID: 6212904251455541101}
   - component: {fileID: 5350718661955953098}
   - component: {fileID: 72079277146839570}
+  - component: {fileID: 7981371923313711165}
   m_Layer: 0
   m_Name: BloodChef
   m_TagString: Untagged
@@ -200,7 +201,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a2521d02dd2398418e398bc620c6337, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoulCrystalDefense.Units.DefenderUnit
-  defenderData: {fileID: 0}
-  spriteRenderer: {fileID: 0}
-  healthBar: {fileID: 0}
+  defenderData: {fileID: 11400000, guid: 551791cbd30b197498c4b954e9d96e22, type: 2}
+  spriteRenderer: {fileID: 6212904251455541101}
+  animPlayer: {fileID: 7981371923313711165}
+  healthBar: {fileID: 5146632671859118659}
   attackOrigin: {fileID: 0}
+--- !u!114 &7981371923313711165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6466907849108623043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ceacb4d6fa8d5e4796da2aa8f9d2260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoulCrystalDefense.Units.UnitAnimationPlayer
+  targetRenderer: {fileID: 6212904251455541101}
+  idleFrames:
+  - {fileID: -4564556589458484578, guid: 3c5ed11d8aa41fd47bd7a37f66284455, type: 3}
+  - {fileID: 5498202207581165989, guid: 3c5ed11d8aa41fd47bd7a37f66284455, type: 3}
+  - {fileID: -3445163256190454828, guid: 3c5ed11d8aa41fd47bd7a37f66284455, type: 3}
+  - {fileID: 8614212073925619220, guid: 3c5ed11d8aa41fd47bd7a37f66284455, type: 3}
+  - {fileID: 4990657554006578504, guid: 3c5ed11d8aa41fd47bd7a37f66284455, type: 3}
+  - {fileID: 926667334511340291, guid: 3c5ed11d8aa41fd47bd7a37f66284455, type: 3}
+  idleFps: 8
+  walkFrames:
+  - {fileID: 2054276244188416152, guid: 932070c17a42b5644ac0faf4d92cbc13, type: 3}
+  - {fileID: 3214725308997833993, guid: 932070c17a42b5644ac0faf4d92cbc13, type: 3}
+  - {fileID: 3106427689451118067, guid: 932070c17a42b5644ac0faf4d92cbc13, type: 3}
+  - {fileID: -5264644684812403638, guid: 932070c17a42b5644ac0faf4d92cbc13, type: 3}
+  - {fileID: 3034730292453380051, guid: 932070c17a42b5644ac0faf4d92cbc13, type: 3}
+  - {fileID: 2888479152563589435, guid: 932070c17a42b5644ac0faf4d92cbc13, type: 3}
+  walkFps: 10
+  attackFrames:
+  - {fileID: 8434733310757185133, guid: 732eb66f8d7c00c4387f291d919559ab, type: 3}
+  - {fileID: -8163631377779696319, guid: 732eb66f8d7c00c4387f291d919559ab, type: 3}
+  - {fileID: -8382803792087599384, guid: 732eb66f8d7c00c4387f291d919559ab, type: 3}
+  - {fileID: 2302738241878320352, guid: 732eb66f8d7c00c4387f291d919559ab, type: 3}
+  - {fileID: 1446799385561780587, guid: 732eb66f8d7c00c4387f291d919559ab, type: 3}
+  - {fileID: 8136500886473167854, guid: 732eb66f8d7c00c4387f291d919559ab, type: 3}
+  attackFps: 12
+  deathFrames: []
+  deathFps: 10

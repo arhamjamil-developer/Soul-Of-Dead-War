@@ -12,6 +12,7 @@ namespace SoulCrystalDefense.Units
         [Header("Configuration")]
         [SerializeField] private DefenderData defenderData;
         [SerializeField] private SpriteRenderer spriteRenderer;
+        [SerializeField] private UnitAnimationPlayer animPlayer;
         [SerializeField] private HealthBar healthBar;
         [SerializeField] private Transform attackOrigin;
 
@@ -28,12 +29,14 @@ namespace SoulCrystalDefense.Units
         public int RowIndex => cell != null ? cell.Row : 0;
         public float CurrentHealth => currentHealth;
         public bool IsDead => isDead;
+        public UnitAnimationPlayer AnimPlayer => animPlayer;
 
         public event Action<DefenderUnit> OnDefenderDestroyed;
 
         private void Awake()
         {
             if (spriteRenderer == null) spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+            if (animPlayer == null) animPlayer = GetComponentInChildren<UnitAnimationPlayer>();
             if (healthBar == null) healthBar = GetComponentInChildren<HealthBar>();
             if (spriteRenderer != null) originalColor = spriteRenderer.color;
         }
@@ -54,6 +57,11 @@ namespace SoulCrystalDefense.Units
             if (healthBar != null)
             {
                 healthBar.Initialize(currentHealth, new Color(0.2f, 0.8f, 0.3f, 1f));
+            }
+
+            if (animPlayer != null)
+            {
+                animPlayer.PlayIdle();
             }
         }
 
@@ -83,6 +91,12 @@ namespace SoulCrystalDefense.Units
 
         private bool TryAttack()
         {
+            // If already performing attack animation, wait
+            if (animPlayer != null && animPlayer.CurrentState == UnitAnimationPlayer.AnimState.Attack)
+            {
+                return false;
+            }
+
             // Find enemies in the same lane above this defender
             var enemies = FindObjectsByType<EnemyUnit>(FindObjectsSortMode.None);
             EnemyUnit closestEnemy = null;
@@ -122,13 +136,29 @@ namespace SoulCrystalDefense.Units
         {
             // Visual punch/bob toward target
             StartCoroutine(PunchAnimation(0.12f));
-
             SoundManager.Instance?.PlayDwarfImpact();
 
-            target.TakeDamage(defenderData.damage);
-            if (defenderData.knockback > 0.01f)
+            if (animPlayer != null && animPlayer.HasAttackFrames)
             {
-                target.ApplyKnockback(defenderData.knockback);
+                animPlayer.PlayAttack(() =>
+                {
+                    if (target != null && !target.IsDead)
+                    {
+                        target.TakeDamage(defenderData.damage);
+                        if (defenderData.knockback > 0.01f)
+                        {
+                            target.ApplyKnockback(defenderData.knockback);
+                        }
+                    }
+                });
+            }
+            else
+            {
+                target.TakeDamage(defenderData.damage);
+                if (defenderData.knockback > 0.01f)
+                {
+                    target.ApplyKnockback(defenderData.knockback);
+                }
             }
         }
 
@@ -155,6 +185,23 @@ namespace SoulCrystalDefense.Units
 
         private void LaunchRangedAttack(EnemyUnit target)
         {
+            if (animPlayer != null && animPlayer.HasAttackFrames)
+            {
+                animPlayer.PlayAttack(() =>
+                {
+                    SpawnProjectile(target);
+                });
+            }
+            else
+            {
+                SpawnProjectile(target);
+            }
+        }
+
+        private void SpawnProjectile(EnemyUnit target)
+        {
+            if (target == null || target.IsDead) return;
+
             SoundManager.Instance?.PlayChefFireImpact();
 
             Vector3 spawnPos = attackOrigin != null ? attackOrigin.position : transform.position + Vector3.up * 0.3f;
@@ -213,7 +260,15 @@ namespace SoulCrystalDefense.Units
             }
 
             OnDefenderDestroyed?.Invoke(this);
-            Destroy(gameObject, 0.1f);
+
+            if (animPlayer != null && animPlayer.HasDeathFrames)
+            {
+                animPlayer.PlayDeath(() => Destroy(gameObject, 0.3f));
+            }
+            else
+            {
+                Destroy(gameObject, 0.1f);
+            }
         }
 
         private void OnDestroy()

@@ -121,7 +121,7 @@ namespace SoulCrystalDefense.UI
                 GameManager.Instance.TogglePause();
                 if (pauseButtonText != null)
                 {
-                    pauseButtonText.text = GameManager.Instance.IsPaused ? "RESUME" : "PAUSE";
+                    pauseButtonText.text = GameManager.Instance.IsPaused ? ">" : "II";
                 }
             }
         }

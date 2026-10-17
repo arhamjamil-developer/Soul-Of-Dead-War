@@ -25,11 +25,19 @@ namespace SoulCrystalDefense.Units
         private Color originalColor = Color.white;
         private float flashTimer = 0f;
 
+        [Header("Scaling & Elite State")]
+        [SerializeField] private bool isEliteUnit = false;
+        [SerializeField] private float hpMultiplier = 1.0f;
+        [SerializeField] private float speedMultiplier = 1.0f;
+        private float effectiveDamage = 9f;
+        private float effectiveMoveSpeed = 0.55f;
+
         public EnemyData Data => enemyData;
         public int LaneIndex => laneIndex;
         public float CurrentHealth => currentHealth;
         public bool IsDead => isDead;
         public bool HasBreached => hasBreached;
+        public bool IsElite => isEliteUnit;
 
         public event Action<EnemyUnit> OnDeath;
         public event Action<EnemyUnit> OnBreach;
@@ -43,18 +51,45 @@ namespace SoulCrystalDefense.Units
             if (spriteRenderer != null) originalColor = spriteRenderer.color;
         }
 
-        public void Initialize(EnemyData data, int lane)
+        public void Initialize(EnemyData data, int lane, float hpMult = 1.0f, float spdMult = 1.0f, bool isElite = false)
         {
             enemyData = data;
             laneIndex = lane;
-            currentHealth = data.maxHealth;
+            isEliteUnit = isElite;
+            hpMultiplier = Mathf.Max(0.1f, hpMult);
+            speedMultiplier = Mathf.Max(0.1f, spdMult);
+
+            float baseHp = data != null ? data.maxHealth : 60f;
+            if (isEliteUnit)
+            {
+                baseHp *= 2.0f; // Elite has 2.0x base health
+            }
+            currentHealth = baseHp * hpMultiplier;
+
+            float baseDmg = data != null ? data.damage : 9f;
+            effectiveDamage = isEliteUnit ? baseDmg * 1.35f : baseDmg;
+
+            float baseSpd = data != null ? data.moveSpeed : 0.55f;
+            effectiveMoveSpeed = baseSpd * speedMultiplier;
+
             isDead = false;
             hasBreached = false;
             attackTimer = 0f;
 
             if (healthBar != null)
             {
-                healthBar.Initialize(currentHealth, new Color(0.95f, 0.25f, 0.25f, 1f));
+                Color barColor = isEliteUnit
+                    ? new Color(1.0f, 0.78f, 0.15f, 1f) // Gold health bar for elite
+                    : new Color(0.95f, 0.25f, 0.25f, 1f); // Red health bar for standard
+                healthBar.Initialize(currentHealth, barColor);
+            }
+
+            if (isEliteUnit && spriteRenderer != null)
+            {
+                // Distinct elite silhouette aura and scale
+                transform.localScale = transform.localScale * 1.22f;
+                spriteRenderer.color = new Color(1.0f, 0.88f, 0.98f, 1f);
+                originalColor = spriteRenderer.color;
             }
 
             if (animPlayer != null)
@@ -90,7 +125,12 @@ namespace SoulCrystalDefense.Units
 
             if (currentTargetDefender != null && !currentTargetDefender.IsDead)
             {
-                // In combat range: stop moving and attack
+                // In combat range: stop moving and transition from Walk to Idle stance
+                if (animPlayer != null && animPlayer.CurrentState == UnitAnimationPlayer.AnimState.Walk)
+                {
+                    animPlayer.PlayIdle();
+                }
+
                 attackTimer += Time.deltaTime;
                 if (attackTimer >= enemyData.attackCooldown)
                 {
@@ -102,7 +142,7 @@ namespace SoulCrystalDefense.Units
             {
                 // Advance downward along lane
                 currentTargetDefender = null;
-                transform.position += Vector3.down * enemyData.moveSpeed * Time.deltaTime;
+                transform.position += Vector3.down * effectiveMoveSpeed * Time.deltaTime;
                 if (animPlayer != null)
                 {
                     animPlayer.PlayWalk();
@@ -148,7 +188,7 @@ namespace SoulCrystalDefense.Units
                 {
                     if (currentTargetDefender != null && !currentTargetDefender.IsDead)
                     {
-                        currentTargetDefender.TakeDamage(enemyData.damage);
+                        currentTargetDefender.TakeDamage(effectiveDamage);
                     }
                 });
             }
@@ -156,7 +196,7 @@ namespace SoulCrystalDefense.Units
             {
                 if (currentTargetDefender != null && !currentTargetDefender.IsDead)
                 {
-                    currentTargetDefender.TakeDamage(enemyData.damage);
+                    currentTargetDefender.TakeDamage(effectiveDamage);
                 }
             }
         }
@@ -194,10 +234,13 @@ namespace SoulCrystalDefense.Units
 
             SoundManager.Instance?.PlayBoneDeath();
 
-            // Reward soul energy
+            // Reward soul energy (with elite bonus)
+            int reward = enemyData != null ? enemyData.soulReward : 15;
+            if (isEliteUnit) reward = Mathf.RoundToInt(reward * 2.5f);
+
             if (SoulEnergyWallet.Instance != null)
             {
-                SoulEnergyWallet.Instance.AddEnergy(enemyData.soulReward);
+                SoulEnergyWallet.Instance.AddEnergy(reward);
             }
 
             OnDeath?.Invoke(this);
@@ -220,9 +263,12 @@ namespace SoulCrystalDefense.Units
             if (hasBreached) return;
             hasBreached = true;
 
+            int breach = enemyData != null ? enemyData.crystalBreachDamage : 2;
+            if (isEliteUnit) breach += 2;
+
             if (SoulCrystal.Instance != null)
             {
-                SoulCrystal.Instance.TakeBreachDamage(enemyData.crystalBreachDamage);
+                SoulCrystal.Instance.TakeBreachDamage(breach);
             }
 
             OnBreach?.Invoke(this);
