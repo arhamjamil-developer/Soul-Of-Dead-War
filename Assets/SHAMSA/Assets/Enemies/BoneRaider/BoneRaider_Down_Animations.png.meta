@@ -1,0 +1,904 @@
+fileFormatVersion: 2
+guid: 9b0d0245bb641c641b1436d55b7fe398
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 694387473151162248
+    second: BoneRaider_Down_Animations_0
+  - first:
+      213: -3353275542042494565
+    second: BoneRaider_Down_Animations_1
+  - first:
+      213: -8187361850934926461
+    second: BoneRaider_Down_Animations_2
+  - first:
+      213: 2611829335236512206
+    second: BoneRaider_Down_Animations_3
+  - first:
+      213: 5941868872911138849
+    second: BoneRaider_Down_Animations_4
+  - first:
+      213: 7029308208191410007
+    second: BoneRaider_Down_Animations_5
+  - first:
+      213: 2110236299569854442
+    second: BoneRaider_Down_Animations_6
+  - first:
+      213: 60037040119690513
+    second: BoneRaider_Down_Animations_7
+  - first:
+      213: 1422114494381372772
+    second: BoneRaider_Down_Animations_8
+  - first:
+      213: 5630968846337044898
+    second: BoneRaider_Down_Animations_9
+  - first:
+      213: -5143666256811358764
+    second: BoneRaider_Down_Animations_10
+  - first:
+      213: -1040192657594262714
+    second: BoneRaider_Down_Animations_11
+  - first:
+      213: 1959879069303235869
+    second: BoneRaider_Down_Animations_12
+  - first:
+      213: -7051268101851188623
+    second: BoneRaider_Down_Animations_13
+  - first:
+      213: 4784424923445543965
+    second: BoneRaider_Down_Animations_14
+  - first:
+      213: -2929084990231596611
+    second: BoneRaider_Down_Animations_15
+  - first:
+      213: 8467417146982986128
+    second: BoneRaider_Down_Animations_16
+  - first:
+      213: -5140438820633430805
+    second: BoneRaider_Down_Animations_17
+  - first:
+      213: -1621657720898558821
+    second: BoneRaider_Down_Animations_18
+  - first:
+      213: -6325071250864712637
+    second: BoneRaider_Down_Animations_19
+  - first:
+      213: 2250035831744682623
+    second: BoneRaider_Down_Animations_20
+  - first:
+      213: 5127839657805369462
+    second: BoneRaider_Down_Animations_21
+  - first:
+      213: -7193487683253465675
+    second: BoneRaider_Down_Animations_22
+  - first:
+      213: 6836932684175025671
+    second: BoneRaider_Down_Animations_23
+  - first:
+      213: -6124615780498771898
+    second: BoneRaider_Down_Animations_24
+  - first:
+      213: 1355506359939209103
+    second: BoneRaider_Down_Animations_25
+  - first:
+      213: -8574581780998318424
+    second: BoneRaider_Down_Animations_26
+  - first:
+      213: -1416614349202112243
+    second: BoneRaider_Down_Animations_27
+  - first:
+      213: -4045887372437227691
+    second: BoneRaider_Down_Animations_28
+  - first:
+      213: 3534520348107797912
+    second: BoneRaider_Down_Animations_29
+  - first:
+      213: 2426483386693961287
+    second: BoneRaider_Down_Animations_30
+  - first:
+      213: -6154261598838283557
+    second: BoneRaider_DeathDown_00
+  - first:
+      213: -2905910943934371199
+    second: BoneRaider_DeathDown_01
+  - first:
+      213: 6928099834442095573
+    second: BoneRaider_DeathDown_02
+  - first:
+      213: 5010599986376979677
+    second: BoneRaider_DeathDown_03
+  - first:
+      213: -8599844395748959265
+    second: BoneRaider_DeathDown_04
+  - first:
+      213: -193836772065172902
+    second: BoneRaider_DeathDown_05
+  - first:
+      213: 192478816506807959
+    second: BoneRaider_DeathDown_06
+  - first:
+      213: 4148703416991145832
+    second: BoneRaider_DeathDown_07
+  - first:
+      213: 29900518405679253
+    second: BoneRaider_AttackDown_00
+  - first:
+      213: -2680758055657860019
+    second: BoneRaider_AttackDown_01
+  - first:
+      213: 5867747155276434856
+    second: BoneRaider_AttackDown_02
+  - first:
+      213: 3804114301143636719
+    second: BoneRaider_AttackDown_03
+  - first:
+      213: 6363673300572936669
+    second: BoneRaider_AttackDown_04
+  - first:
+      213: -7467036236787702303
+    second: BoneRaider_AttackDown_05
+  - first:
+      213: -7757289648442789043
+    second: BoneRaider_AttackDown_06
+  - first:
+      213: 7758344810646584363
+    second: BoneRaider_AttackDown_07
+  - first:
+      213: -9026044378802839405
+    second: BoneRaider_WalkDown_00
+  - first:
+      213: -1168583238566950683
+    second: BoneRaider_WalkDown_01
+  - first:
+      213: -5283287927823034621
+    second: BoneRaider_WalkDown_02
+  - first:
+      213: -2935380976166179344
+    second: BoneRaider_WalkDown_03
+  - first:
+      213: -3214444973881735980
+    second: BoneRaider_WalkDown_04
+  - first:
+      213: 1625429132758632423
+    second: BoneRaider_WalkDown_05
+  - first:
+      213: -7826023343556245893
+    second: BoneRaider_WalkDown_06
+  - first:
+      213: 258683772887371554
+    second: BoneRaider_WalkDown_07
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BoneRaider_DeathDown_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd2aa6abeaba79aa0800000000000000
+      internalID: -6154261598838283557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneRaider_DeathDown_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18a2fd584612ca7d0800000000000000
+      internalID: -2905910943934371199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneRaider_DeathDown_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5db1d50c71e852060800000000000000
+      internalID: 6928099834442095573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneRaider_DeathDown_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd4b39be32a398540800000000000000
+      internalID: 5010599986376979677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneRaider_DeathDown_04
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdbdfb3061737a880800000000000000
+      internalID: -8599844395748959265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneRaider_DeathDown_05
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a52a5a89b7a5f4df0800000000000000
+      internalID: -193836772065172902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneRaider_DeathDown_06
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7960dacb672dba200800000000000000
+      internalID: 192478816506807959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneRaider_DeathDown_07
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86fd438e6c7239930800000000000000
+      internalID: 4148703416991145832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneRaider_AttackDown_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 598ab22fc5a3a6000800000000000000
+      internalID: 29900518405679253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneRaider_AttackDown_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d441fbb60c80ccad0800000000000000
+      internalID: -2680758055657860019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneRaider_AttackDown_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad8f06f2fc6e6150800000000000000
+      internalID: 5867747155276434856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneRaider_AttackDown_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fea56a44dcdeac430800000000000000
+      internalID: 3804114301143636719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneRaider_AttackDown_04
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd99943962f405850800000000000000
+      internalID: 6363673300572936669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneRaider_AttackDown_05
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 256
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e5ac4dca12cf5890800000000000000
+      internalID: -7467036236787702303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneRaider_AttackDown_06
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 256
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d43b0c42a22985490800000000000000
+      internalID: -7757289648442789043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneRaider_AttackDown_07
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 256
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2cb593ff7d2bab60800000000000000
+      internalID: 7758344810646584363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneRaider_WalkDown_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 390ab82a57c0db280800000000000000
+      internalID: -9026044378802839405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneRaider_WalkDown_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e8cdb66cbb58cfe0800000000000000
+      internalID: -1168583238566950683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneRaider_WalkDown_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3079ff72f9dfda6b0800000000000000
+      internalID: -5283287927823034621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneRaider_WalkDown_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fdec23fd8e6347d0800000000000000
+      internalID: -2935380976166179344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneRaider_WalkDown_04
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d44dbdb35ff363d0800000000000000
+      internalID: -3214444973881735980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneRaider_WalkDown_05
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 512
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e746a13f2fae8610800000000000000
+      internalID: 1625429132758632423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneRaider_WalkDown_06
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 512
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b764a6bab31646390800000000000000
+      internalID: -7826023343556245893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoneRaider_WalkDown_07
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 512
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f0c185587079300800000000000000
+      internalID: 258683772887371554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BoneRaider_AttackDown_00: 29900518405679253
+      BoneRaider_AttackDown_01: -2680758055657860019
+      BoneRaider_AttackDown_02: 5867747155276434856
+      BoneRaider_AttackDown_03: 3804114301143636719
+      BoneRaider_AttackDown_04: 6363673300572936669
+      BoneRaider_AttackDown_05: -7467036236787702303
+      BoneRaider_AttackDown_06: -7757289648442789043
+      BoneRaider_AttackDown_07: 7758344810646584363
+      BoneRaider_DeathDown_00: -6154261598838283557
+      BoneRaider_DeathDown_01: -2905910943934371199
+      BoneRaider_DeathDown_02: 6928099834442095573
+      BoneRaider_DeathDown_03: 5010599986376979677
+      BoneRaider_DeathDown_04: -8599844395748959265
+      BoneRaider_DeathDown_05: -193836772065172902
+      BoneRaider_DeathDown_06: 192478816506807959
+      BoneRaider_DeathDown_07: 4148703416991145832
+      BoneRaider_Down_Animations_0: 694387473151162248
+      BoneRaider_Down_Animations_1: -3353275542042494565
+      BoneRaider_Down_Animations_10: -5143666256811358764
+      BoneRaider_Down_Animations_11: -1040192657594262714
+      BoneRaider_Down_Animations_12: 1959879069303235869
+      BoneRaider_Down_Animations_13: -7051268101851188623
+      BoneRaider_Down_Animations_14: 4784424923445543965
+      BoneRaider_Down_Animations_15: -2929084990231596611
+      BoneRaider_Down_Animations_16: 8467417146982986128
+      BoneRaider_Down_Animations_17: -5140438820633430805
+      BoneRaider_Down_Animations_18: -1621657720898558821
+      BoneRaider_Down_Animations_19: -6325071250864712637
+      BoneRaider_Down_Animations_2: -8187361850934926461
+      BoneRaider_Down_Animations_20: 2250035831744682623
+      BoneRaider_Down_Animations_21: 5127839657805369462
+      BoneRaider_Down_Animations_22: -7193487683253465675
+      BoneRaider_Down_Animations_23: 6836932684175025671
+      BoneRaider_Down_Animations_24: -6124615780498771898
+      BoneRaider_Down_Animations_25: 1355506359939209103
+      BoneRaider_Down_Animations_26: -8574581780998318424
+      BoneRaider_Down_Animations_27: -1416614349202112243
+      BoneRaider_Down_Animations_28: -4045887372437227691
+      BoneRaider_Down_Animations_29: 3534520348107797912
+      BoneRaider_Down_Animations_3: 2611829335236512206
+      BoneRaider_Down_Animations_30: 2426483386693961287
+      BoneRaider_Down_Animations_4: 5941868872911138849
+      BoneRaider_Down_Animations_5: 7029308208191410007
+      BoneRaider_Down_Animations_6: 2110236299569854442
+      BoneRaider_Down_Animations_7: 60037040119690513
+      BoneRaider_Down_Animations_8: 1422114494381372772
+      BoneRaider_Down_Animations_9: 5630968846337044898
+      BoneRaider_WalkDown_00: -9026044378802839405
+      BoneRaider_WalkDown_01: -1168583238566950683
+      BoneRaider_WalkDown_02: -5283287927823034621
+      BoneRaider_WalkDown_03: -2935380976166179344
+      BoneRaider_WalkDown_04: -3214444973881735980
+      BoneRaider_WalkDown_05: 1625429132758632423
+      BoneRaider_WalkDown_06: -7826023343556245893
+      BoneRaider_WalkDown_07: 258683772887371554
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

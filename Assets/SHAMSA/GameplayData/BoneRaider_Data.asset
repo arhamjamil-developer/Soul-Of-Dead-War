@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32fafa3590fc9d447a48d561da6d609d, type: 3}
+  m_Name: BoneRaider_Data
+  m_EditorClassIdentifier: Assembly-CSharp::SoulCrystalDefense.Data.EnemyData
+  enemyType: 0
+  displayName: Bone Raider
+  unitPrefab: {fileID: 8196120358443099143, guid: 7a9e3bb10ec934645866759193724ad6, type: 3}
+  maxHealth: 60
+  moveSpeed: 0.55
+  damage: 9
+  attackCooldown: 1.2
+  attackRange: 0.65
+  crystalBreachDamage: 2
+  soulReward: 15
+  isRanged: 0
+  projectileSpeed: 6
+  projectilePrefab: {fileID: 0}

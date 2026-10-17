@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11f4ac5042e3a6248bc6beab61d61f45, type: 3}
+  m_Name: DwarfGuardian_Data
+  m_EditorClassIdentifier: Assembly-CSharp::SoulCrystalDefense.Data.DefenderData
+  defenderType: 0
+  displayName: Dwarf Guardian
+  cardIcon: {fileID: -786724977399321365, guid: fc42f7c901e81244c914ff79c632a700, type: 3}
+  unitPrefab: {fileID: 3988263755522584316, guid: dba873cf2ebf78e4eb400d70a89582bd, type: 3}
+  soulCost: 100
+  placementCooldown: 1
+  maxHealth: 220
+  damage: 24
+  attackCooldown: 0.9
+  attackRange: 0.9
+  knockback: 0.15
+  isRanged: 0
+  projectileSpeed: 8
+  splashRadius: 0.75
+  projectilePrefab: {fileID: 0}

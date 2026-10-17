@@ -1,0 +1,988 @@
+fileFormatVersion: 2
+guid: 0f78e76faad5e7f4b810088a35becb59
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1332386720334117093
+    second: SoulReaper_Down_Animations_0
+  - first:
+      213: 8682037089718251813
+    second: SoulReaper_Down_Animations_1
+  - first:
+      213: 9207253278526497578
+    second: SoulReaper_Down_Animations_2
+  - first:
+      213: -2650246581662283622
+    second: SoulReaper_Down_Animations_3
+  - first:
+      213: -8935128359939413144
+    second: SoulReaper_Down_Animations_4
+  - first:
+      213: -6074010165815192296
+    second: SoulReaper_Down_Animations_5
+  - first:
+      213: 2210119221507732044
+    second: SoulReaper_Down_Animations_6
+  - first:
+      213: 6733304764728491274
+    second: SoulReaper_Down_Animations_7
+  - first:
+      213: -586880121053224223
+    second: SoulReaper_Down_Animations_8
+  - first:
+      213: 9089068603349727387
+    second: SoulReaper_Down_Animations_9
+  - first:
+      213: -7253488539307569782
+    second: SoulReaper_Down_Animations_10
+  - first:
+      213: 1886097006109718731
+    second: SoulReaper_Down_Animations_11
+  - first:
+      213: 7989457998631677951
+    second: SoulReaper_Down_Animations_12
+  - first:
+      213: 6697041612419295589
+    second: SoulReaper_Down_Animations_13
+  - first:
+      213: 7715065573349531268
+    second: SoulReaper_Down_Animations_14
+  - first:
+      213: -7981322239007508926
+    second: SoulReaper_Down_Animations_15
+  - first:
+      213: 5135910595675162270
+    second: SoulReaper_Down_Animations_16
+  - first:
+      213: -8865388807282700078
+    second: SoulReaper_Down_Animations_17
+  - first:
+      213: -7581642082778176530
+    second: SoulReaper_Down_Animations_18
+  - first:
+      213: 1598521268378631394
+    second: SoulReaper_Down_Animations_19
+  - first:
+      213: -6283206111149391553
+    second: SoulReaper_Down_Animations_20
+  - first:
+      213: -3373482589145075389
+    second: SoulReaper_Down_Animations_21
+  - first:
+      213: 1515307249970645152
+    second: SoulReaper_Down_Animations_22
+  - first:
+      213: 6506711911976805504
+    second: SoulReaper_Down_Animations_23
+  - first:
+      213: 3504172672009955649
+    second: SoulReaper_Down_Animations_24
+  - first:
+      213: -1968473308829005692
+    second: SoulReaper_Down_Animations_25
+  - first:
+      213: -7392120747010889933
+    second: SoulReaper_Down_Animations_26
+  - first:
+      213: -2112465355010028126
+    second: SoulReaper_Down_Animations_27
+  - first:
+      213: 2466044962335745737
+    second: SoulReaper_Down_Animations_28
+  - first:
+      213: -4672230842377123796
+    second: SoulReaper_Down_Animations_29
+  - first:
+      213: 5535436292426395816
+    second: SoulReaper_Down_Animations_30
+  - first:
+      213: -4273762635120007798
+    second: SoulReaper_Down_Animations_31
+  - first:
+      213: -4837707901610109563
+    second: SoulReaper_Down_Animations_32
+  - first:
+      213: 5318449108297184207
+    second: SoulReaper_Down_Animations_33
+  - first:
+      213: -3249487481411454990
+    second: SoulReaper_Down_Animations_34
+  - first:
+      213: 6860935222240117378
+    second: SoulReaper_Down_Animations_35
+  - first:
+      213: 8864484924441224046
+    second: SoulReaper_Down_Animations_36
+  - first:
+      213: -6674330154119246200
+    second: SoulReaper_Down_Animations_37
+  - first:
+      213: 384109020570497927
+    second: SoulReaper_Down_Animations_38
+  - first:
+      213: -332595163257091590
+    second: SoulReaper_Down_Animations_39
+  - first:
+      213: -72132751054489804
+    second: SoulReaper_Down_Animations_40
+  - first:
+      213: 5224774771129952959
+    second: SoulReaper_Down_Animations_41
+  - first:
+      213: 2320352489698092367
+    second: SoulReaper_Down_Animations_42
+  - first:
+      213: -5256362107986045280
+    second: SoulReaper_Down_Animations_43
+  - first:
+      213: 3384509742227545374
+    second: SoulReaper_Down_Animations_44
+  - first:
+      213: 2538972568427150744
+    second: SoulReaper_Down_Animations_45
+  - first:
+      213: 8174839366569255598
+    second: SoulReaper_Down_Animations_46
+  - first:
+      213: 1710671714824059975
+    second: SoulReaper_Down_Animations_47
+  - first:
+      213: 6510906793353222060
+    second: SoulReaper_Down_Animations_48
+  - first:
+      213: 6697538117265718749
+    second: SoulReaper_Down_Animations_49
+  - first:
+      213: -3612655855713214266
+    second: SoulReaper_Down_Animations_50
+  - first:
+      213: -116348703885114233
+    second: SoulReaper_Down_Animations_51
+  - first:
+      213: -6732195746901553649
+    second: SoulReaper_DeathDown_00
+  - first:
+      213: 8156211619240499080
+    second: SoulReaper_DeathDown_01
+  - first:
+      213: -3092999389496149429
+    second: SoulReaper_DeathDown_02
+  - first:
+      213: 6372612140954849402
+    second: SoulReaper_DeathDown_03
+  - first:
+      213: 2726077368933149201
+    second: SoulReaper_DeathDown_04
+  - first:
+      213: -6708562213476632720
+    second: SoulReaper_DeathDown_05
+  - first:
+      213: -5077035997429590972
+    second: SoulReaper_DeathDown_06
+  - first:
+      213: 255812508637758491
+    second: SoulReaper_DeathDown_07
+  - first:
+      213: -5084732224091372605
+    second: SoulReaper_AttackDown_00
+  - first:
+      213: -1346945922408973288
+    second: SoulReaper_AttackDown_01
+  - first:
+      213: 420294760749105667
+    second: SoulReaper_AttackDown_02
+  - first:
+      213: 571801065499470284
+    second: SoulReaper_AttackDown_03
+  - first:
+      213: 6887305481259323805
+    second: SoulReaper_AttackDown_04
+  - first:
+      213: 818915752738102191
+    second: SoulReaper_AttackDown_05
+  - first:
+      213: 1685453316357249953
+    second: SoulReaper_AttackDown_06
+  - first:
+      213: -6722774109034803418
+    second: SoulReaper_AttackDown_07
+  - first:
+      213: 1402741397776972852
+    second: SoulReaper_WalkDown_00
+  - first:
+      213: 1892297136751529559
+    second: SoulReaper_WalkDown_01
+  - first:
+      213: 1089025890174683246
+    second: SoulReaper_WalkDown_02
+  - first:
+      213: -6525038471662864026
+    second: SoulReaper_WalkDown_03
+  - first:
+      213: 2224826470691462072
+    second: SoulReaper_WalkDown_04
+  - first:
+      213: -715822169681225485
+    second: SoulReaper_WalkDown_05
+  - first:
+      213: 617514227896004439
+    second: SoulReaper_WalkDown_06
+  - first:
+      213: 8264386589974596224
+    second: SoulReaper_WalkDown_07
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SoulReaper_DeathDown_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e898b03af6292a0800000000000000
+      internalID: -6732195746901553649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulReaper_DeathDown_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8875eb5114fa03170800000000000000
+      internalID: 8156211619240499080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulReaper_DeathDown_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4af49251757315d0800000000000000
+      internalID: -3092999389496149429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulReaper_DeathDown_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7094f88af0107850800000000000000
+      internalID: 6372612140954849402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulReaper_DeathDown_04
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11aed757ce8f4d520800000000000000
+      internalID: 2726077368933149201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulReaper_DeathDown_05
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 077fd18d53666e2a0800000000000000
+      internalID: -6708562213476632720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulReaper_DeathDown_06
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 444965dd8aeba89b0800000000000000
+      internalID: -5077035997429590972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulReaper_DeathDown_07
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b14847a0f14dc8300800000000000000
+      internalID: 255812508637758491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulReaper_AttackDown_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c34d057bf66f69b0800000000000000
+      internalID: -5084732224091372605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulReaper_AttackDown_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81cf62be1dfae4de0800000000000000
+      internalID: -1346945922408973288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulReaper_AttackDown_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 302886babdf25d500800000000000000
+      internalID: 420294760749105667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulReaper_AttackDown_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc9294f1a027fe700800000000000000
+      internalID: 571801065499470284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulReaper_AttackDown_04
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d91101e38df949f50800000000000000
+      internalID: 6887305481259323805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulReaper_AttackDown_05
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 256
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fab1deec98f5d5b00800000000000000
+      internalID: 818915752738102191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulReaper_AttackDown_06
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 256
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab5afe7cdee36710800000000000000
+      internalID: 1685453316357249953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulReaper_AttackDown_07
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 256
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62f89cd0198e3b2a0800000000000000
+      internalID: -6722774109034803418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulReaper_WalkDown_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43c3b368ed9877310800000000000000
+      internalID: 1402741397776972852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulReaper_WalkDown_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75e4095583ac24a10800000000000000
+      internalID: 1892297136751529559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulReaper_WalkDown_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e68c017f64ffc1f00800000000000000
+      internalID: 1089025890174683246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulReaper_WalkDown_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 669f6c6c4186275a0800000000000000
+      internalID: -6525038471662864026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulReaper_WalkDown_04
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bb537033eb20ee10800000000000000
+      internalID: 2224826470691462072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulReaper_WalkDown_05
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 512
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f81dcd7783e016f0800000000000000
+      internalID: -715822169681225485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulReaper_WalkDown_06
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 512
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75fad752be9d19800800000000000000
+      internalID: 617514227896004439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulReaper_WalkDown_07
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 512
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08a00f521dff0b270800000000000000
+      internalID: 8264386589974596224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SoulReaper_AttackDown_00: -5084732224091372605
+      SoulReaper_AttackDown_01: -1346945922408973288
+      SoulReaper_AttackDown_02: 420294760749105667
+      SoulReaper_AttackDown_03: 571801065499470284
+      SoulReaper_AttackDown_04: 6887305481259323805
+      SoulReaper_AttackDown_05: 818915752738102191
+      SoulReaper_AttackDown_06: 1685453316357249953
+      SoulReaper_AttackDown_07: -6722774109034803418
+      SoulReaper_DeathDown_00: -6732195746901553649
+      SoulReaper_DeathDown_01: 8156211619240499080
+      SoulReaper_DeathDown_02: -3092999389496149429
+      SoulReaper_DeathDown_03: 6372612140954849402
+      SoulReaper_DeathDown_04: 2726077368933149201
+      SoulReaper_DeathDown_05: -6708562213476632720
+      SoulReaper_DeathDown_06: -5077035997429590972
+      SoulReaper_DeathDown_07: 255812508637758491
+      SoulReaper_Down_Animations_0: 1332386720334117093
+      SoulReaper_Down_Animations_1: 8682037089718251813
+      SoulReaper_Down_Animations_10: -7253488539307569782
+      SoulReaper_Down_Animations_11: 1886097006109718731
+      SoulReaper_Down_Animations_12: 7989457998631677951
+      SoulReaper_Down_Animations_13: 6697041612419295589
+      SoulReaper_Down_Animations_14: 7715065573349531268
+      SoulReaper_Down_Animations_15: -7981322239007508926
+      SoulReaper_Down_Animations_16: 5135910595675162270
+      SoulReaper_Down_Animations_17: -8865388807282700078
+      SoulReaper_Down_Animations_18: -7581642082778176530
+      SoulReaper_Down_Animations_19: 1598521268378631394
+      SoulReaper_Down_Animations_2: 9207253278526497578
+      SoulReaper_Down_Animations_20: -6283206111149391553
+      SoulReaper_Down_Animations_21: -3373482589145075389
+      SoulReaper_Down_Animations_22: 1515307249970645152
+      SoulReaper_Down_Animations_23: 6506711911976805504
+      SoulReaper_Down_Animations_24: 3504172672009955649
+      SoulReaper_Down_Animations_25: -1968473308829005692
+      SoulReaper_Down_Animations_26: -7392120747010889933
+      SoulReaper_Down_Animations_27: -2112465355010028126
+      SoulReaper_Down_Animations_28: 2466044962335745737
+      SoulReaper_Down_Animations_29: -4672230842377123796
+      SoulReaper_Down_Animations_3: -2650246581662283622
+      SoulReaper_Down_Animations_30: 5535436292426395816
+      SoulReaper_Down_Animations_31: -4273762635120007798
+      SoulReaper_Down_Animations_32: -4837707901610109563
+      SoulReaper_Down_Animations_33: 5318449108297184207
+      SoulReaper_Down_Animations_34: -3249487481411454990
+      SoulReaper_Down_Animations_35: 6860935222240117378
+      SoulReaper_Down_Animations_36: 8864484924441224046
+      SoulReaper_Down_Animations_37: -6674330154119246200
+      SoulReaper_Down_Animations_38: 384109020570497927
+      SoulReaper_Down_Animations_39: -332595163257091590
+      SoulReaper_Down_Animations_4: -8935128359939413144
+      SoulReaper_Down_Animations_40: -72132751054489804
+      SoulReaper_Down_Animations_41: 5224774771129952959
+      SoulReaper_Down_Animations_42: 2320352489698092367
+      SoulReaper_Down_Animations_43: -5256362107986045280
+      SoulReaper_Down_Animations_44: 3384509742227545374
+      SoulReaper_Down_Animations_45: 2538972568427150744
+      SoulReaper_Down_Animations_46: 8174839366569255598
+      SoulReaper_Down_Animations_47: 1710671714824059975
+      SoulReaper_Down_Animations_48: 6510906793353222060
+      SoulReaper_Down_Animations_49: 6697538117265718749
+      SoulReaper_Down_Animations_5: -6074010165815192296
+      SoulReaper_Down_Animations_50: -3612655855713214266
+      SoulReaper_Down_Animations_51: -116348703885114233
+      SoulReaper_Down_Animations_6: 2210119221507732044
+      SoulReaper_Down_Animations_7: 6733304764728491274
+      SoulReaper_Down_Animations_8: -586880121053224223
+      SoulReaper_Down_Animations_9: 9089068603349727387
+      SoulReaper_WalkDown_00: 1402741397776972852
+      SoulReaper_WalkDown_01: 1892297136751529559
+      SoulReaper_WalkDown_02: 1089025890174683246
+      SoulReaper_WalkDown_03: -6525038471662864026
+      SoulReaper_WalkDown_04: 2224826470691462072
+      SoulReaper_WalkDown_05: -715822169681225485
+      SoulReaper_WalkDown_06: 617514227896004439
+      SoulReaper_WalkDown_07: 8264386589974596224
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f1900b1c9b04e64fb72a211fa6013ee, type: 3}
+  m_Name: Level01_ForgottenGraveyard
+  m_EditorClassIdentifier: Assembly-CSharp::SoulCrystalDefense.Data.LevelData
+  levelId: Level01_ForgottenGraveyard
+  levelTitle: Forgotten Graveyard
+  backgroundSprite: {fileID: 0}
+  laneCount: 5
+  rowCount: 8
+  maxCrystalHealth: 20
+  startingSoulEnergy: 250
+  passiveEnergyAmount: 25
+  passiveEnergyInterval: 4
+  availableDefenders:
+  - {fileID: 11400000, guid: ee8ff72b266ecc749b6a6ea377f21981, type: 2}
+  - {fileID: 11400000, guid: 551791cbd30b197498c4b954e9d96e22, type: 2}
+  waves:
+  - {fileID: 11400000, guid: 16349b2a325a95c478e15c80ff3f34d0, type: 2}
+  rewardFragmentCount: 1
+  rewardCoins: 100
+  minHealthForThreeStars: 16
+  maxTimeForThreeStars: 55
+  maxDefendersForThreeStars: 5
