@@ -1,0 +1,52 @@
+{
+  "success": true,
+  "result": {
+    "capture": "B:\\Soul-Of-Dead-War\\ArtReview\\MainMenu\\QA-Reference-1080x1920.png",
+    "checks": {
+      "width": 697,
+      "height": 826,
+      "buttons": [
+        {
+          "name": "Button_Play",
+          "hit": false,
+          "insideSafeArea": true,
+          "width": 820,
+          "height": 182,
+          "listeners": 1
+        },
+        {
+          "name": "Button_Shop",
+          "hit": false,
+          "insideSafeArea": true,
+          "width": 390,
+          "height": 150,
+          "listeners": 1
+        },
+        {
+          "name": "Button_Settings",
+          "hit": false,
+          "insideSafeArea": true,
+          "width": 390,
+          "height": 150,
+          "listeners": 1
+        },
+        {
+          "name": "Button_HowToPlay",
+          "hit": false,
+          "insideSafeArea": true,
+          "width": 820,
+          "height": 182,
+          "listeners": 1
+        },
+        {
+          "name": "Button_Exit",
+          "hit": false,
+          "insideSafeArea": true,
+          "width": 450,
+          "height": 144,
+          "listeners": 1
+        }
+      ]
+    }
+  }
+}

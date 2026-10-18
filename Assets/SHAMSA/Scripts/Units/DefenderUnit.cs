@@ -79,7 +79,7 @@ namespace SoulCrystalDefense.Units
                 }
             }
 
-            attackTimer += Time.deltaTime;
+            attackTimer += Time.deltaTime * (cell != null ? cell.AttackSpeedMultiplier : 1f);
             if (attackTimer >= defenderData.attackCooldown)
             {
                 if (TryAttack())
@@ -202,6 +202,35 @@ namespace SoulCrystalDefense.Units
         {
             if (target == null || target.IsDead) return;
 
+            if (defenderData.defenderType == DefenderType.BoneMage)
+            {
+                Vector3 previous = transform.position;
+                Vector3 chainCenter = target.transform.position;
+                var victims = FindObjectsByType<EnemyUnit>(FindObjectsSortMode.None);
+                EnemyUnit next = target;
+                var hit = new System.Collections.Generic.HashSet<EnemyUnit>();
+                for (int bounce = 0; bounce < 3 && next != null; bounce++)
+                {
+                    Vector3 pos = next.transform.position;
+                    SoulCrystalDefense.Presentation.GameplayEffects.Instance?.Lightning(previous, pos);
+                    hit.Add(next); next.TakeDamage(defenderData.damage * Mathf.Pow(.75f, bounce));
+                    previous = pos; next = null; float distance = 1.6f;
+                    foreach (var enemy in victims)
+                    {
+                        if (enemy == null || enemy.IsDead || enemy.HasBreached || hit.Contains(enemy)) continue;
+                        float fromPrevious = Vector2.Distance(pos, enemy.transform.position);
+                        float fromCenter = Vector2.Distance(chainCenter, enemy.transform.position);
+                        float d = Mathf.Min(fromPrevious, fromCenter);
+                        if (d < distance)
+                        {
+                            distance = d; next = enemy;
+                            previous = fromPrevious <= 1.6f ? pos : chainCenter;
+                        }
+                    }
+                }
+                return;
+            }
+
             SoundManager.Instance?.PlayChefFireImpact();
 
             Vector3 spawnPos = attackOrigin != null ? attackOrigin.position : transform.position + Vector3.up * 0.3f;
@@ -213,6 +242,7 @@ namespace SoulCrystalDefense.Units
                 if (proj != null)
                 {
                     proj.Initialize(defenderData.damage, defenderData.projectileSpeed, defenderData.splashRadius, Vector3.up, target);
+                    if (defenderData.defenderType == DefenderType.SoulArcher) proj.SetPiercing(3);
                 }
             }
             else

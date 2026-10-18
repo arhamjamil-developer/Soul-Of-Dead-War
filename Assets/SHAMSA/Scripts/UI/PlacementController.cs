@@ -19,6 +19,7 @@ namespace SoulCrystalDefense.UI
 
         private DefenderCardUI selectedCard = null;
         private Camera mainCamera;
+        private readonly List<RaycastResult> pointerUiHits = new List<RaycastResult>();
 
         private void Awake()
         {
@@ -74,7 +75,7 @@ namespace SoulCrystalDefense.UI
 
             if (SoulEnergyWallet.Instance != null && !SoulEnergyWallet.Instance.CanAfford(card.Data.soulCost))
             {
-                // Can't afford
+                FindFirstObjectByType<SoulCrystalDefense.Presentation.BattlePresentation>()?.Show("NOT ENOUGH SOUL ENERGY", "WAIT FOR REGENERATION OR DEFEAT ENEMIES");
                 return;
             }
 
@@ -100,6 +101,7 @@ namespace SoulCrystalDefense.UI
             if (previewObject != null && previewRenderer != null)
             {
                 previewObject.SetActive(true);
+                previewObject.transform.localScale = card.Data.unitPrefab != null ? card.Data.unitPrefab.transform.localScale : Vector3.one;
                 if (card.Data.cardIcon != null)
                 {
                     previewRenderer.sprite = card.Data.cardIcon;
@@ -191,17 +193,24 @@ namespace SoulCrystalDefense.UI
             }
 
             // Handle Click / Tap
+            if (previewRenderer != null) previewRenderer.enabled = hoveredCell != null;
             if (pointerDown)
             {
                 // If clicked over UI card or button, let UI handle it
-                if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+                if (EventSystem.current != null)
                 {
-                    return;
+                    pointerUiHits.Clear();
+                    EventSystem.current.RaycastAll(new PointerEventData(EventSystem.current) { position = screenPos }, pointerUiHits);
+                    if (pointerUiHits.Count > 0) return;
                 }
 
                 if (hoveredCell != null && !hoveredCell.IsOccupied)
                 {
                     TryPlaceUnit(hoveredCell);
+                }
+                else if (hoveredCell != null && hoveredCell.IsOccupied)
+                {
+                    FindFirstObjectByType<SoulCrystalDefense.Presentation.BattlePresentation>()?.Show("TILE OCCUPIED", "CHOOSE AN EMPTY TILE");
                 }
                 else if (hoveredCell == null)
                 {
@@ -219,6 +228,7 @@ namespace SoulCrystalDefense.UI
 
         public bool DeployDefender(DefenderData data, int lane, int row)
         {
+            if (data == null || (GameManager.Instance != null && (!GameManager.Instance.IsGameActive || GameManager.Instance.IsPaused))) return false;
             var cell = BoardGrid.Instance != null ? BoardGrid.Instance.GetCell(lane, row) : null;
             if (cell == null || cell.IsOccupied) return false;
 
@@ -251,6 +261,7 @@ namespace SoulCrystalDefense.UI
             }
 
             SoundManager.Instance?.PlayDefenderPlacement();
+            SoulCrystalDefense.Presentation.GameplayEffects.Instance?.Ring(cell.transform.position, new Color(.4f,1,1), .7f, .6f);
 
             return true;
         }

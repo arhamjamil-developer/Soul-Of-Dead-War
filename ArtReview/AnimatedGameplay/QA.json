@@ -1,0 +1,23 @@
+{
+  "errors": [],
+  "selected": 0,
+  "placed": 1,
+  "casts": 1,
+  "sizes": [
+    {
+      "width": 320,
+      "overflow": false,
+      "canvas": 300
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "canvas": 370
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "canvas": 540
+    }
+  ]
+}

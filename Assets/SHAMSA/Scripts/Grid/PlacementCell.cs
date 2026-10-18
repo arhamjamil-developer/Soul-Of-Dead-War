@@ -21,6 +21,15 @@ namespace SoulCrystalDefense.Grid
         public int Row => row;
         public bool IsOccupied => occupant != null;
         public DefenderUnit Occupant => occupant;
+        public bool IsCorrupted { get; private set; }
+        public float AttackSpeedMultiplier => IsCorrupted ? .65f : 1f;
+        private CellVisualState visualState;
+
+        public void SetCorrupted(bool value)
+        {
+            IsCorrupted = value;
+            SetVisualState(visualState);
+        }
 
         private void Awake()
         {
@@ -56,12 +65,13 @@ namespace SoulCrystalDefense.Grid
 
         public void SetVisualState(CellVisualState state)
         {
+            visualState = state;
             if (cellRenderer == null) return;
 
             switch (state)
             {
                 case CellVisualState.Normal:
-                    cellRenderer.color = normalColor;
+                    cellRenderer.color = IsCorrupted ? new Color(.7f,.15f,.95f,.35f) : normalColor;
                     break;
                 case CellVisualState.ValidHighlight:
                     cellRenderer.color = validColor;

@@ -15,6 +15,7 @@ namespace SoulCrystalDefense.UI
 
         [Header("UI Elements")]
         [SerializeField] private Image iconImage;
+        [SerializeField] private Sprite presentationPortrait;
         [SerializeField] private Text nameText;
         [SerializeField] private Text costText;
         [SerializeField] private Image selectionBorder;
@@ -28,9 +29,13 @@ namespace SoulCrystalDefense.UI
         public DefenderData Data => defenderData;
         public bool IsLocked => isLocked;
         private bool isSelected = false;
+        private Vector3 restingScale;
+        private Vector3 targetScale;
 
         private void Awake()
         {
+            restingScale = transform.localScale;
+            targetScale = restingScale;
             if (cardButton == null) cardButton = GetComponent<Button>();
             if (cardButton != null)
             {
@@ -80,8 +85,8 @@ namespace SoulCrystalDefense.UI
 
             if (defenderData != null)
             {
-                if (iconImage != null && defenderData.cardIcon != null)
-                    iconImage.sprite = defenderData.cardIcon;
+                if (iconImage != null)
+                    iconImage.sprite = presentationPortrait != null ? presentationPortrait : defenderData.cardIcon;
 
                 if (nameText != null)
                     nameText.text = defenderData.displayName;
@@ -96,6 +101,7 @@ namespace SoulCrystalDefense.UI
         public void SetSelected(bool selected)
         {
             isSelected = selected;
+            targetScale = restingScale * (selected ? 1.035f : 1f);
             if (selectionBorder != null)
             {
                 selectionBorder.gameObject.SetActive(isSelected);
@@ -107,6 +113,7 @@ namespace SoulCrystalDefense.UI
             if (isLocked || defenderData == null) return;
 
             bool canAfford = currentEnergy >= defenderData.soulCost;
+            if (costText != null) costText.color = canAfford ? new Color(.55f, .94f, 1f) : new Color(1f, .52f, .36f);
             if (unaffordableOverlay != null)
             {
                 unaffordableOverlay.SetActive(!canAfford);
@@ -117,6 +124,12 @@ namespace SoulCrystalDefense.UI
         {
             if (isLocked) return;
             OnCardClicked?.Invoke(this);
+        }
+
+        private void Update()
+        {
+            if ((transform.localScale - targetScale).sqrMagnitude > .000001f)
+                transform.localScale = Vector3.Lerp(transform.localScale, targetScale, 1f - Mathf.Exp(-18f * Time.unscaledDeltaTime));
         }
     }
 }

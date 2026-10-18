@@ -12,6 +12,9 @@ namespace SoulCrystalDefense.Systems
         [SerializeField] private Color spawnColor = new Color(1f, 0.9f, 0.4f, 1f);
 
         private Coroutine activePulseRoutine;
+        private Vector3 authoredScale;
+
+        private void Awake() { authoredScale = transform.localScale; }
 
         public int LaneIndex => laneIndex;
 
@@ -51,7 +54,7 @@ namespace SoulCrystalDefense.Systems
                 if (portalRenderer != null)
                 {
                     portalRenderer.color = Color.Lerp(idleColor, telegraphColor, t);
-                    transform.localScale = Vector3.one * (1f + t * 0.15f);
+                    transform.localScale = authoredScale * (1f + t * 0.08f);
                 }
                 yield return null;
             }
@@ -59,7 +62,7 @@ namespace SoulCrystalDefense.Systems
             if (portalRenderer != null)
             {
                 portalRenderer.color = idleColor;
-                transform.localScale = Vector3.one;
+                transform.localScale = authoredScale;
             }
         }
 
@@ -68,7 +71,7 @@ namespace SoulCrystalDefense.Systems
             if (portalRenderer != null)
             {
                 portalRenderer.color = spawnColor;
-                transform.localScale = Vector3.one * 1.3f;
+                transform.localScale = authoredScale * 1.15f;
             }
 
             float elapsed = 0f;
@@ -80,7 +83,7 @@ namespace SoulCrystalDefense.Systems
                 if (portalRenderer != null)
                 {
                     portalRenderer.color = Color.Lerp(spawnColor, idleColor, t);
-                    transform.localScale = Vector3.Lerp(Vector3.one * 1.3f, Vector3.one, t);
+                    transform.localScale = authoredScale * Mathf.Lerp(1.15f, 1f, t);
                 }
                 yield return null;
             }
@@ -88,7 +91,7 @@ namespace SoulCrystalDefense.Systems
             if (portalRenderer != null)
             {
                 portalRenderer.color = idleColor;
-                transform.localScale = Vector3.one;
+                transform.localScale = authoredScale;
             }
         }
     }

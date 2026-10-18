@@ -29,7 +29,8 @@ namespace SoulCrystalDefense.UI
         private void Awake()
         {
             if (panelRoot == null) panelRoot = gameObject;
-            panelRoot.SetActive(false);
+            // The scene authors this panel inactive. Hiding it in Awake also hid
+            // the first victory/defeat when SetActive(true) lazily invoked Awake.
 
             if (victoryReplayButton != null)
                 victoryReplayButton.onClick.AddListener(OnReplayClicked);

@@ -53,7 +53,8 @@ namespace SoulCrystalDefense.UI
                 countdownContainer.SetActive(false);
             }
 
-            SetWaveText(1, 1);
+            // GameManager owns the wave count and initializes this label.
+            // Resetting it here made the first procedural wave display 1/1.
         }
 
         private void OnDestroy()

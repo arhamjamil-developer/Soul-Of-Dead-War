@@ -27,6 +27,9 @@ namespace SoulCrystalDefense.Combat
 
         private Vector3 initialVisualPos;
         private float shakeTimer = 0f;
+        private float barrierUntil;
+        public bool IsBarrierActive => Time.time < barrierUntil;
+        public void ActivateBarrier(float seconds) { barrierUntil = Time.time + Mathf.Max(0, seconds); }
 
         private void Awake()
         {
@@ -43,12 +46,13 @@ namespace SoulCrystalDefense.Combat
         {
             maxHealth = startingMaxHealth;
             currentHealth = maxHealth;
+            barrierUntil = 0;
             OnHealthChanged?.Invoke(currentHealth, maxHealth);
         }
 
         public void TakeBreachDamage(int amount)
         {
-            if (currentHealth <= 0) return;
+            if (currentHealth <= 0 || IsBarrierActive) return;
 
             currentHealth = Mathf.Max(0, currentHealth - amount);
             OnHealthChanged?.Invoke(currentHealth, maxHealth);

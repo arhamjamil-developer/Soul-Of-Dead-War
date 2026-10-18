@@ -1,0 +1,39 @@
+{
+  "success": true,
+  "result": {
+    "buttons": [
+      {
+        "name": "PauseButton",
+        "insideSafeArea": true
+      },
+      {
+        "name": "Card_Dwarf",
+        "insideSafeArea": true
+      },
+      {
+        "name": "Card_Chef",
+        "insideSafeArea": true
+      },
+      {
+        "name": "Card_Elephant",
+        "insideSafeArea": true
+      },
+      {
+        "name": "Card_Train",
+        "insideSafeArea": true
+      },
+      {
+        "name": "Art_0",
+        "insideSafeArea": true
+      },
+      {
+        "name": "Art_1",
+        "insideSafeArea": true
+      },
+      {
+        "name": "Art_2",
+        "insideSafeArea": true
+      }
+    ]
+  }
+}

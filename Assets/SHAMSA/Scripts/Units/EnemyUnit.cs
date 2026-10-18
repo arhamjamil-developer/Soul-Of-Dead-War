@@ -38,6 +38,7 @@ namespace SoulCrystalDefense.Units
         public bool IsDead => isDead;
         public bool HasBreached => hasBreached;
         public bool IsElite => isEliteUnit;
+        public float MaxHealth => (enemyData != null ? enemyData.maxHealth : 60f) * hpMultiplier * (isEliteUnit ? 2f : 1f);
 
         public event Action<EnemyUnit> OnDeath;
         public event Action<EnemyUnit> OnBreach;
@@ -206,6 +207,7 @@ namespace SoulCrystalDefense.Units
             if (isDead || hasBreached) return;
 
             currentHealth -= dmg;
+            SoulCrystalDefense.Presentation.GameplayEffects.Instance?.Impact(transform.position, dmg);
             if (healthBar != null) healthBar.UpdateHealth(currentHealth);
 
             // Hit flash

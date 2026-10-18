@@ -5,6 +5,8 @@ namespace SoulCrystalDefense.Data
         DwarfGuardian,
         BloodChef,
         ElephantPreview,
-        WarTrainUltimate
+        WarTrainUltimate,
+        SoulArcher,
+        BoneMage
     }
 }

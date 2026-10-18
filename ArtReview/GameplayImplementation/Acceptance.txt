@@ -1,0 +1,25 @@
+PASS DwarfGuardian deploys
+PASS BloodChef deploys
+PASS SoulArcher deploys
+PASS BoneMage deploys
+PASS four deployments spend exactly 550 energy
+PASS occupied tile rejects placement without spending
+PASS two tactical cells become corrupted
+PASS corruption applies a 35 percent attack-speed penalty
+PASS Soul Pulse knocks back and purifies
+PASS Soul Pulse cannot bypass its cooldown
+PASS Crystal Storm deals 36 actual damage
+PASS Crystal Storm cannot bypass its cooldown
+PASS paused battle rejects ability casts
+PASS paused battle rejects deployment
+PASS Divine Barrier blocks real breach damage
+PASS Soul Archer pierces three distinct enemies
+PASS Bone Mage chains damage to neighboring lanes
+PASS barrier expires and normal breach damage resumes
+PASS Card_Dwarf receives pointer raycasts
+PASS Card_Chef receives pointer raycasts
+PASS Card_Elephant receives pointer raycasts
+PASS Card_Train receives pointer raycasts
+PASS Art_0 receives pointer raycasts
+PASS Art_1 receives pointer raycasts
+PASS Art_2 receives pointer raycasts

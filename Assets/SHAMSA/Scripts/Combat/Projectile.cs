@@ -13,6 +13,9 @@ namespace SoulCrystalDefense.Combat
         private Vector3 direction = Vector3.up;
         private EnemyUnit targetEnemy;
         private bool hasHit = false;
+        private int hitsRemaining = 1;
+        private readonly System.Collections.Generic.HashSet<EnemyUnit> struck = new System.Collections.Generic.HashSet<EnemyUnit>();
+        public void SetPiercing(int count) { hitsRemaining = Mathf.Max(1, count); }
 
         public void Initialize(float dmg, float spd, float splash, Vector3 dir, EnemyUnit target = null)
         {
@@ -49,7 +52,7 @@ namespace SoulCrystalDefense.Combat
             var enemies = FindObjectsByType<EnemyUnit>(FindObjectsSortMode.None);
             foreach (var enemy in enemies)
             {
-                if (enemy == null || enemy.IsDead) continue;
+                if (enemy == null || enemy.IsDead || enemy.HasBreached || struck.Contains(enemy)) continue;
 
                 float dist = Vector2.Distance(transform.position, enemy.transform.position);
                 if (dist < 0.4f)
@@ -62,7 +65,9 @@ namespace SoulCrystalDefense.Combat
 
         private void OnHit(EnemyUnit primaryTarget)
         {
-            hasHit = true;
+            struck.Add(primaryTarget);
+            hitsRemaining--;
+            hasHit = hitsRemaining <= 0;
 
             if (splashRadius > 0.05f)
             {
@@ -87,7 +92,7 @@ namespace SoulCrystalDefense.Combat
             }
 
             // Spawn hit VFX if any
-            Destroy(gameObject);
+            if (hasHit) Destroy(gameObject);
         }
     }
 }
