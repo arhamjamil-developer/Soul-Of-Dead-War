@@ -14,8 +14,13 @@ namespace SoulCrystalDefense.Combat
         private EnemyUnit targetEnemy;
         private bool hasHit = false;
         private int hitsRemaining = 1;
+        private float chillSlow = 0f;
+        private float chillDuration = 0f;
         private readonly System.Collections.Generic.HashSet<EnemyUnit> struck = new System.Collections.Generic.HashSet<EnemyUnit>();
+        public event System.Action<EnemyUnit> OnHitEnemy;
+
         public void SetPiercing(int count) { hitsRemaining = Mathf.Max(1, count); }
+        public void SetChillOnHit(float slow, float duration) { chillSlow = slow; chillDuration = duration; }
 
         public void Initialize(float dmg, float spd, float splash, Vector3 dir, EnemyUnit target = null)
         {
@@ -69,6 +74,12 @@ namespace SoulCrystalDefense.Combat
             hitsRemaining--;
             hasHit = hitsRemaining <= 0;
 
+            if (primaryTarget != null)
+            {
+                if (chillSlow > 0.01f) primaryTarget.ApplyChill(chillSlow, chillDuration);
+                OnHitEnemy?.Invoke(primaryTarget);
+            }
+
             if (splashRadius > 0.05f)
             {
                 // Splash damage to all enemies in radius
@@ -80,6 +91,7 @@ namespace SoulCrystalDefense.Combat
                     if (dist <= splashRadius)
                     {
                         enemy.TakeDamage(damage);
+                        if (chillSlow > 0.01f) enemy.ApplyChill(chillSlow, chillDuration);
                     }
                 }
             }

@@ -16,10 +16,10 @@ PASS Divine Barrier blocks real breach damage
 PASS Soul Archer pierces three distinct enemies
 PASS Bone Mage chains damage to neighboring lanes
 PASS barrier expires and normal breach damage resumes
-PASS Card_Dwarf receives pointer raycasts
-PASS Card_Chef receives pointer raycasts
-PASS Card_Elephant receives pointer raycasts
-PASS Card_Train receives pointer raycasts
 PASS Art_0 receives pointer raycasts
 PASS Art_1 receives pointer raycasts
 PASS Art_2 receives pointer raycasts
+PASS Card_Dwarf receives pointer raycasts
+PASS Card_Chef receives pointer raycasts
+PASS Card_SoulArcher receives pointer raycasts
+PASS Card_BoneMage receives pointer raycasts

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11f4ac5042e3a6248bc6beab61d61f45, type: 3}
+  m_Name: IronPaladin_Data
+  m_EditorClassIdentifier: Assembly-CSharp::SoulCrystalDefense.Data.DefenderData
+  defenderType: 6
+  displayName: IRON PALADIN
+  cardIcon: {fileID: 21300000, guid: 7cd511b8c8557794caaac77b754cc612, type: 3}
+  unitPrefab: {fileID: 677211018653192078, guid: e5564d4160a2a694aa8c2a8f1d4e62b6, type: 3}
+  soulCost: 200
+  placementCooldown: 1
+  maxHealth: 420
+  damage: 28
+  attackCooldown: 1.1
+  attackRange: 0.9
+  knockback: 0.25
+  isRanged: 0
+  projectileSpeed: 8
+  splashRadius: 0.75
+  projectilePrefab: {fileID: 0}

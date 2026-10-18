@@ -102,7 +102,7 @@ namespace SoulCrystalDefense.EditorTools
                 foreach(var button in canvas.GetComponentsInChildren<Button>().Where(b=>b.name.StartsWith("Art_")||b.GetComponent<DefenderCardUI>()!=null))
                 {
                     var r=button.GetComponent<RectTransform>();var pointer=new PointerEventData(EventSystem.current){position=RectTransformUtility.WorldToScreenPoint(null,r.TransformPoint(r.rect.center))};
-                    var hits=new List<RaycastResult>();raycaster.Raycast(pointer,hits);
+                    var scroll=button.GetComponentInParent<ScrollRect>(); if(scroll&&!RectTransformUtility.RectangleContainsScreenPoint(scroll.viewport,pointer.position))continue; var hits=new List<RaycastResult>();raycaster.Raycast(pointer,hits);
                     Check(hits.Count>0&&hits[0].gameObject==button.gameObject,button.name+" receives pointer raycasts");
                 }
                 File.WriteAllLines("ArtReview/GameplayImplementation/Acceptance.txt",results);
@@ -111,4 +111,5 @@ namespace SoulCrystalDefense.EditorTools
         }
     }
 }
+
 

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ArmoredElephant_Data
   m_EditorClassIdentifier: Assembly-CSharp::SoulCrystalDefense.Data.EnemyData
   enemyType: 2
-  displayName: Armored Elephant Boss
+  displayName: Corrupted Colossus
   unitPrefab: {fileID: 2651406688775060754, guid: 9dc838279eb21ff49a4fd5572d4a0950, type: 3}
   maxHealth: 450
   moveSpeed: 0.32

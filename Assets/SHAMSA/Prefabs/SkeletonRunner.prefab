@@ -1,0 +1,255 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3091240765521318010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3427461352991627243}
+  - component: {fileID: 8238270364308447247}
+  m_Layer: 0
+  m_Name: HealthBar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3427461352991627243
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3091240765521318010}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.66, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1613515711524835808}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8238270364308447247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3091240765521318010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21d61c7aedd57874bb5c771e4a90eab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoulCrystalDefense.Combat.HealthBar
+  barSize: {x: 0.8, y: 0.1}
+  fillColor: {r: 0.2, g: 0.8, b: 0.2, a: 1}
+  bgColor: {r: 0.05, g: 0.05, b: 0.08, a: 0.8}
+  hideWhenFull: 1
+--- !u!1 &5635527766861835395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1613515711524835808}
+  - component: {fileID: 5581690677924632896}
+  - component: {fileID: 270664542744078974}
+  - component: {fileID: 5708124477052731591}
+  - component: {fileID: 252642008156554373}
+  m_Layer: 0
+  m_Name: SkeletonRunner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1613515711524835808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5635527766861835395}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3427461352991627243}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &5581690677924632896
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5635527766861835395}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: df4dd44d0e5dbe04984a6609091501a3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+--- !u!61 &270664542744078974
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5635527766861835395}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0.4000001}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.1636363, y: 1.1636363}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.6, y: 0.8}
+  m_EdgeRadius: 0
+--- !u!114 &5708124477052731591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5635527766861835395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ceacb4d6fa8d5e4796da2aa8f9d2260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoulCrystalDefense.Units.UnitAnimationPlayer
+  targetRenderer: {fileID: 5581690677924632896}
+  idleFrames:
+  - {fileID: 21300000, guid: df4dd44d0e5dbe04984a6609091501a3, type: 3}
+  - {fileID: 21300000, guid: a7448cb3c56fc8542a139ce2f4e84d59, type: 3}
+  - {fileID: 21300000, guid: 525a4b5e06cb0674eae040c5b3ce83d6, type: 3}
+  - {fileID: 21300000, guid: a7ae70e1b5129954cbcd83f065ea38d7, type: 3}
+  - {fileID: 21300000, guid: 1410884184324424b83f41c6dc32825f, type: 3}
+  - {fileID: 21300000, guid: 0c20a3345b72caa489698ffcb491c89f, type: 3}
+  idleFps: 6
+  walkFrames:
+  - {fileID: 21300000, guid: df4dd44d0e5dbe04984a6609091501a3, type: 3}
+  - {fileID: 21300000, guid: a7448cb3c56fc8542a139ce2f4e84d59, type: 3}
+  - {fileID: 21300000, guid: 525a4b5e06cb0674eae040c5b3ce83d6, type: 3}
+  - {fileID: 21300000, guid: a7ae70e1b5129954cbcd83f065ea38d7, type: 3}
+  - {fileID: 21300000, guid: 1410884184324424b83f41c6dc32825f, type: 3}
+  - {fileID: 21300000, guid: 0c20a3345b72caa489698ffcb491c89f, type: 3}
+  walkFps: 9
+  attackFrames:
+  - {fileID: 21300000, guid: 9c941c12e2e58494cbf811111ff265a9, type: 3}
+  - {fileID: 21300000, guid: 42920ee7eff9c35478c820c7f307b6da, type: 3}
+  - {fileID: 21300000, guid: d0f3650d704e8fb4f832840bc648e2d8, type: 3}
+  - {fileID: 21300000, guid: 79abe39cef1c9114380c71d7bd847f7c, type: 3}
+  - {fileID: 21300000, guid: 58aa7015d2eedbf4ba3e1972107f86d2, type: 3}
+  - {fileID: 21300000, guid: e9d9196ef6d35c04ba37db04b5455106, type: 3}
+  attackFps: 12
+  deathFrames:
+  - {fileID: 21300000, guid: ea0f8f661a1e54744b7f046cca1394c0, type: 3}
+  - {fileID: 21300000, guid: c58b738d45a5d4e4caf083b1a665014e, type: 3}
+  - {fileID: 21300000, guid: eef4ba8d73ea0c145bb9278f107799eb, type: 3}
+  - {fileID: 21300000, guid: 8939f53b79f96cc458aa910c7247fee5, type: 3}
+  - {fileID: 21300000, guid: dbd895eb847a0dc43a546656fb2451ef, type: 3}
+  - {fileID: 21300000, guid: 8c8e7f2f3cabcf24db426fef56131e51, type: 3}
+  deathFps: 10
+--- !u!114 &252642008156554373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5635527766861835395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6770eb4ccd00ced4aa0659cf64e92ea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoulCrystalDefense.Units.EnemyUnit
+  enemyData: {fileID: 11400000, guid: 3e75b70a5e43ee24fb209698fee2781f, type: 2}
+  animPlayer: {fileID: 5708124477052731591}
+  spriteRenderer: {fileID: 5581690677924632896}
+  healthBar: {fileID: 8238270364308447247}
+  isEliteUnit: 0
+  hpMultiplier: 1
+  speedMultiplier: 1

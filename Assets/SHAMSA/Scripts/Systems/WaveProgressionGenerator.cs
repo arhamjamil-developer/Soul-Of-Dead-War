@@ -142,9 +142,12 @@ namespace SoulCrystalDefense.Systems
             if (waveNumber == 20 || waveNumber == 999) return WavePattern.GuardedBoss;
             if (waveNumber % 20 == 0 && waveNumber > 20) return WavePattern.GuardedBoss;
             if (waveNumber == 6 || waveNumber == 11 || waveNumber == 16 || (waveNumber > 20 && waveNumber % 10 == 1)) return WavePattern.RecoveryWave;
-            if (waveNumber == 2 || waveNumber == 14 || (waveNumber % 7 == 0)) return WavePattern.Rush;
-            if (waveNumber == 3 || waveNumber == 8 || (waveNumber % 4 == 0)) return WavePattern.CrossLane;
-            if (waveNumber == 4 || waveNumber == 9 || waveNumber == 12) return WavePattern.SplitPortals;
+            if (waveNumber == 2) return WavePattern.CrossLane;
+            if (waveNumber == 3) return WavePattern.RangedPressure;
+            if (waveNumber == 4) return WavePattern.SplitPortals;
+            if (waveNumber == 5 || waveNumber == 14 || (waveNumber > 5 && waveNumber % 7 == 0)) return WavePattern.Rush;
+            if (waveNumber == 8 || (waveNumber % 4 == 0)) return WavePattern.CrossLane;
+            if (waveNumber == 9 || waveNumber == 12) return WavePattern.SplitPortals;
             return WavePattern.RangedPressure;
         }
 
@@ -256,23 +259,27 @@ namespace SoulCrystalDefense.Systems
             }
 
             wave.spawns = BuildProceduralSpawns(waveNumber, effectiveBudget, pattern, wave.waveDuration, rng);
+            for(int i=0;i<wave.spawns.Count;i++)
+            {
+                var entry=wave.spawns[i];
+                if(entry.enemyType!=EnemyType.BoneRaider||entry.isElite)continue;
+                if(waveNumber>=7&&i%7==0)entry.enemyType=EnemyType.ShieldBearer;
+                else if(waveNumber>=3&&i%5==0)entry.enemyType=EnemyType.SkeletonRunner;
+            }
             return wave;
         }
 
         private List<EnemySpawnEntry> BuildWave1TutorialSpawns()
         {
-            // Exact table from GAMEPLAY_DATA.md Section 221
+            // Gentle onboarding pacing: generous 7.0s setup window, followed by predictable single-lane threats
             return new List<EnemySpawnEntry>
             {
-                new EnemySpawnEntry { spawnTime = 3.0f,  laneIndex = 2, enemyType = EnemyType.BoneRaider, isElite = false, notes = "First threat; center-lane tutorial" },
-                new EnemySpawnEntry { spawnTime = 8.0f,  laneIndex = 1, enemyType = EnemyType.BoneRaider, isElite = false, notes = "Teaches a second lane" },
-                new EnemySpawnEntry { spawnTime = 12.0f, laneIndex = 3, enemyType = EnemyType.BoneRaider, isElite = false, notes = "Teaches symmetrical pressure" },
-                new EnemySpawnEntry { spawnTime = 18.0f, laneIndex = 2, enemyType = EnemyType.BoneRaider, isElite = false, notes = "Tests the first placement" },
-                new EnemySpawnEntry { spawnTime = 22.0f, laneIndex = 0, enemyType = EnemyType.BoneRaider, isElite = false, notes = "Introduces an outer lane" },
-                new EnemySpawnEntry { spawnTime = 25.0f, laneIndex = 4, enemyType = EnemyType.BoneRaider, isElite = false, notes = "Completes outer-lane pressure" },
-                new EnemySpawnEntry { spawnTime = 31.0f, laneIndex = 2, enemyType = EnemyType.SoulReaper, isElite = false, notes = "Late ranged threat; signals escalation" },
-                new EnemySpawnEntry { spawnTime = 35.0f, laneIndex = 1, enemyType = EnemyType.BoneRaider, isElite = false, notes = "Small final pressure" },
-                new EnemySpawnEntry { spawnTime = 35.5f, laneIndex = 3, enemyType = EnemyType.BoneRaider, isElite = false, notes = "Small final pressure" }
+                new EnemySpawnEntry { spawnTime = 7.0f,  laneIndex = 2, enemyType = EnemyType.BoneRaider, isElite = false, notes = "First scout; center-lane onboarding with 7s peaceful setup" },
+                new EnemySpawnEntry { spawnTime = 19.0f, laneIndex = 1, enemyType = EnemyType.BoneRaider, isElite = false, notes = "Second threat; introduces adjacent lane defense" },
+                new EnemySpawnEntry { spawnTime = 30.0f, laneIndex = 3, enemyType = EnemyType.BoneRaider, isElite = false, notes = "Third threat; reinforces lane symmetry" },
+                new EnemySpawnEntry { spawnTime = 40.0f, laneIndex = 2, enemyType = EnemyType.BoneRaider, isElite = false, notes = "Center lane pressure test" },
+                new EnemySpawnEntry { spawnTime = 46.0f, laneIndex = 1, enemyType = EnemyType.BoneRaider, isElite = false, notes = "Gentle dual-lane finish" },
+                new EnemySpawnEntry { spawnTime = 46.8f, laneIndex = 3, enemyType = EnemyType.BoneRaider, isElite = false, notes = "Gentle dual-lane finish" }
             };
         }
 
@@ -399,7 +406,8 @@ namespace SoulCrystalDefense.Systems
             float usableDuration = duration - 8f; // leave 8s buffer at the end for combat resolution
             float timeStep = usableDuration / Mathf.Max(1, (boneRaidersCount + reapersAllocated));
 
-            float currentTime = 3.0f; // initial 3-second breathing room
+            // Early waves grant calm opening breathers (6.0s for waves <= 2, 4.5s for waves 3-4, 3.0s later)
+            float currentTime = waveNumber <= 2 ? 6.0f : (waveNumber <= 4 ? 4.5f : 3.0f);
 
             switch (pattern)
             {

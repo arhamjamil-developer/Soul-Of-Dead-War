@@ -186,6 +186,9 @@ namespace SoulCrystalDefense.Units
             // When holding the final frame after non-looping playback, remain halted on the last frame
             if (!currentLoop && holdFinalFrame && currentFrameIndex >= currentClip.Length - 1)
             {
+                var finished = onAnimComplete;
+                onAnimComplete = null;
+                finished?.Invoke();
                 return;
             }
 

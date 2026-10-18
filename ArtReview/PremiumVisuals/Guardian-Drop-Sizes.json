@@ -1,0 +1,42 @@
+{
+  "success": true,
+  "result": [
+    {
+      "name": "BONE MAGE",
+      "previewHeight": 1.16363633,
+      "spawnHeight": 1.47393942,
+      "previewSprite": "Idle_00"
+    },
+    {
+      "name": "Blood Chef",
+      "previewHeight": 1.21859479,
+      "spawnHeight": 1.53088057,
+      "previewSprite": "Chef_Ideal_3"
+    },
+    {
+      "name": "SOUL ARCHER",
+      "previewHeight": 1.16363633,
+      "spawnHeight": 1.47393942,
+      "previewSprite": "Idle_00"
+    },
+    {
+      "name": "FROST WITCH",
+      "previewHeight": 1.16363633,
+      "spawnHeight": 1.47393942,
+      "previewSprite": "Idle_00"
+    },
+    {
+      "name": "Dwarf Guardian",
+      "previewHeight": 1.33465135,
+      "spawnHeight": 1.67028189,
+      "previewSprite": "Barbarian_Ideal_4"
+    },
+    {
+      "name": "IRON PALADIN",
+      "previewHeight": 1.16363633,
+      "spawnHeight": 1.47393942,
+      "previewSprite": "Idle_00"
+    }
+  ],
+  "count": 6
+}

@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: 7f9d475d1588a004faaeae25a202fa4a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3105371517351499402
+    second: SoulArcher-Source_0
+  - first:
+      213: -6999386381440028176
+    second: SoulArcher-Source_1
+  - first:
+      213: 6916101895925662472
+    second: SoulArcher-Source_2
+  - first:
+      213: 7022061885458382896
+    second: SoulArcher-Source_3
+  - first:
+      213: -219344337916528138
+    second: SoulArcher-Source_4
+  - first:
+      213: 7190372902272990451
+    second: SoulArcher-Source_5
+  - first:
+      213: -3464567017074824436
+    second: SoulArcher-Source_6
+  - first:
+      213: -5569022893421913264
+    second: SoulArcher-Source_7
+  - first:
+      213: 8173523908981758898
+    second: SoulArcher-Source_8
+  - first:
+      213: 6956918796355373022
+    second: SoulArcher-Source_9
+  - first:
+      213: -4502442407682033927
+    second: SoulArcher-Source_10
+  - first:
+      213: -2759594995874566669
+    second: SoulArcher-Source_11
+  - first:
+      213: -5466308337256596111
+    second: SoulArcher-Source_12
+  - first:
+      213: -8311252764755180425
+    second: SoulArcher-Source_13
+  - first:
+      213: 2853361550458650788
+    second: SoulArcher-Source_14
+  - first:
+      213: -2336267722179735051
+    second: SoulArcher-Source_15
+  - first:
+      213: 5670874393311761777
+    second: SoulArcher-Source_16
+  - first:
+      213: 5216847761127319368
+    second: SoulArcher-Source_17
+  - first:
+      213: 7735030236333086132
+    second: SoulArcher-Source_18
+  - first:
+      213: -53207376702082631
+    second: SoulArcher-Source_19
+  - first:
+      213: -2276517124146563022
+    second: SoulArcher-Source_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SoulArcher-Source_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 531
+        width: 277
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 679e5a4de0187e4d0800000000000000
+      internalID: -3105371517351499402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulArcher-Source_1
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 765
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f17f80ab2f2dde90800000000000000
+      internalID: -6999386381440028176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulArcher-Source_2
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 604
+        width: 348
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8030e01080eeaff50800000000000000
+      internalID: 6916101895925662472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulArcher-Source_3
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 604
+        width: 277
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0308e819410637160800000000000000
+      internalID: 7022061885458382896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulArcher-Source_4
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 287
+        width: 249
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f9fdfe9c7bb4fcf0800000000000000
+      internalID: -219344337916528138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulArcher-Source_5
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 0
+        width: 580
+        height: 869
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc7392fe0659c360800000000000000
+      internalID: 7190372902272990451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulArcher-Source_6
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 614
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0b68be67a26befc0800000000000000
+      internalID: -3464567017074824436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulArcher-Source_7
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 620
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05b91933f2bd6b2b0800000000000000
+      internalID: -5569022893421913264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulArcher-Source_8
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 533
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bb1506a0b03e6170800000000000000
+      internalID: 8173523908981758898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulArcher-Source_9
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 303
+        width: 225
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed7000439c0fb8060800000000000000
+      internalID: 6956918796355373022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulArcher-Source_10
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 0
+        width: 330
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f635743c7c1481c0800000000000000
+      internalID: -4502442407682033927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulArcher-Source_11
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 287
+        width: 323
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fd63f2e8f2f3b9d0800000000000000
+      internalID: -2759594995874566669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulArcher-Source_12
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 469
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17d701d6785c324b0800000000000000
+      internalID: -5466308337256596111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulArcher-Source_13
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 0
+        width: 231
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 774c84635af78ac80800000000000000
+      internalID: -8311252764755180425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulArcher-Source_14
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 0
+        width: 295
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a088de563d299720800000000000000
+      internalID: 2853361550458650788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulArcher-Source_15
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 280
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f1144f72e8e39fd0800000000000000
+      internalID: -2336267722179735051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulArcher-Source_16
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 13
+        width: 309
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 175d433173ef2be40800000000000000
+      internalID: 5670874393311761777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulArcher-Source_17
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 249
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84729411667f56840800000000000000
+      internalID: 5216847761127319368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulArcher-Source_18
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 148
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b51a8b9409585b60800000000000000
+      internalID: 7735030236333086132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulArcher-Source_19
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 146
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b1fd3c3c28f24ff0800000000000000
+      internalID: -53207376702082631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulArcher-Source_20
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 88
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2387622bcbf2860e0800000000000000
+      internalID: -2276517124146563022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SoulArcher-Source_0: -3105371517351499402
+      SoulArcher-Source_1: -6999386381440028176
+      SoulArcher-Source_10: -4502442407682033927
+      SoulArcher-Source_11: -2759594995874566669
+      SoulArcher-Source_12: -5466308337256596111
+      SoulArcher-Source_13: -8311252764755180425
+      SoulArcher-Source_14: 2853361550458650788
+      SoulArcher-Source_15: -2336267722179735051
+      SoulArcher-Source_16: 5670874393311761777
+      SoulArcher-Source_17: 5216847761127319368
+      SoulArcher-Source_18: 7735030236333086132
+      SoulArcher-Source_19: -53207376702082631
+      SoulArcher-Source_2: 6916101895925662472
+      SoulArcher-Source_20: -2276517124146563022
+      SoulArcher-Source_3: 7022061885458382896
+      SoulArcher-Source_4: -219344337916528138
+      SoulArcher-Source_5: 7190372902272990451
+      SoulArcher-Source_6: -3464567017074824436
+      SoulArcher-Source_7: -5569022893421913264
+      SoulArcher-Source_8: 8173523908981758898
+      SoulArcher-Source_9: 6956918796355373022
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

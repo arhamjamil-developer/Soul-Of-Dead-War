@@ -1,0 +1,650 @@
+[
+  {
+    "character": "IronPaladin",
+    "action": "Idle",
+    "frame": 0,
+    "path": "Assets/UI/AnimationSheets/IronPaladin/Idle_00.png"
+  },
+  {
+    "character": "IronPaladin",
+    "action": "Idle",
+    "frame": 1,
+    "path": "Assets/UI/AnimationSheets/IronPaladin/Idle_01.png"
+  },
+  {
+    "character": "IronPaladin",
+    "action": "Idle",
+    "frame": 2,
+    "path": "Assets/UI/AnimationSheets/IronPaladin/Idle_02.png"
+  },
+  {
+    "character": "IronPaladin",
+    "action": "Idle",
+    "frame": 3,
+    "path": "Assets/UI/AnimationSheets/IronPaladin/Idle_03.png"
+  },
+  {
+    "character": "IronPaladin",
+    "action": "Idle",
+    "frame": 4,
+    "path": "Assets/UI/AnimationSheets/IronPaladin/Idle_04.png"
+  },
+  {
+    "character": "IronPaladin",
+    "action": "Idle",
+    "frame": 5,
+    "path": "Assets/UI/AnimationSheets/IronPaladin/Idle_05.png"
+  },
+  {
+    "character": "IronPaladin",
+    "action": "Attack",
+    "frame": 0,
+    "path": "Assets/UI/AnimationSheets/IronPaladin/Attack_00.png"
+  },
+  {
+    "character": "IronPaladin",
+    "action": "Attack",
+    "frame": 1,
+    "path": "Assets/UI/AnimationSheets/IronPaladin/Attack_01.png"
+  },
+  {
+    "character": "IronPaladin",
+    "action": "Attack",
+    "frame": 2,
+    "path": "Assets/UI/AnimationSheets/IronPaladin/Attack_02.png"
+  },
+  {
+    "character": "IronPaladin",
+    "action": "Attack",
+    "frame": 3,
+    "path": "Assets/UI/AnimationSheets/IronPaladin/Attack_03.png"
+  },
+  {
+    "character": "IronPaladin",
+    "action": "Attack",
+    "frame": 4,
+    "path": "Assets/UI/AnimationSheets/IronPaladin/Attack_04.png"
+  },
+  {
+    "character": "IronPaladin",
+    "action": "Attack",
+    "frame": 5,
+    "path": "Assets/UI/AnimationSheets/IronPaladin/Attack_05.png"
+  },
+  {
+    "character": "IronPaladin",
+    "action": "Death",
+    "frame": 0,
+    "path": "Assets/UI/AnimationSheets/IronPaladin/Death_00.png"
+  },
+  {
+    "character": "IronPaladin",
+    "action": "Death",
+    "frame": 1,
+    "path": "Assets/UI/AnimationSheets/IronPaladin/Death_01.png"
+  },
+  {
+    "character": "IronPaladin",
+    "action": "Death",
+    "frame": 2,
+    "path": "Assets/UI/AnimationSheets/IronPaladin/Death_02.png"
+  },
+  {
+    "character": "IronPaladin",
+    "action": "Death",
+    "frame": 3,
+    "path": "Assets/UI/AnimationSheets/IronPaladin/Death_03.png"
+  },
+  {
+    "character": "IronPaladin",
+    "action": "Death",
+    "frame": 4,
+    "path": "Assets/UI/AnimationSheets/IronPaladin/Death_04.png"
+  },
+  {
+    "character": "IronPaladin",
+    "action": "Death",
+    "frame": 5,
+    "path": "Assets/UI/AnimationSheets/IronPaladin/Death_05.png"
+  },
+  {
+    "character": "SoulArcher",
+    "action": "Idle",
+    "frame": 0,
+    "path": "Assets/UI/AnimationSheets/SoulArcher/Idle_00.png"
+  },
+  {
+    "character": "SoulArcher",
+    "action": "Idle",
+    "frame": 1,
+    "path": "Assets/UI/AnimationSheets/SoulArcher/Idle_01.png"
+  },
+  {
+    "character": "SoulArcher",
+    "action": "Idle",
+    "frame": 2,
+    "path": "Assets/UI/AnimationSheets/SoulArcher/Idle_02.png"
+  },
+  {
+    "character": "SoulArcher",
+    "action": "Idle",
+    "frame": 3,
+    "path": "Assets/UI/AnimationSheets/SoulArcher/Idle_03.png"
+  },
+  {
+    "character": "SoulArcher",
+    "action": "Idle",
+    "frame": 4,
+    "path": "Assets/UI/AnimationSheets/SoulArcher/Idle_04.png"
+  },
+  {
+    "character": "SoulArcher",
+    "action": "Idle",
+    "frame": 5,
+    "path": "Assets/UI/AnimationSheets/SoulArcher/Idle_05.png"
+  },
+  {
+    "character": "SoulArcher",
+    "action": "Attack",
+    "frame": 0,
+    "path": "Assets/UI/AnimationSheets/SoulArcher/Attack_00.png"
+  },
+  {
+    "character": "SoulArcher",
+    "action": "Attack",
+    "frame": 1,
+    "path": "Assets/UI/AnimationSheets/SoulArcher/Attack_01.png"
+  },
+  {
+    "character": "SoulArcher",
+    "action": "Attack",
+    "frame": 2,
+    "path": "Assets/UI/AnimationSheets/SoulArcher/Attack_02.png"
+  },
+  {
+    "character": "SoulArcher",
+    "action": "Attack",
+    "frame": 3,
+    "path": "Assets/UI/AnimationSheets/SoulArcher/Attack_03.png"
+  },
+  {
+    "character": "SoulArcher",
+    "action": "Attack",
+    "frame": 4,
+    "path": "Assets/UI/AnimationSheets/SoulArcher/Attack_04.png"
+  },
+  {
+    "character": "SoulArcher",
+    "action": "Attack",
+    "frame": 5,
+    "path": "Assets/UI/AnimationSheets/SoulArcher/Attack_05.png"
+  },
+  {
+    "character": "SoulArcher",
+    "action": "Death",
+    "frame": 0,
+    "path": "Assets/UI/AnimationSheets/SoulArcher/Death_00.png"
+  },
+  {
+    "character": "SoulArcher",
+    "action": "Death",
+    "frame": 1,
+    "path": "Assets/UI/AnimationSheets/SoulArcher/Death_01.png"
+  },
+  {
+    "character": "SoulArcher",
+    "action": "Death",
+    "frame": 2,
+    "path": "Assets/UI/AnimationSheets/SoulArcher/Death_02.png"
+  },
+  {
+    "character": "SoulArcher",
+    "action": "Death",
+    "frame": 3,
+    "path": "Assets/UI/AnimationSheets/SoulArcher/Death_03.png"
+  },
+  {
+    "character": "SoulArcher",
+    "action": "Death",
+    "frame": 4,
+    "path": "Assets/UI/AnimationSheets/SoulArcher/Death_04.png"
+  },
+  {
+    "character": "SoulArcher",
+    "action": "Death",
+    "frame": 5,
+    "path": "Assets/UI/AnimationSheets/SoulArcher/Death_05.png"
+  },
+  {
+    "character": "BoneMage",
+    "action": "Idle",
+    "frame": 0,
+    "path": "Assets/UI/AnimationSheets/BoneMage/Idle_00.png"
+  },
+  {
+    "character": "BoneMage",
+    "action": "Idle",
+    "frame": 1,
+    "path": "Assets/UI/AnimationSheets/BoneMage/Idle_01.png"
+  },
+  {
+    "character": "BoneMage",
+    "action": "Idle",
+    "frame": 2,
+    "path": "Assets/UI/AnimationSheets/BoneMage/Idle_02.png"
+  },
+  {
+    "character": "BoneMage",
+    "action": "Idle",
+    "frame": 3,
+    "path": "Assets/UI/AnimationSheets/BoneMage/Idle_03.png"
+  },
+  {
+    "character": "BoneMage",
+    "action": "Idle",
+    "frame": 4,
+    "path": "Assets/UI/AnimationSheets/BoneMage/Idle_04.png"
+  },
+  {
+    "character": "BoneMage",
+    "action": "Idle",
+    "frame": 5,
+    "path": "Assets/UI/AnimationSheets/BoneMage/Idle_05.png"
+  },
+  {
+    "character": "BoneMage",
+    "action": "Attack",
+    "frame": 0,
+    "path": "Assets/UI/AnimationSheets/BoneMage/Attack_00.png"
+  },
+  {
+    "character": "BoneMage",
+    "action": "Attack",
+    "frame": 1,
+    "path": "Assets/UI/AnimationSheets/BoneMage/Attack_01.png"
+  },
+  {
+    "character": "BoneMage",
+    "action": "Attack",
+    "frame": 2,
+    "path": "Assets/UI/AnimationSheets/BoneMage/Attack_02.png"
+  },
+  {
+    "character": "BoneMage",
+    "action": "Attack",
+    "frame": 3,
+    "path": "Assets/UI/AnimationSheets/BoneMage/Attack_03.png"
+  },
+  {
+    "character": "BoneMage",
+    "action": "Attack",
+    "frame": 4,
+    "path": "Assets/UI/AnimationSheets/BoneMage/Attack_04.png"
+  },
+  {
+    "character": "BoneMage",
+    "action": "Attack",
+    "frame": 5,
+    "path": "Assets/UI/AnimationSheets/BoneMage/Attack_05.png"
+  },
+  {
+    "character": "BoneMage",
+    "action": "Death",
+    "frame": 0,
+    "path": "Assets/UI/AnimationSheets/BoneMage/Death_00.png"
+  },
+  {
+    "character": "BoneMage",
+    "action": "Death",
+    "frame": 1,
+    "path": "Assets/UI/AnimationSheets/BoneMage/Death_01.png"
+  },
+  {
+    "character": "BoneMage",
+    "action": "Death",
+    "frame": 2,
+    "path": "Assets/UI/AnimationSheets/BoneMage/Death_02.png"
+  },
+  {
+    "character": "BoneMage",
+    "action": "Death",
+    "frame": 3,
+    "path": "Assets/UI/AnimationSheets/BoneMage/Death_03.png"
+  },
+  {
+    "character": "BoneMage",
+    "action": "Death",
+    "frame": 4,
+    "path": "Assets/UI/AnimationSheets/BoneMage/Death_04.png"
+  },
+  {
+    "character": "BoneMage",
+    "action": "Death",
+    "frame": 5,
+    "path": "Assets/UI/AnimationSheets/BoneMage/Death_05.png"
+  },
+  {
+    "character": "FrostWitch",
+    "action": "Idle",
+    "frame": 0,
+    "path": "Assets/UI/AnimationSheets/FrostWitch/Idle_00.png"
+  },
+  {
+    "character": "FrostWitch",
+    "action": "Idle",
+    "frame": 1,
+    "path": "Assets/UI/AnimationSheets/FrostWitch/Idle_01.png"
+  },
+  {
+    "character": "FrostWitch",
+    "action": "Idle",
+    "frame": 2,
+    "path": "Assets/UI/AnimationSheets/FrostWitch/Idle_02.png"
+  },
+  {
+    "character": "FrostWitch",
+    "action": "Idle",
+    "frame": 3,
+    "path": "Assets/UI/AnimationSheets/FrostWitch/Idle_03.png"
+  },
+  {
+    "character": "FrostWitch",
+    "action": "Idle",
+    "frame": 4,
+    "path": "Assets/UI/AnimationSheets/FrostWitch/Idle_04.png"
+  },
+  {
+    "character": "FrostWitch",
+    "action": "Idle",
+    "frame": 5,
+    "path": "Assets/UI/AnimationSheets/FrostWitch/Idle_05.png"
+  },
+  {
+    "character": "FrostWitch",
+    "action": "Attack",
+    "frame": 0,
+    "path": "Assets/UI/AnimationSheets/FrostWitch/Attack_00.png"
+  },
+  {
+    "character": "FrostWitch",
+    "action": "Attack",
+    "frame": 1,
+    "path": "Assets/UI/AnimationSheets/FrostWitch/Attack_01.png"
+  },
+  {
+    "character": "FrostWitch",
+    "action": "Attack",
+    "frame": 2,
+    "path": "Assets/UI/AnimationSheets/FrostWitch/Attack_02.png"
+  },
+  {
+    "character": "FrostWitch",
+    "action": "Attack",
+    "frame": 3,
+    "path": "Assets/UI/AnimationSheets/FrostWitch/Attack_03.png"
+  },
+  {
+    "character": "FrostWitch",
+    "action": "Attack",
+    "frame": 4,
+    "path": "Assets/UI/AnimationSheets/FrostWitch/Attack_04.png"
+  },
+  {
+    "character": "FrostWitch",
+    "action": "Attack",
+    "frame": 5,
+    "path": "Assets/UI/AnimationSheets/FrostWitch/Attack_05.png"
+  },
+  {
+    "character": "FrostWitch",
+    "action": "Death",
+    "frame": 0,
+    "path": "Assets/UI/AnimationSheets/FrostWitch/Death_00.png"
+  },
+  {
+    "character": "FrostWitch",
+    "action": "Death",
+    "frame": 1,
+    "path": "Assets/UI/AnimationSheets/FrostWitch/Death_01.png"
+  },
+  {
+    "character": "FrostWitch",
+    "action": "Death",
+    "frame": 2,
+    "path": "Assets/UI/AnimationSheets/FrostWitch/Death_02.png"
+  },
+  {
+    "character": "FrostWitch",
+    "action": "Death",
+    "frame": 3,
+    "path": "Assets/UI/AnimationSheets/FrostWitch/Death_03.png"
+  },
+  {
+    "character": "FrostWitch",
+    "action": "Death",
+    "frame": 4,
+    "path": "Assets/UI/AnimationSheets/FrostWitch/Death_04.png"
+  },
+  {
+    "character": "FrostWitch",
+    "action": "Death",
+    "frame": 5,
+    "path": "Assets/UI/AnimationSheets/FrostWitch/Death_05.png"
+  },
+  {
+    "character": "SkeletonRunner",
+    "action": "Walk",
+    "frame": 0,
+    "path": "Assets/UI/AnimationSheets/SkeletonRunner/Walk_00.png"
+  },
+  {
+    "character": "SkeletonRunner",
+    "action": "Walk",
+    "frame": 1,
+    "path": "Assets/UI/AnimationSheets/SkeletonRunner/Walk_01.png"
+  },
+  {
+    "character": "SkeletonRunner",
+    "action": "Walk",
+    "frame": 2,
+    "path": "Assets/UI/AnimationSheets/SkeletonRunner/Walk_02.png"
+  },
+  {
+    "character": "SkeletonRunner",
+    "action": "Walk",
+    "frame": 3,
+    "path": "Assets/UI/AnimationSheets/SkeletonRunner/Walk_03.png"
+  },
+  {
+    "character": "SkeletonRunner",
+    "action": "Walk",
+    "frame": 4,
+    "path": "Assets/UI/AnimationSheets/SkeletonRunner/Walk_04.png"
+  },
+  {
+    "character": "SkeletonRunner",
+    "action": "Walk",
+    "frame": 5,
+    "path": "Assets/UI/AnimationSheets/SkeletonRunner/Walk_05.png"
+  },
+  {
+    "character": "SkeletonRunner",
+    "action": "Attack",
+    "frame": 0,
+    "path": "Assets/UI/AnimationSheets/SkeletonRunner/Attack_00.png"
+  },
+  {
+    "character": "SkeletonRunner",
+    "action": "Attack",
+    "frame": 1,
+    "path": "Assets/UI/AnimationSheets/SkeletonRunner/Attack_01.png"
+  },
+  {
+    "character": "SkeletonRunner",
+    "action": "Attack",
+    "frame": 2,
+    "path": "Assets/UI/AnimationSheets/SkeletonRunner/Attack_02.png"
+  },
+  {
+    "character": "SkeletonRunner",
+    "action": "Attack",
+    "frame": 3,
+    "path": "Assets/UI/AnimationSheets/SkeletonRunner/Attack_03.png"
+  },
+  {
+    "character": "SkeletonRunner",
+    "action": "Attack",
+    "frame": 4,
+    "path": "Assets/UI/AnimationSheets/SkeletonRunner/Attack_04.png"
+  },
+  {
+    "character": "SkeletonRunner",
+    "action": "Attack",
+    "frame": 5,
+    "path": "Assets/UI/AnimationSheets/SkeletonRunner/Attack_05.png"
+  },
+  {
+    "character": "SkeletonRunner",
+    "action": "Death",
+    "frame": 0,
+    "path": "Assets/UI/AnimationSheets/SkeletonRunner/Death_00.png"
+  },
+  {
+    "character": "SkeletonRunner",
+    "action": "Death",
+    "frame": 1,
+    "path": "Assets/UI/AnimationSheets/SkeletonRunner/Death_01.png"
+  },
+  {
+    "character": "SkeletonRunner",
+    "action": "Death",
+    "frame": 2,
+    "path": "Assets/UI/AnimationSheets/SkeletonRunner/Death_02.png"
+  },
+  {
+    "character": "SkeletonRunner",
+    "action": "Death",
+    "frame": 3,
+    "path": "Assets/UI/AnimationSheets/SkeletonRunner/Death_03.png"
+  },
+  {
+    "character": "SkeletonRunner",
+    "action": "Death",
+    "frame": 4,
+    "path": "Assets/UI/AnimationSheets/SkeletonRunner/Death_04.png"
+  },
+  {
+    "character": "SkeletonRunner",
+    "action": "Death",
+    "frame": 5,
+    "path": "Assets/UI/AnimationSheets/SkeletonRunner/Death_05.png"
+  },
+  {
+    "character": "ShieldBearer",
+    "action": "Walk",
+    "frame": 0,
+    "path": "Assets/UI/AnimationSheets/ShieldBearer/Walk_00.png"
+  },
+  {
+    "character": "ShieldBearer",
+    "action": "Walk",
+    "frame": 1,
+    "path": "Assets/UI/AnimationSheets/ShieldBearer/Walk_01.png"
+  },
+  {
+    "character": "ShieldBearer",
+    "action": "Walk",
+    "frame": 2,
+    "path": "Assets/UI/AnimationSheets/ShieldBearer/Walk_02.png"
+  },
+  {
+    "character": "ShieldBearer",
+    "action": "Walk",
+    "frame": 3,
+    "path": "Assets/UI/AnimationSheets/ShieldBearer/Walk_03.png"
+  },
+  {
+    "character": "ShieldBearer",
+    "action": "Walk",
+    "frame": 4,
+    "path": "Assets/UI/AnimationSheets/ShieldBearer/Walk_04.png"
+  },
+  {
+    "character": "ShieldBearer",
+    "action": "Walk",
+    "frame": 5,
+    "path": "Assets/UI/AnimationSheets/ShieldBearer/Walk_05.png"
+  },
+  {
+    "character": "ShieldBearer",
+    "action": "Attack",
+    "frame": 0,
+    "path": "Assets/UI/AnimationSheets/ShieldBearer/Attack_00.png"
+  },
+  {
+    "character": "ShieldBearer",
+    "action": "Attack",
+    "frame": 1,
+    "path": "Assets/UI/AnimationSheets/ShieldBearer/Attack_01.png"
+  },
+  {
+    "character": "ShieldBearer",
+    "action": "Attack",
+    "frame": 2,
+    "path": "Assets/UI/AnimationSheets/ShieldBearer/Attack_02.png"
+  },
+  {
+    "character": "ShieldBearer",
+    "action": "Attack",
+    "frame": 3,
+    "path": "Assets/UI/AnimationSheets/ShieldBearer/Attack_03.png"
+  },
+  {
+    "character": "ShieldBearer",
+    "action": "Attack",
+    "frame": 4,
+    "path": "Assets/UI/AnimationSheets/ShieldBearer/Attack_04.png"
+  },
+  {
+    "character": "ShieldBearer",
+    "action": "Attack",
+    "frame": 5,
+    "path": "Assets/UI/AnimationSheets/ShieldBearer/Attack_05.png"
+  },
+  {
+    "character": "ShieldBearer",
+    "action": "Death",
+    "frame": 0,
+    "path": "Assets/UI/AnimationSheets/ShieldBearer/Death_00.png"
+  },
+  {
+    "character": "ShieldBearer",
+    "action": "Death",
+    "frame": 1,
+    "path": "Assets/UI/AnimationSheets/ShieldBearer/Death_01.png"
+  },
+  {
+    "character": "ShieldBearer",
+    "action": "Death",
+    "frame": 2,
+    "path": "Assets/UI/AnimationSheets/ShieldBearer/Death_02.png"
+  },
+  {
+    "character": "ShieldBearer",
+    "action": "Death",
+    "frame": 3,
+    "path": "Assets/UI/AnimationSheets/ShieldBearer/Death_03.png"
+  },
+  {
+    "character": "ShieldBearer",
+    "action": "Death",
+    "frame": 4,
+    "path": "Assets/UI/AnimationSheets/ShieldBearer/Death_04.png"
+  },
+  {
+    "character": "ShieldBearer",
+    "action": "Death",
+    "frame": 5,
+    "path": "Assets/UI/AnimationSheets/ShieldBearer/Death_05.png"
+  }
+]

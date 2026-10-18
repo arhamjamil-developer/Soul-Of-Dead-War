@@ -33,6 +33,74 @@ namespace SoulCrystalDefense.Units
 
         public event Action<DefenderUnit> OnDefenderDestroyed;
 
+        [Header("Progression & Upgrades")]
+        private int currentLevel = 1;
+        private GameObject levelAuraObj;
+        public int CurrentLevel => currentLevel;
+        public int MaxLevel => 5;
+        public bool CanUpgrade => currentLevel < MaxLevel && defenderData != null && defenderData.defenderType != DefenderType.ElephantPreview;
+        public int UpgradeCost => defenderData != null ? Mathf.RoundToInt(defenderData.soulCost * 0.5f * currentLevel) : 75;
+        public float DamageMultiplier => 1f + (currentLevel - 1) * 0.35f;
+        public float AttackSpeedMultiplier => 1f + (currentLevel - 1) * 0.15f;
+        public float HealthMultiplier => 1f + (currentLevel - 1) * 0.25f;
+
+        public bool TryUpgrade()
+        {
+            if (!CanUpgrade || isDead) return false;
+            int cost = UpgradeCost;
+            if (SoulEnergyWallet.Instance == null || !SoulEnergyWallet.Instance.TrySpendEnergy(cost))
+            {
+                FindFirstObjectByType<SoulCrystalDefense.Presentation.BattlePresentation>()?.Show("NOT ENOUGH SOUL ENERGY", $"NEED {cost} SOUL TO UPGRADE TO LV.{currentLevel + 1}");
+                return false;
+            }
+
+            currentLevel++;
+            float newMax = defenderData.maxHealth * HealthMultiplier;
+            currentHealth = Mathf.Min(newMax, currentHealth + (newMax - defenderData.maxHealth));
+            if (healthBar != null) healthBar.Initialize(currentHealth, new Color(0.2f, 0.9f, 0.35f, 1f));
+
+            // Visual evolution: scale up subtly and spawn glowing runic aura
+            transform.localScale = transform.localScale * 1.07f;
+            ApplyUpgradeVisuals();
+
+            SoundManager.Instance?.PlayCrystalDamage();
+            SoulCrystalDefense.Presentation.GameplayEffects.Instance?.Ring(transform.position, new Color(1f, 0.85f, 0.2f), 1.3f, 1.2f);
+            FindFirstObjectByType<SoulCrystalDefense.Presentation.BattlePresentation>()?.Show(
+                $"{defenderData.displayName.ToUpper()} LV.{currentLevel}!",
+                $"+35% DAMAGE  /  +15% SPEED  /  RUNIC EVOLUTION"
+            );
+            return true;
+        }
+
+        private void ApplyUpgradeVisuals()
+        {
+            if (levelAuraObj == null)
+            {
+                levelAuraObj = new GameObject("RunicAuraRing");
+                levelAuraObj.transform.SetParent(transform);
+                levelAuraObj.transform.localPosition = new Vector3(0, -0.2f, 0.05f);
+                var sr = levelAuraObj.AddComponent<SpriteRenderer>();
+                sr.sprite = HealthBar.GetWhitePixelSprite();
+                sr.sortingOrder = 1;
+                levelAuraObj.transform.localScale = new Vector3(0.7f, 0.15f, 1f);
+            }
+
+            var auraSr = levelAuraObj.GetComponent<SpriteRenderer>();
+            if (auraSr != null)
+            {
+                // Evolution color by level
+                Color auraColor = currentLevel switch
+                {
+                    2 => new Color(0.2f, 0.9f, 1f, 0.65f),   // Cyan
+                    3 => new Color(0.9f, 0.5f, 1f, 0.75f),   // Purple Arcane
+                    4 => new Color(1f, 0.85f, 0.2f, 0.85f),  // Radiant Gold
+                    5 => new Color(1f, 0.25f, 0.4f, 0.95f),  // Mythic Crimson/Prismatic
+                    _ => Color.white
+                };
+                auraSr.color = auraColor;
+            }
+        }
+
         private void Awake()
         {
             if (spriteRenderer == null) spriteRenderer = GetComponentInChildren<SpriteRenderer>();
@@ -79,7 +147,7 @@ namespace SoulCrystalDefense.Units
                 }
             }
 
-            attackTimer += Time.deltaTime * (cell != null ? cell.AttackSpeedMultiplier : 1f);
+            attackTimer += Time.deltaTime * (cell != null ? cell.AttackSpeedMultiplier : 1f) * AttackSpeedMultiplier;
             if (attackTimer >= defenderData.attackCooldown)
             {
                 if (TryAttack())
@@ -138,26 +206,36 @@ namespace SoulCrystalDefense.Units
             StartCoroutine(PunchAnimation(0.12f));
             SoundManager.Instance?.PlayDwarfImpact();
 
+            float effectiveDmg = defenderData.damage * DamageMultiplier;
+            float effectiveKnockback = defenderData.knockback;
+
+            if (defenderData.defenderType == DefenderType.ThunderGuardian)
+            {
+                effectiveKnockback *= 1.8f;
+                TriggerChainLightning(target, 3);
+                SoulCrystalDefense.Presentation.GameplayEffects.Instance?.Ring(transform.position, new Color(1f, 0.9f, 0.2f), 1.5f, 0.8f);
+            }
+
             if (animPlayer != null && animPlayer.HasAttackFrames)
             {
                 animPlayer.PlayAttack(() =>
                 {
                     if (target != null && !target.IsDead)
                     {
-                        target.TakeDamage(defenderData.damage);
-                        if (defenderData.knockback > 0.01f)
+                        target.TakeDamage(effectiveDmg);
+                        if (effectiveKnockback > 0.01f)
                         {
-                            target.ApplyKnockback(defenderData.knockback);
+                            target.ApplyKnockback(effectiveKnockback);
                         }
                     }
                 });
             }
             else
             {
-                target.TakeDamage(defenderData.damage);
-                if (defenderData.knockback > 0.01f)
+                target.TakeDamage(effectiveDmg);
+                if (effectiveKnockback > 0.01f)
                 {
-                    target.ApplyKnockback(defenderData.knockback);
+                    target.ApplyKnockback(effectiveKnockback);
                 }
             }
         }
@@ -198,50 +276,77 @@ namespace SoulCrystalDefense.Units
             }
         }
 
+        private void TriggerChainLightning(EnemyUnit target, int maxBounces)
+        {
+            if (target == null || target.IsDead) return;
+            Vector3 previous = transform.position;
+            Vector3 chainCenter = target.transform.position;
+            var victims = FindObjectsByType<EnemyUnit>(FindObjectsSortMode.None);
+            EnemyUnit next = target;
+            var hit = new System.Collections.Generic.HashSet<EnemyUnit>();
+            for (int bounce = 0; bounce < maxBounces && next != null; bounce++)
+            {
+                Vector3 pos = next.transform.position;
+                SoulCrystalDefense.Presentation.GameplayEffects.Instance?.Lightning(previous, pos);
+                hit.Add(next);
+                next.TakeDamage(defenderData.damage * DamageMultiplier * Mathf.Pow(0.75f, bounce));
+                previous = pos;
+                next = null;
+                float distance = 1.6f;
+                foreach (var enemy in victims)
+                {
+                    if (enemy == null || enemy.IsDead || enemy.HasBreached || hit.Contains(enemy)) continue;
+                    float fromPrevious = Vector2.Distance(pos, enemy.transform.position);
+                    float fromCenter = Vector2.Distance(chainCenter, enemy.transform.position);
+                    float d = Mathf.Min(fromPrevious, fromCenter);
+                    if (d < distance)
+                    {
+                        distance = d;
+                        next = enemy;
+                        previous = fromPrevious <= 1.6f ? pos : chainCenter;
+                    }
+                }
+            }
+        }
+
         private void SpawnProjectile(EnemyUnit target)
         {
             if (target == null || target.IsDead) return;
 
             if (defenderData.defenderType == DefenderType.BoneMage)
             {
-                Vector3 previous = transform.position;
-                Vector3 chainCenter = target.transform.position;
-                var victims = FindObjectsByType<EnemyUnit>(FindObjectsSortMode.None);
-                EnemyUnit next = target;
-                var hit = new System.Collections.Generic.HashSet<EnemyUnit>();
-                for (int bounce = 0; bounce < 3 && next != null; bounce++)
-                {
-                    Vector3 pos = next.transform.position;
-                    SoulCrystalDefense.Presentation.GameplayEffects.Instance?.Lightning(previous, pos);
-                    hit.Add(next); next.TakeDamage(defenderData.damage * Mathf.Pow(.75f, bounce));
-                    previous = pos; next = null; float distance = 1.6f;
-                    foreach (var enemy in victims)
-                    {
-                        if (enemy == null || enemy.IsDead || enemy.HasBreached || hit.Contains(enemy)) continue;
-                        float fromPrevious = Vector2.Distance(pos, enemy.transform.position);
-                        float fromCenter = Vector2.Distance(chainCenter, enemy.transform.position);
-                        float d = Mathf.Min(fromPrevious, fromCenter);
-                        if (d < distance)
-                        {
-                            distance = d; next = enemy;
-                            previous = fromPrevious <= 1.6f ? pos : chainCenter;
-                        }
-                    }
-                }
+                TriggerChainLightning(target, 3);
+                return;
+            }
+
+            if (defenderData.defenderType == DefenderType.FrostWitch)
+            {
+                // Glacial Frost Orb
+                Vector3 spawnPos = attackOrigin != null ? attackOrigin.position : transform.position + Vector3.up * 0.3f;
+                var projObj = new GameObject("GlacialFrostOrb");
+                projObj.transform.position = spawnPos;
+                var sr = projObj.AddComponent<SpriteRenderer>();
+                sr.sprite = HealthBar.GetWhitePixelSprite();
+                sr.color = new Color(0.2f, 0.85f, 1f, 1f);
+                projObj.transform.localScale = new Vector3(0.3f, 0.3f, 1f);
+                var proj = projObj.AddComponent<Projectile>();
+                proj.Initialize(defenderData.damage * DamageMultiplier, defenderData.projectileSpeed, 0.65f, Vector3.up, target);
+                proj.SetChillOnHit(0.40f, 3.5f);
+                SoundManager.Instance?.PlayChefFireImpact();
                 return;
             }
 
             SoundManager.Instance?.PlayChefFireImpact();
 
-            Vector3 spawnPos = attackOrigin != null ? attackOrigin.position : transform.position + Vector3.up * 0.3f;
+            Vector3 projSpawnPos = attackOrigin != null ? attackOrigin.position : transform.position + Vector3.up * 0.3f;
 
             if (defenderData.projectilePrefab != null)
             {
-                var projObj = Instantiate(defenderData.projectilePrefab, spawnPos, Quaternion.identity);
+                var projObj = Instantiate(defenderData.projectilePrefab, projSpawnPos, Quaternion.identity);
                 var proj = projObj.GetComponent<Projectile>();
                 if (proj != null)
                 {
-                    proj.Initialize(defenderData.damage, defenderData.projectileSpeed, defenderData.splashRadius, Vector3.up, target);
+                    proj.Initialize(defenderData.damage * DamageMultiplier, defenderData.projectileSpeed, defenderData.splashRadius, Vector3.up, target);
                     if (defenderData.defenderType == DefenderType.SoulArcher) proj.SetPiercing(3);
                 }
             }
@@ -249,19 +354,26 @@ namespace SoulCrystalDefense.Units
             {
                 // Procedural projectile fallback
                 var projObj = new GameObject("RangedFireball");
-                projObj.transform.position = spawnPos;
+                projObj.transform.position = projSpawnPos;
                 var sr = projObj.AddComponent<SpriteRenderer>();
                 sr.sprite = HealthBar.GetWhitePixelSprite();
                 sr.color = new Color(1f, 0.55f, 0.1f, 1f);
                 projObj.transform.localScale = new Vector3(0.25f, 0.25f, 1f);
                 var proj = projObj.AddComponent<Projectile>();
-                proj.Initialize(defenderData.damage, defenderData.projectileSpeed, defenderData.splashRadius, Vector3.up, target);
+                proj.Initialize(defenderData.damage * DamageMultiplier, defenderData.projectileSpeed, defenderData.splashRadius, Vector3.up, target);
             }
         }
 
         public void TakeDamage(float dmg)
         {
             if (isDead) return;
+
+            if (defenderData != null && defenderData.defenderType == DefenderType.IronPaladin)
+            {
+                // Heavy Armor absorbs 40% damage
+                dmg *= 0.60f;
+                SoulCrystalDefense.Presentation.GameplayEffects.Instance?.Ring(transform.position, new Color(0.2f, 0.6f, 1f), 0.6f, 0.4f);
+            }
 
             currentHealth -= dmg;
             if (healthBar != null) healthBar.UpdateHealth(currentHealth);
@@ -310,3 +422,5 @@ namespace SoulCrystalDefense.Units
         }
     }
 }
+
+

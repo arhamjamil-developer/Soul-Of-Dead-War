@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "result": {
+    "normal": {
+      "resolution": "2048x2732",
+      "visibleTMP": 33,
+      "overflow": [],
+      "legacyVisible": 0
+    },
+    "settings": {
+      "resolution": "2048x2732",
+      "visibleTMP": 42,
+      "overflow": [],
+      "legacyVisible": 0
+    }
+  }
+}

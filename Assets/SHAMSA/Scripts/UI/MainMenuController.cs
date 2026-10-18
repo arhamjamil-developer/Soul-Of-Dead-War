@@ -58,7 +58,7 @@ namespace SoulCrystalDefense.UI
 
         private void UpdateVolumeLabel(float value)
         {
-            volumeLabel.text = "MASTER VOLUME  " + Mathf.RoundToInt(value * 100f) + "%";
+            volumeLabel.text = Mathf.RoundToInt(value * 100f) + "%";
         }
 
         public void ConfirmExit()

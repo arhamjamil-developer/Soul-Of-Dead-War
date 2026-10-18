@@ -1,0 +1,354 @@
+[
+  {
+    "name": "Panel",
+    "group": "Frames",
+    "path": "Assets/UI/Premium/Frames/Panel.png",
+    "size": [
+      475,
+      454
+    ],
+    "source": "exec-7f32ff57-9796-4ca1-8572-b091c92b684d.png",
+    "cell": 0
+  },
+  {
+    "name": "TitleBanner",
+    "group": "Frames",
+    "path": "Assets/UI/Premium/Frames/TitleBanner.png",
+    "size": [
+      492,
+      380
+    ],
+    "source": "exec-7f32ff57-9796-4ca1-8572-b091c92b684d.png",
+    "cell": 1
+  },
+  {
+    "name": "Button",
+    "group": "Frames",
+    "path": "Assets/UI/Premium/Frames/Button.png",
+    "size": [
+      491,
+      157
+    ],
+    "source": "exec-7f32ff57-9796-4ca1-8572-b091c92b684d.png",
+    "cell": 2
+  },
+  {
+    "name": "CardFrame",
+    "group": "Frames",
+    "path": "Assets/UI/Premium/Frames/CardFrame.png",
+    "size": [
+      454,
+      512
+    ],
+    "source": "exec-7f32ff57-9796-4ca1-8572-b091c92b684d.png",
+    "cell": 3
+  },
+  {
+    "name": "SliderTrack",
+    "group": "Frames",
+    "path": "Assets/UI/Premium/Frames/SliderTrack.png",
+    "size": [
+      489,
+      93
+    ],
+    "source": "exec-7f32ff57-9796-4ca1-8572-b091c92b684d.png",
+    "cell": 4
+  },
+  {
+    "name": "SelectionFrame",
+    "group": "Frames",
+    "path": "Assets/UI/Premium/Frames/SelectionFrame.png",
+    "size": [
+      467,
+      442
+    ],
+    "source": "exec-7f32ff57-9796-4ca1-8572-b091c92b684d.png",
+    "cell": 5
+  },
+  {
+    "name": "Crystal",
+    "group": "Icons",
+    "path": "Assets/UI/Premium/Icons/Crystal.png",
+    "size": [
+      245,
+      307
+    ],
+    "source": "exec-eb5bdc95-ad08-4235-b8fb-cdb531617398.png",
+    "cell": 0
+  },
+  {
+    "name": "Pulse",
+    "group": "Icons",
+    "path": "Assets/UI/Premium/Icons/Pulse.png",
+    "size": [
+      280,
+      268
+    ],
+    "source": "exec-eb5bdc95-ad08-4235-b8fb-cdb531617398.png",
+    "cell": 1
+  },
+  {
+    "name": "Storm",
+    "group": "Icons",
+    "path": "Assets/UI/Premium/Icons/Storm.png",
+    "size": [
+      291,
+      302
+    ],
+    "source": "exec-eb5bdc95-ad08-4235-b8fb-cdb531617398.png",
+    "cell": 2
+  },
+  {
+    "name": "Barrier",
+    "group": "Icons",
+    "path": "Assets/UI/Premium/Icons/Barrier.png",
+    "size": [
+      273,
+      306
+    ],
+    "source": "exec-eb5bdc95-ad08-4235-b8fb-cdb531617398.png",
+    "cell": 3
+  },
+  {
+    "name": "Pause",
+    "group": "Icons",
+    "path": "Assets/UI/Premium/Icons/Pause.png",
+    "size": [
+      296,
+      311
+    ],
+    "source": "exec-eb5bdc95-ad08-4235-b8fb-cdb531617398.png",
+    "cell": 4
+  },
+  {
+    "name": "Play",
+    "group": "Icons",
+    "path": "Assets/UI/Premium/Icons/Play.png",
+    "size": [
+      304,
+      303
+    ],
+    "source": "exec-eb5bdc95-ad08-4235-b8fb-cdb531617398.png",
+    "cell": 5
+  },
+  {
+    "name": "Settings",
+    "group": "Icons",
+    "path": "Assets/UI/Premium/Icons/Settings.png",
+    "size": [
+      280,
+      303
+    ],
+    "source": "exec-eb5bdc95-ad08-4235-b8fb-cdb531617398.png",
+    "cell": 6
+  },
+  {
+    "name": "Back",
+    "group": "Icons",
+    "path": "Assets/UI/Premium/Icons/Back.png",
+    "size": [
+      262,
+      300
+    ],
+    "source": "exec-eb5bdc95-ad08-4235-b8fb-cdb531617398.png",
+    "cell": 7
+  },
+  {
+    "name": "Volume",
+    "group": "Icons",
+    "path": "Assets/UI/Premium/Icons/Volume.png",
+    "size": [
+      285,
+      285
+    ],
+    "source": "exec-eb5bdc95-ad08-4235-b8fb-cdb531617398.png",
+    "cell": 8
+  },
+  {
+    "name": "Music",
+    "group": "Icons",
+    "path": "Assets/UI/Premium/Icons/Music.png",
+    "size": [
+      217,
+      287
+    ],
+    "source": "exec-eb5bdc95-ad08-4235-b8fb-cdb531617398.png",
+    "cell": 9
+  },
+  {
+    "name": "Owned",
+    "group": "Icons",
+    "path": "Assets/UI/Premium/Icons/Owned.png",
+    "size": [
+      310,
+      313
+    ],
+    "source": "exec-eb5bdc95-ad08-4235-b8fb-cdb531617398.png",
+    "cell": 10
+  },
+  {
+    "name": "Exit",
+    "group": "Icons",
+    "path": "Assets/UI/Premium/Icons/Exit.png",
+    "size": [
+      255,
+      312
+    ],
+    "source": "exec-eb5bdc95-ad08-4235-b8fb-cdb531617398.png",
+    "cell": 11
+  },
+  {
+    "name": "Elephant",
+    "group": "Icons",
+    "path": "Assets/UI/Premium/Icons/Elephant.png",
+    "size": [
+      311,
+      297
+    ],
+    "source": "exec-eb5bdc95-ad08-4235-b8fb-cdb531617398.png",
+    "cell": 12
+  },
+  {
+    "name": "Train",
+    "group": "Icons",
+    "path": "Assets/UI/Premium/Icons/Train.png",
+    "size": [
+      306,
+      274
+    ],
+    "source": "exec-eb5bdc95-ad08-4235-b8fb-cdb531617398.png",
+    "cell": 13
+  },
+  {
+    "name": "Book",
+    "group": "Icons",
+    "path": "Assets/UI/Premium/Icons/Book.png",
+    "size": [
+      313,
+      277
+    ],
+    "source": "exec-eb5bdc95-ad08-4235-b8fb-cdb531617398.png",
+    "cell": 14
+  },
+  {
+    "name": "Trophy",
+    "group": "Icons",
+    "path": "Assets/UI/Premium/Icons/Trophy.png",
+    "size": [
+      299,
+      273
+    ],
+    "source": "exec-eb5bdc95-ad08-4235-b8fb-cdb531617398.png",
+    "cell": 15
+  },
+  {
+    "name": "Dwarf",
+    "group": "Portraits",
+    "path": "Assets/UI/Premium/Portraits/Dwarf.png",
+    "size": [
+      509,
+      494
+    ],
+    "source": "exec-b6d60263-ef25-4c23-b7c0-064ad68dcaa8.png",
+    "cell": 0
+  },
+  {
+    "name": "Chef",
+    "group": "Portraits",
+    "path": "Assets/UI/Premium/Portraits/Chef.png",
+    "size": [
+      511,
+      508
+    ],
+    "source": "exec-b6d60263-ef25-4c23-b7c0-064ad68dcaa8.png",
+    "cell": 1
+  },
+  {
+    "name": "Archer",
+    "group": "Portraits",
+    "path": "Assets/UI/Premium/Portraits/Archer.png",
+    "size": [
+      499,
+      512
+    ],
+    "source": "exec-b6d60263-ef25-4c23-b7c0-064ad68dcaa8.png",
+    "cell": 2
+  },
+  {
+    "name": "Mage",
+    "group": "Portraits",
+    "path": "Assets/UI/Premium/Portraits/Mage.png",
+    "size": [
+      508,
+      512
+    ],
+    "source": "exec-b6d60263-ef25-4c23-b7c0-064ad68dcaa8.png",
+    "cell": 3
+  },
+  {
+    "name": "Paladin",
+    "group": "Portraits",
+    "path": "Assets/UI/Premium/Portraits/Paladin.png",
+    "size": [
+      512,
+      511
+    ],
+    "source": "exec-b6d60263-ef25-4c23-b7c0-064ad68dcaa8.png",
+    "cell": 4
+  },
+  {
+    "name": "Witch",
+    "group": "Portraits",
+    "path": "Assets/UI/Premium/Portraits/Witch.png",
+    "size": [
+      509,
+      508
+    ],
+    "source": "exec-b6d60263-ef25-4c23-b7c0-064ad68dcaa8.png",
+    "cell": 5
+  },
+  {
+    "name": "ElephantPortrait",
+    "group": "Supports",
+    "path": "Assets/UI/Premium/Supports/ElephantPortrait.png",
+    "size": [
+      580,
+      618
+    ],
+    "source": "exec-101ed860-927f-4114-a906-3a7d58f4eec8.png",
+    "cell": 0
+  },
+  {
+    "name": "TrainPortrait",
+    "group": "Supports",
+    "path": "Assets/UI/Premium/Supports/TrainPortrait.png",
+    "size": [
+      591,
+      623
+    ],
+    "source": "exec-101ed860-927f-4114-a906-3a7d58f4eec8.png",
+    "cell": 1
+  },
+  {
+    "name": "ElephantWorld",
+    "group": "Supports",
+    "path": "Assets/UI/Premium/Supports/ElephantWorld.png",
+    "size": [
+      438,
+      615
+    ],
+    "source": "exec-101ed860-927f-4114-a906-3a7d58f4eec8.png",
+    "cell": 2
+  },
+  {
+    "name": "TrainWorld",
+    "group": "Supports",
+    "path": "Assets/UI/Premium/Supports/TrainWorld.png",
+    "size": [
+      372,
+      615
+    ],
+    "source": "exec-101ed860-927f-4114-a906-3a7d58f4eec8.png",
+    "cell": 3
+  }
+]

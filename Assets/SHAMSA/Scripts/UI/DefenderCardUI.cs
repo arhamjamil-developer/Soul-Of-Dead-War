@@ -1,12 +1,13 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using SoulCrystalDefense.Data;
 using SoulCrystalDefense.Systems;
 
 namespace SoulCrystalDefense.UI
 {
-    public class DefenderCardUI : MonoBehaviour
+    public class DefenderCardUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
     {
         [Header("Card Configuration")]
         [SerializeField] private DefenderData defenderData;
@@ -29,6 +30,7 @@ namespace SoulCrystalDefense.UI
         public DefenderData Data => defenderData;
         public bool IsLocked => isLocked;
         private bool isSelected = false;
+        private bool scrollingCards;
         private Vector3 restingScale;
         private Vector3 targetScale;
 
@@ -124,6 +126,29 @@ namespace SoulCrystalDefense.UI
         {
             if (isLocked) return;
             OnCardClicked?.Invoke(this);
+        }
+
+        public void OnBeginDrag(PointerEventData eventData)
+        {
+            var movement=eventData.position-eventData.pressPosition;
+            scrollingCards=Mathf.Abs(movement.x)>Mathf.Abs(movement.y)&&GetComponentInParent<ScrollRect>()!=null;
+            if(scrollingCards){GetComponentInParent<ScrollRect>().OnBeginDrag(eventData);return;}
+            if (isLocked || defenderData == null) return;
+            PlacementController.Instance?.StartDragFromCard(this, eventData);
+        }
+
+        public void OnDrag(PointerEventData eventData)
+        {
+            if(scrollingCards){GetComponentInParent<ScrollRect>().OnDrag(eventData);return;}
+            if (isLocked || defenderData == null) return;
+            PlacementController.Instance?.UpdateDrag(eventData);
+        }
+
+        public void OnEndDrag(PointerEventData eventData)
+        {
+            if(scrollingCards){GetComponentInParent<ScrollRect>().OnEndDrag(eventData);scrollingCards=false;return;}
+            if (isLocked || defenderData == null) return;
+            PlacementController.Instance?.EndDrag(eventData);
         }
 
         private void Update()

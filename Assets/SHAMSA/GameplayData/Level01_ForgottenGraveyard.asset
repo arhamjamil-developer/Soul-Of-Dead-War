@@ -24,6 +24,10 @@ MonoBehaviour:
   availableDefenders:
   - {fileID: 11400000, guid: ee8ff72b266ecc749b6a6ea377f21981, type: 2}
   - {fileID: 11400000, guid: 551791cbd30b197498c4b954e9d96e22, type: 2}
+  - {fileID: 11400000, guid: 60650bd62e4cb1546bf639af67a04136, type: 2}
+  - {fileID: 11400000, guid: a914cc9a5940a1e448eb2bd9fa257290, type: 2}
+  - {fileID: 11400000, guid: 6d1db00113b78d843a17a3d8b9c9c423, type: 2}
+  - {fileID: 11400000, guid: 4787ef401db341949b537012e6d63f6f, type: 2}
   waves:
   - {fileID: 11400000, guid: 16349b2a325a95c478e15c80ff3f34d0, type: 2}
   rewardFragmentCount: 1

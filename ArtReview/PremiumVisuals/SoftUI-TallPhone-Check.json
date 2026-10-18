@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "result": {
+    "normal": {
+      "resolution": "1170x2532",
+      "visibleTMP": 33,
+      "overflow": [],
+      "legacyVisible": 0
+    },
+    "tutorial": {
+      "resolution": "1170x2532",
+      "visibleTMP": 44,
+      "overflow": [],
+      "legacyVisible": 0
+    }
+  }
+}

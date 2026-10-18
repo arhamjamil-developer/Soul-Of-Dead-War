@@ -55,6 +55,14 @@ namespace SoulCrystalDefense.Systems
             }
 
             GenerateProceduralFallbacks();
+            ApplySavedVolumes();
+        }
+
+        public void ApplySavedVolumes()
+        {
+            AudioListener.volume = PlayerPrefs.GetFloat("MainMenu.MasterVolume",1f);
+            if(musicSource)musicSource.volume=PlayerPrefs.GetFloat("Audio.Music",.7f);
+            if(sfxSource)sfxSource.volume=PlayerPrefs.GetFloat("Audio.Effects",1f);
         }
 
         private void GenerateProceduralFallbacks()

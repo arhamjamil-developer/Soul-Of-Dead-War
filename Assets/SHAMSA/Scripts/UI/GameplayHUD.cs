@@ -22,6 +22,7 @@ namespace SoulCrystalDefense.UI
         [Header("Controls")]
         [SerializeField] private Button pauseButton;
         [SerializeField] private Text pauseButtonText;
+        public GameScreenFlow screenFlow;
 
         private void Start()
         {
@@ -117,6 +118,7 @@ namespace SoulCrystalDefense.UI
 
         private void OnPauseClicked()
         {
+            if (screenFlow != null) { screenFlow.TogglePause(); return; }
             if (GameManager.Instance != null)
             {
                 GameManager.Instance.TogglePause();

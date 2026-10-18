@@ -7,6 +7,9 @@ namespace SoulCrystalDefense.Data
         ElephantPreview,
         WarTrainUltimate,
         SoulArcher,
-        BoneMage
+        BoneMage,
+        IronPaladin,
+        FrostWitch,
+        ThunderGuardian
     }
 }

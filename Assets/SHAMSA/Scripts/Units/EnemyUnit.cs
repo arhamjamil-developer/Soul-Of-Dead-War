@@ -31,6 +31,22 @@ namespace SoulCrystalDefense.Units
         [SerializeField] private float speedMultiplier = 1.0f;
         private float effectiveDamage = 9f;
         private float effectiveMoveSpeed = 0.55f;
+        private float slowTimer = 0f;
+        private float slowSpeedMultiplier = 1.0f;
+        private Color chillColor = new Color(0.4f, 0.85f, 1f, 1f);
+
+        public bool IsChilled => slowTimer > 0f;
+
+        public void ApplyChill(float slowAmount, float duration)
+        {
+            SoulCrystalDefense.Presentation.GameplayEffects.Instance?.Frost(transform.position);
+            slowSpeedMultiplier = Mathf.Clamp(1.0f - slowAmount, 0.25f, 1.0f);
+            slowTimer = Mathf.Max(slowTimer, duration);
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.color = chillColor;
+            }
+        }
 
         public EnemyData Data => enemyData;
         public int LaneIndex => laneIndex;
@@ -95,6 +111,10 @@ namespace SoulCrystalDefense.Units
 
             if (animPlayer != null)
             {
+                if(data.enemyType==EnemyType.ArmoredElephant&&spriteRenderer!=null)
+                {
+                    spriteRenderer.color=new Color(.8f,.45f,1,1);originalColor=spriteRenderer.color;
+                }
                 animPlayer.PlayWalk();
             }
         }
@@ -121,6 +141,18 @@ namespace SoulCrystalDefense.Units
                 return;
             }
 
+            // Handle Chill recovery
+            float currentMoveSpeed = effectiveMoveSpeed;
+            if (slowTimer > 0f)
+            {
+                slowTimer -= Time.deltaTime;
+                currentMoveSpeed *= slowSpeedMultiplier;
+                if (slowTimer <= 0f && flashTimer <= 0f && spriteRenderer != null)
+                {
+                    spriteRenderer.color = originalColor;
+                }
+            }
+
             // Search for defender in front within attack range in the same lane
             FindTargetDefender();
 
@@ -143,7 +175,7 @@ namespace SoulCrystalDefense.Units
             {
                 // Advance downward along lane
                 currentTargetDefender = null;
-                transform.position += Vector3.down * effectiveMoveSpeed * Time.deltaTime;
+                transform.position += Vector3.down * currentMoveSpeed * Time.deltaTime;
                 if (animPlayer != null)
                 {
                     animPlayer.PlayWalk();
@@ -205,6 +237,7 @@ namespace SoulCrystalDefense.Units
         public void TakeDamage(float dmg)
         {
             if (isDead || hasBreached) return;
+            if(enemyData!=null&&enemyData.enemyType==EnemyType.ShieldBearer)dmg*=.65f;
 
             currentHealth -= dmg;
             SoulCrystalDefense.Presentation.GameplayEffects.Instance?.Impact(transform.position, dmg);

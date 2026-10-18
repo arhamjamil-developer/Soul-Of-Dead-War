@@ -60,7 +60,8 @@ namespace SoulCrystalDefense.Grid
         {
             Normal,
             ValidHighlight,
-            InvalidHighlight
+            InvalidHighlight,
+            HoverHighlight
         }
 
         public void SetVisualState(CellVisualState state)
@@ -78,6 +79,9 @@ namespace SoulCrystalDefense.Grid
                     break;
                 case CellVisualState.InvalidHighlight:
                     cellRenderer.color = invalidColor;
+                    break;
+                case CellVisualState.HoverHighlight:
+                    cellRenderer.color = new Color(0.2f, 1f, 0.5f, 0.75f); // Vibrant glowing green/cyan hover indicator
                     break;
             }
         }

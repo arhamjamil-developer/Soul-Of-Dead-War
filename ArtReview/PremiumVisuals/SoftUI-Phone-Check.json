@@ -1,0 +1,85 @@
+{
+  "success": true,
+  "result": {
+    "normal": {
+      "resolution": "1080x1920",
+      "visibleTMP": 33,
+      "overflow": [],
+      "legacyVisible": 0
+    },
+    "pause": {
+      "resolution": "1080x1920",
+      "visibleTMP": 39,
+      "overflow": [],
+      "legacyVisible": 0
+    },
+    "settings": {
+      "resolution": "1080x1920",
+      "visibleTMP": 42,
+      "overflow": [],
+      "legacyVisible": 0
+    },
+    "tutorial": {
+      "resolution": "1080x1920",
+      "visibleTMP": 44,
+      "overflow": [],
+      "legacyVisible": 0
+    },
+    "healthFill": 0.75,
+    "healthWorks": true,
+    "units": [
+      {
+        "name": "FROST WITCH",
+        "height": 1.16363633
+      },
+      {
+        "name": "BONE MAGE",
+        "height": 1.16363633
+      },
+      {
+        "name": "BONE MAGE",
+        "height": 1.16363633
+      },
+      {
+        "name": "SOUL ARCHER",
+        "height": 1.16363633
+      },
+      {
+        "name": "IRON PALADIN",
+        "height": 1.16363633
+      },
+      {
+        "name": "IRON PALADIN",
+        "height": 1.16363633
+      },
+      {
+        "name": "Blood Chef",
+        "height": 1.03450489
+      },
+      {
+        "name": "SOUL ARCHER",
+        "height": 1.16363633
+      },
+      {
+        "name": "Dwarf Guardian",
+        "height": 1.45579362
+      },
+      {
+        "name": "Blood Chef",
+        "height": 1.03450489
+      },
+      {
+        "name": "SOUL ARCHER",
+        "height": 1.16363633
+      },
+      {
+        "name": "FROST WITCH",
+        "height": 1.16363633
+      },
+      {
+        "name": "Dwarf Guardian",
+        "height": 1.33465135
+      }
+    ]
+  }
+}

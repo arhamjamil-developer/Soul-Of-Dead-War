@@ -1,0 +1,676 @@
+fileFormatVersion: 2
+guid: f569dadd5c26bab4c9f0bc00a37fab4e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2637256824597269406
+    second: SkeletonRunner-Source_0
+  - first:
+      213: 4012038358374024085
+    second: SkeletonRunner-Source_1
+  - first:
+      213: 6272635423112219228
+    second: SkeletonRunner-Source_2
+  - first:
+      213: 4705512759506419900
+    second: SkeletonRunner-Source_3
+  - first:
+      213: -8970917666868608510
+    second: SkeletonRunner-Source_4
+  - first:
+      213: -8296298121853246277
+    second: SkeletonRunner-Source_5
+  - first:
+      213: 3534599247042263365
+    second: SkeletonRunner-Source_6
+  - first:
+      213: 1608226681757549225
+    second: SkeletonRunner-Source_7
+  - first:
+      213: 5369477105390054847
+    second: SkeletonRunner-Source_8
+  - first:
+      213: -6496401042179685979
+    second: SkeletonRunner-Source_9
+  - first:
+      213: 1829655987733452586
+    second: SkeletonRunner-Source_10
+  - first:
+      213: -2499685111651462687
+    second: SkeletonRunner-Source_11
+  - first:
+      213: -4079682503838055356
+    second: SkeletonRunner-Source_12
+  - first:
+      213: 9073334638580451626
+    second: SkeletonRunner-Source_13
+  - first:
+      213: -6783174799905222406
+    second: SkeletonRunner-Source_14
+  - first:
+      213: -4591736102536227742
+    second: SkeletonRunner-Source_15
+  - first:
+      213: 1667517656313424459
+    second: SkeletonRunner-Source_16
+  - first:
+      213: -954347557140761625
+    second: SkeletonRunner-Source_17
+  - first:
+      213: -5545114204613523453
+    second: SkeletonRunner-Source_18
+  - first:
+      213: 3372078574795995070
+    second: SkeletonRunner-Source_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SkeletonRunner-Source_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 594
+        width: 279
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9b4893fb1b699420800000000000000
+      internalID: 2637256824597269406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonRunner-Source_1
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 747
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 593002851af9da730800000000000000
+      internalID: 4012038358374024085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonRunner-Source_2
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 593
+        width: 225
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5ac228fea0ec0750800000000000000
+      internalID: 6272635423112219228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonRunner-Source_3
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 247
+        width: 335
+        height: 627
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb0c2748ce65d4140800000000000000
+      internalID: 4705512759506419900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonRunner-Source_4
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 575
+        width: 284
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 202450579e5e08380800000000000000
+      internalID: -8970917666868608510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonRunner-Source_5
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 588
+        width: 288
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb4623850d0addc80800000000000000
+      internalID: -8296298121853246277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonRunner-Source_6
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 594
+        width: 229
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 549315fb94b6d0130800000000000000
+      internalID: 3534599247042263365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonRunner-Source_7
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 727
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a2c67475a1915610800000000000000
+      internalID: 1608226681757549225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonRunner-Source_8
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 694
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbded588af6348a40800000000000000
+      internalID: 5369477105390054847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonRunner-Source_9
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 281
+        width: 282
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a1076aeba528d5a0800000000000000
+      internalID: -6496401042179685979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonRunner-Source_10
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 257
+        width: 235
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27d40a4d6e346910800000000000000
+      internalID: 1829655987733452586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonRunner-Source_11
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 9
+        width: 604
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e19ea582a55f4dd0800000000000000
+      internalID: -2499685111651462687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonRunner-Source_12
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 563
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4444b5ab06e0267c0800000000000000
+      internalID: -4079682503838055356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonRunner-Source_13
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 563
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a29c5dcf7c5faed70800000000000000
+      internalID: 9073334638580451626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonRunner-Source_14
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 293
+        width: 253
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af0944255725dd1a0800000000000000
+      internalID: -6783174799905222406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonRunner-Source_15
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 327
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 264ddf1c750e640c0800000000000000
+      internalID: -4591736102536227742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonRunner-Source_16
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 23
+        width: 258
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4ae0493976342710800000000000000
+      internalID: 1667517656313424459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonRunner-Source_17
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 39
+        width: 301
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e3fc5004f971c2f0800000000000000
+      internalID: -954347557140761625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonRunner-Source_18
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 17
+        width: 305
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 308c90b920ccb03b0800000000000000
+      internalID: -5545114204613523453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonRunner-Source_19
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 23
+        width: 237
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb7bb6509970cce20800000000000000
+      internalID: 3372078574795995070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SkeletonRunner-Source_0: 2637256824597269406
+      SkeletonRunner-Source_1: 4012038358374024085
+      SkeletonRunner-Source_10: 1829655987733452586
+      SkeletonRunner-Source_11: -2499685111651462687
+      SkeletonRunner-Source_12: -4079682503838055356
+      SkeletonRunner-Source_13: 9073334638580451626
+      SkeletonRunner-Source_14: -6783174799905222406
+      SkeletonRunner-Source_15: -4591736102536227742
+      SkeletonRunner-Source_16: 1667517656313424459
+      SkeletonRunner-Source_17: -954347557140761625
+      SkeletonRunner-Source_18: -5545114204613523453
+      SkeletonRunner-Source_19: 3372078574795995070
+      SkeletonRunner-Source_2: 6272635423112219228
+      SkeletonRunner-Source_3: 4705512759506419900
+      SkeletonRunner-Source_4: -8970917666868608510
+      SkeletonRunner-Source_5: -8296298121853246277
+      SkeletonRunner-Source_6: 3534599247042263365
+      SkeletonRunner-Source_7: 1608226681757549225
+      SkeletonRunner-Source_8: 5369477105390054847
+      SkeletonRunner-Source_9: -6496401042179685979
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

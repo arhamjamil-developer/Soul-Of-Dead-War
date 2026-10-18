@@ -29,6 +29,8 @@ namespace SoulCrystalDefense.Systems
         [SerializeField] private EnemyData boneRaiderData;
         [SerializeField] private EnemyData soulReaperData;
         [SerializeField] private EnemyData armoredElephantData;
+        public GameObject skeletonRunnerPrefab,shieldBearerPrefab;
+        public EnemyData skeletonRunnerData,shieldBearerData;
 
         [Header("Portals")]
         [SerializeField] private PortalVisual[] portals = new PortalVisual[BoardGrid.LANE_COUNT];
@@ -168,6 +170,10 @@ namespace SoulCrystalDefense.Systems
 
             switch (entry.enemyType)
             {
+                case EnemyType.SkeletonRunner:
+                    prefabToUse=skeletonRunnerPrefab;dataToUse=skeletonRunnerData;break;
+                case EnemyType.ShieldBearer:
+                    prefabToUse=shieldBearerPrefab;dataToUse=shieldBearerData;break;
                 case EnemyType.BoneRaider:
                     prefabToUse = boneRaiderPrefab;
                     dataToUse = boneRaiderData;

@@ -42,7 +42,8 @@ namespace SoulCrystalDefense.Systems
             if (enemy.Data == null || enemy.Data.enemyType != Data.EnemyType.ArmoredElephant) return;
             boss = enemy;
             if (bossPanel) bossPanel.SetActive(true);
-            presentation?.Show("THE COLOSSUS AWAKENS", "ARMORED ROYAL ELEPHANT");
+            if(bossLabel)bossLabel.text="CORRUPTED COLOSSUS";
+            presentation?.Show("THE COLOSSUS AWAKENS", "CORRUPTED COLOSSUS / HOSTILE");
         }
         private bool CanCast(int index)
         {

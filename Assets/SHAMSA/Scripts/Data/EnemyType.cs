@@ -4,6 +4,8 @@ namespace SoulCrystalDefense.Data
     {
         BoneRaider,
         SoulReaper,
-        ArmoredElephant
+        ArmoredElephant,
+        SkeletonRunner,
+        ShieldBearer
     }
 }

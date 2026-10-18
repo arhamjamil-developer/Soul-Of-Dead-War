@@ -1,0 +1,18 @@
+PASS SoulArcher has bound idle/walk, attack and death frames
+PASS BoneMage has bound idle/walk, attack and death frames
+PASS IronPaladin has bound idle/walk, attack and death frames
+PASS FrostWitch has bound idle/walk, attack and death frames
+PASS SkeletonRunner has bound idle/walk, attack and death frames
+PASS ShieldBearer has bound idle/walk, attack and death frames
+PASS Royal Bulwark spawns and spends 200
+PASS Royal Bulwark is limited to once per battle
+PASS Elephant has timed lifetime and rejects upgrades
+PASS Soul Express spawns and spends 150
+PASS Soul Express is limited to once per battle
+PASS Shield Bearer reduces actual damage by 35 percent
+PASS Pause opens panel and suspends battle
+PASS Settings opens from pause
+PASS Tutorial opens from pause
+PASS Resume closes panels and restores battle
+PASS Horizontal tray scroll reveals sixth guardian
+PASS Death animation completes and removes defeated enemy

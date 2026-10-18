@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: 4f06ce1b1c85a0347af8f97f8e593916
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3891984089028255361
+    second: IronPaladin-Source_0
+  - first:
+      213: 8298630958781994938
+    second: IronPaladin-Source_1
+  - first:
+      213: -5379041226628139495
+    second: IronPaladin-Source_2
+  - first:
+      213: 3488271560213138602
+    second: IronPaladin-Source_3
+  - first:
+      213: -5994420164517916384
+    second: IronPaladin-Source_4
+  - first:
+      213: -8852433372646000880
+    second: IronPaladin-Source_5
+  - first:
+      213: 5860603905558407147
+    second: IronPaladin-Source_6
+  - first:
+      213: 4680486494112379456
+    second: IronPaladin-Source_7
+  - first:
+      213: 3710059704559627849
+    second: IronPaladin-Source_8
+  - first:
+      213: 2400331339750919345
+    second: IronPaladin-Source_9
+  - first:
+      213: -6839692825310988302
+    second: IronPaladin-Source_10
+  - first:
+      213: -3415392694369453064
+    second: IronPaladin-Source_11
+  - first:
+      213: 7404759210646549604
+    second: IronPaladin-Source_12
+  - first:
+      213: -5348873239458681830
+    second: IronPaladin-Source_13
+  - first:
+      213: 8888053871743068740
+    second: IronPaladin-Source_14
+  - first:
+      213: -8134410587306553893
+    second: IronPaladin-Source_15
+  - first:
+      213: 1376373912811208015
+    second: IronPaladin-Source_16
+  - first:
+      213: -3637032559796862891
+    second: IronPaladin-Source_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IronPaladin-Source_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 555
+        width: 301
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e500a88ea130630800000000000000
+      internalID: 3891984089028255361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronPaladin-Source_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 569
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7924493e8aa2370800000000000000
+      internalID: 8298630958781994938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronPaladin-Source_2
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 575
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 916f5a6f08ec955b0800000000000000
+      internalID: -5379041226628139495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronPaladin-Source_3
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 565
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aac0a9a9084d86030800000000000000
+      internalID: 3488271560213138602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronPaladin-Source_4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 563
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0219873ce9a8fcca0800000000000000
+      internalID: -5994420164517916384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronPaladin-Source_5
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 561
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0173f91ffb6d52580800000000000000
+      internalID: -8852433372646000880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronPaladin-Source_6
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 586
+        width: 304
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be76318833c055150800000000000000
+      internalID: 5860603905558407147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronPaladin-Source_7
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 290
+        width: 292
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 042f4990bad64f040800000000000000
+      internalID: 4680486494112379456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronPaladin-Source_8
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 553
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94e64c105a7cc7330800000000000000
+      internalID: 3710059704559627849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronPaladin-Source_9
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 547
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bc4711d2a0bf4120800000000000000
+      internalID: 2400331339750919345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronPaladin-Source_10
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 581
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f7fc861d978411a0800000000000000
+      internalID: -6839692825310988302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronPaladin-Source_11
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 586
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fbf4a3a0761a90d0800000000000000
+      internalID: -3415392694369453064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronPaladin-Source_12
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 575
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 464b3ed154df2c660800000000000000
+      internalID: 7404759210646549604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronPaladin-Source_13
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 0
+        width: 1191
+        height: 879
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ce875d02cf4c5b0800000000000000
+      internalID: -5348873239458681830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronPaladin-Source_14
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 586
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ae7c9c7e5b85b70800000000000000
+      internalID: 8888053871743068740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronPaladin-Source_15
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 286
+        width: 271
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdd8a663ba4cc1f80800000000000000
+      internalID: -8134410587306553893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronPaladin-Source_16
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 592
+        width: 287
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4df93708ccd91310800000000000000
+      internalID: 1376373912811208015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronPaladin-Source_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 600
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55047cc182aa68dc0800000000000000
+      internalID: -3637032559796862891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      IronPaladin-Source_0: 3891984089028255361
+      IronPaladin-Source_1: 8298630958781994938
+      IronPaladin-Source_10: -6839692825310988302
+      IronPaladin-Source_11: -3415392694369453064
+      IronPaladin-Source_12: 7404759210646549604
+      IronPaladin-Source_13: -5348873239458681830
+      IronPaladin-Source_14: 8888053871743068740
+      IronPaladin-Source_15: -8134410587306553893
+      IronPaladin-Source_16: 1376373912811208015
+      IronPaladin-Source_17: -3637032559796862891
+      IronPaladin-Source_2: -5379041226628139495
+      IronPaladin-Source_3: 3488271560213138602
+      IronPaladin-Source_4: -5994420164517916384
+      IronPaladin-Source_5: -8852433372646000880
+      IronPaladin-Source_6: 5860603905558407147
+      IronPaladin-Source_7: 4680486494112379456
+      IronPaladin-Source_8: 3710059704559627849
+      IronPaladin-Source_9: 2400331339750919345
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -14,50 +14,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SoulCrystalDefense.Data.WaveData
   waveNumber: 1
   waveTitle: Tutorial Pressure
-  waveDuration: 45
+  waveDuration: 52
   spawns:
-  - spawnTime: 3
+  - spawnTime: 7
     laneIndex: 2
     enemyType: 0
     isElite: 0
-    notes: First threat; center-lane tutorial
-  - spawnTime: 8
+    notes: First scout; center-lane onboarding with 7s peaceful setup
+  - spawnTime: 19
     laneIndex: 1
     enemyType: 0
     isElite: 0
-    notes: Teaches a second lane
-  - spawnTime: 12
+    notes: Second threat; introduces adjacent lane defense
+  - spawnTime: 30
     laneIndex: 3
     enemyType: 0
     isElite: 0
-    notes: Teaches symmetrical pressure
-  - spawnTime: 18
+    notes: Third threat; reinforces lane symmetry
+  - spawnTime: 40
     laneIndex: 2
     enemyType: 0
     isElite: 0
-    notes: Tests the first placement
-  - spawnTime: 22
-    laneIndex: 0
-    enemyType: 0
-    isElite: 0
-    notes: Introduces an outer lane
-  - spawnTime: 25
-    laneIndex: 4
-    enemyType: 0
-    isElite: 0
-    notes: Completes outer-lane pressure
-  - spawnTime: 31
-    laneIndex: 2
-    enemyType: 1
-    isElite: 0
-    notes: Late ranged threat; signals escalation
-  - spawnTime: 35
+    notes: Center lane pressure test
+  - spawnTime: 46
     laneIndex: 1
     enemyType: 0
     isElite: 0
-    notes: Small final pressure
-  - spawnTime: 35.5
+    notes: Gentle dual-lane finish
+  - spawnTime: 46.8
     laneIndex: 3
     enemyType: 0
     isElite: 0
-    notes: Small final pressure
+    notes: Gentle dual-lane finish
