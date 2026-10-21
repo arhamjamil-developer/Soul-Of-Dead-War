@@ -1,0 +1,208 @@
+{
+  "success": true,
+  "result": [
+    {
+      "name": "SettingsPanel",
+      "size": {
+        "x": 1080,
+        "y": 1920
+      },
+      "active": false,
+      "children": [
+        {
+          "name": "PanelSurface",
+          "size": {
+            "x": 900,
+            "y": 1450
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "text": "",
+          "components": "System.String[]"
+        },
+        {
+          "name": "Heading",
+          "size": {
+            "x": 800,
+            "y": 120
+          },
+          "position": {
+            "x": 0,
+            "y": 580
+          },
+          "text": "SETTINGS",
+          "components": "System.String[]"
+        },
+        {
+          "name": "Close",
+          "size": {
+            "x": 700,
+            "y": 130
+          },
+          "position": {
+            "x": 0,
+            "y": -580
+          },
+          "text": "",
+          "components": "System.String[]"
+        },
+        {
+          "name": "VolumeLabel",
+          "size": {
+            "x": 760,
+            "y": 60
+          },
+          "position": {
+            "x": 0,
+            "y": 380
+          },
+          "text": "100%",
+          "components": "System.String[]"
+        },
+        {
+          "name": "MasterVolume",
+          "size": {
+            "x": 700,
+            "y": 80
+          },
+          "position": {
+            "x": 0,
+            "y": 300
+          },
+          "text": "",
+          "components": "System.String[]"
+        },
+        {
+          "name": "SavedHint",
+          "size": {
+            "x": 720,
+            "y": 80
+          },
+          "position": {
+            "x": 0,
+            "y": -240
+          },
+          "text": "Your audio preference is saved automatically.",
+          "components": "System.String[]"
+        },
+        {
+          "name": "MusicLabel",
+          "size": {
+            "x": 760,
+            "y": 60
+          },
+          "position": {
+            "x": 0,
+            "y": 180
+          },
+          "text": "MUSIC: 70%",
+          "components": "System.String[]"
+        },
+        {
+          "name": "MusicVolume",
+          "size": {
+            "x": 700,
+            "y": 80
+          },
+          "position": {
+            "x": 0,
+            "y": 100
+          },
+          "text": "",
+          "components": "System.String[]"
+        },
+        {
+          "name": "SfxLabel",
+          "size": {
+            "x": 760,
+            "y": 60
+          },
+          "position": {
+            "x": 0,
+            "y": -20
+          },
+          "text": "SFX: 100%",
+          "components": "System.String[]"
+        },
+        {
+          "name": "SfxVolume",
+          "size": {
+            "x": 700,
+            "y": 80
+          },
+          "position": {
+            "x": 0,
+            "y": -100
+          },
+          "text": "",
+          "components": "System.String[]"
+        }
+      ]
+    },
+    {
+      "name": "HowToPlayPanel",
+      "size": {
+        "x": 1080,
+        "y": 1920
+      },
+      "active": false,
+      "children": [
+        {
+          "name": "PanelSurface",
+          "size": {
+            "x": 900,
+            "y": 1450
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "text": "",
+          "components": "System.String[]"
+        },
+        {
+          "name": "Heading",
+          "size": {
+            "x": 800,
+            "y": 120
+          },
+          "position": {
+            "x": 0,
+            "y": 580
+          },
+          "text": "HOW TO PLAY",
+          "components": "System.String[]"
+        },
+        {
+          "name": "Close",
+          "size": {
+            "x": 700,
+            "y": 130
+          },
+          "position": {
+            "x": 0,
+            "y": -580
+          },
+          "text": "",
+          "components": "System.String[]"
+        },
+        {
+          "name": "Instructions",
+          "size": {
+            "x": 760,
+            "y": 920
+          },
+          "position": {
+            "x": 0,
+            "y": 20
+          },
+          "text": "DEFEND THE SOUL CRYSTAL\n\n1. Choose a defender card.\n\n2. Tap an empty board tile to deploy.\nPlacement costs Soul Energy.\n\n3. Defenders attack automatically.\nEnemies advance from the top.\n\n4. Keep enemies away from the crystal\nand survive each wave.\n\nSoul Energy regenerates over time.\nWatch your energy and crystal health.",
+          "components": "System.String[]"
+        }
+      ]
+    }
+  ],
+  "count": 2
+}

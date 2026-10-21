@@ -88,21 +88,19 @@ namespace SoulCrystalDefense.Systems
             if (targetCamera == null)
             {
                 targetCamera = Camera.main;
-                if (targetCamera != null) initialCameraPosition = targetCamera.transform.position;
-                else return;
+                if (targetCamera == null) return;
             }
 
             if (shakeIntensity > 0.001f)
             {
                 float offsetX = (Random.value * 2f - 1f) * shakeIntensity;
                 float offsetY = (Random.value * 2f - 1f) * shakeIntensity;
-                targetCamera.transform.position = initialCameraPosition + new Vector3(offsetX, offsetY, 0f);
+                targetCamera.transform.position += new Vector3(offsetX, offsetY, 0f);
 
                 shakeIntensity = Mathf.MoveTowards(shakeIntensity, 0f, shakeDecay * Time.unscaledDeltaTime);
 
                 if (shakeIntensity <= 0.001f)
                 {
-                    targetCamera.transform.position = initialCameraPosition;
                     shakeIntensity = 0f;
                 }
             }

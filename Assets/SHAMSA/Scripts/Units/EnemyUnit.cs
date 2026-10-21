@@ -71,7 +71,11 @@ namespace SoulCrystalDefense.Units
         public void Initialize(EnemyData data, int lane, float hpMult = 1.0f, float spdMult = 1.0f, bool isElite = false)
         {
             enemyData = data;
-            laneIndex = lane;
+            laneIndex = Mathf.Clamp(lane,0,BoardGrid.LANE_COUNT-1);
+            if(BoardGrid.Instance!=null)
+            {
+                var position=transform.position;position.x=BoardGrid.Instance.GetLaneX(laneIndex);transform.position=position;
+            }
             isEliteUnit = isElite;
             hpMultiplier = Mathf.Max(0.1f, hpMult);
             speedMultiplier = Mathf.Max(0.1f, spdMult);
@@ -84,7 +88,8 @@ namespace SoulCrystalDefense.Units
             currentHealth = baseHp * hpMultiplier;
 
             float baseDmg = data != null ? data.damage : 9f;
-            effectiveDamage = isEliteUnit ? baseDmg * 1.35f : baseDmg;
+            float waveScale = 1.0f + (hpMultiplier - 1.0f) * 0.35f;
+            effectiveDamage = (isEliteUnit ? baseDmg * 1.35f : baseDmg) * waveScale;
 
             float baseSpd = data != null ? data.moveSpeed : 0.55f;
             effectiveMoveSpeed = baseSpd * speedMultiplier;
@@ -153,11 +158,25 @@ namespace SoulCrystalDefense.Units
                 }
             }
 
+            // If playing attack animation, finish it before moving
+            if (animPlayer != null && animPlayer.CurrentState == UnitAnimationPlayer.AnimState.Attack)
+            {
+                return;
+            }
+
             // Search for defender in front within attack range in the same lane
+            var prevDefender = currentTargetDefender;
             FindTargetDefender();
 
             if (currentTargetDefender != null && !currentTargetDefender.IsDead)
             {
+                // When acquiring a target, prime the attack timer so it strikes promptly
+                if (prevDefender == null)
+                {
+                    float cd = enemyData != null ? enemyData.attackCooldown : 1.2f;
+                    attackTimer = Mathf.Max(attackTimer, cd * 0.7f);
+                }
+
                 // In combat range: stop moving and transition from Walk to Idle stance
                 if (animPlayer != null && animPlayer.CurrentState == UnitAnimationPlayer.AnimState.Walk)
                 {
@@ -165,7 +184,8 @@ namespace SoulCrystalDefense.Units
                 }
 
                 attackTimer += Time.deltaTime;
-                if (attackTimer >= enemyData.attackCooldown)
+                float cooldown = enemyData != null ? enemyData.attackCooldown : 1.2f;
+                if (attackTimer >= cooldown)
                 {
                     attackTimer = 0f;
                     PerformAttack();
@@ -189,17 +209,26 @@ namespace SoulCrystalDefense.Units
             DefenderUnit closest = null;
             float closestDist = float.MaxValue;
 
+            float baseRange = enemyData != null ? enemyData.attackRange : 1.0f;
+
             foreach (var def in defenders)
             {
                 if (def == null || def.IsDead || def.LaneIndex != laneIndex) continue;
 
-                // Defender must be below enemy
-                float dy = transform.position.y - def.transform.position.y;
-                if (dy >= 0f && dy <= enemyData.attackRange)
+                // dy is enemy y minus defender y.
+                // -0.45f allows targeting defenders when overlapping or slightly past the defender's center.
+                float dy = transform.position.y - def.CombatPosition.y;
+                float engagementRange=baseRange;
+                // A melee enemy must enter the defender's reach instead of stopping outside it.
+                if((enemyData==null || !enemyData.isRanged) && def.Data!=null && !def.Data.isRanged)
+                    engagementRange=Mathf.Min(baseRange,Mathf.Max(.1f,def.Data.attackRange*.85f));
+                float maxForwardRange=engagementRange+(currentTargetDefender == def ? .05f : 0f);
+                if (dy >= -0.45f && dy <= maxForwardRange)
                 {
-                    if (dy < closestDist)
+                    float dist = Mathf.Abs(dy);
+                    if (dist < closestDist)
                     {
-                        closestDist = dy;
+                        closestDist = dist;
                         closest = def;
                     }
                 }
@@ -210,27 +239,29 @@ namespace SoulCrystalDefense.Units
 
         private void PerformAttack()
         {
+            if (currentTargetDefender == null || currentTargetDefender.IsDead) return;
+
             if (enemyData != null && enemyData.enemyType == EnemyType.SoulReaper)
             {
                 SoundManager.Instance?.PlaySoulReaperCast();
             }
 
-            if (animPlayer != null)
+            DefenderUnit targetToHit = currentTargetDefender;
+            float damageToDeal = effectiveDamage;
+
+            if (animPlayer != null && animPlayer.HasAttackFrames)
             {
                 animPlayer.PlayAttack(() =>
                 {
-                    if (currentTargetDefender != null && !currentTargetDefender.IsDead)
+                    if (targetToHit != null && !targetToHit.IsDead)
                     {
-                        currentTargetDefender.TakeDamage(effectiveDamage);
+                        targetToHit.TakeDamage(damageToDeal);
                     }
                 });
             }
             else
             {
-                if (currentTargetDefender != null && !currentTargetDefender.IsDead)
-                {
-                    currentTargetDefender.TakeDamage(effectiveDamage);
-                }
+                targetToHit.TakeDamage(damageToDeal);
             }
         }
 

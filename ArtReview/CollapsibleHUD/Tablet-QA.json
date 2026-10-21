@@ -1,0 +1,71 @@
+{
+  "width": 1536,
+  "height": 2048,
+  "checks": [
+    {
+      "name": "All authored HUD references assigned",
+      "passed": true
+    },
+    {
+      "name": "Measured panels: top >=232, bottom 580",
+      "passed": true
+    },
+    {
+      "name": "Both panels hide after animated button clicks",
+      "passed": true
+    },
+    {
+      "name": "Hidden panels release raycasts",
+      "passed": true
+    },
+    {
+      "name": "Floating pause and return remain available",
+      "passed": true
+    },
+    {
+      "name": "Complete panel bounds moved outside safe canvas",
+      "passed": true
+    },
+    {
+      "name": "Up/down artwork swaps correctly",
+      "passed": true
+    },
+    {
+      "name": "Unscaled slide animation works during pause",
+      "passed": true
+    },
+    {
+      "name": "Collapse handles do not overlap pause menu",
+      "passed": true
+    },
+    {
+      "name": "Left neighbor camera target and rendering",
+      "passed": true
+    },
+    {
+      "name": "Right neighbor camera target and rendering",
+      "passed": true
+    },
+    {
+      "name": "Neighbor art does not create deployment cells",
+      "passed": true
+    },
+    {
+      "name": "Selecting a card returns to battle",
+      "passed": true
+    },
+    {
+      "name": "Rapid toggles settle cleanly",
+      "passed": true
+    },
+    {
+      "name": "Restored panels accept input",
+      "passed": true
+    },
+    {
+      "name": "Return is centered",
+      "passed": true
+    }
+  ],
+  "status": "passed"
+}

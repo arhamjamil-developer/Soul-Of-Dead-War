@@ -19,10 +19,13 @@ namespace SoulCrystalDefense.Grid
         [SerializeField] private float crystalY = -4.6f;
         [SerializeField] private float crystalBreachY = -4.2f;
 
-        [Header("Prefab")]
+        [Header("Prefab & Visuals")]
         [SerializeField] private GameObject cellPrefab;
+        [SerializeField] private Sprite[] stonePatches;
 
         private PlacementCell[,] cells = new PlacementCell[LANE_COUNT, ROW_COUNT];
+        public float LaneSpacing => laneSpacing;
+        public float RowSpacing => rowSpacing;
 
         private void Awake()
         {
@@ -30,19 +33,47 @@ namespace SoulCrystalDefense.Grid
             else Destroy(gameObject);
 
             EnsureGridGenerated();
+            ApplyStonePatches();
+        }
+
+        public void ApplyStonePatches()
+        {
+            if (stonePatches == null || stonePatches.Length == 0) return;
+            for (int l = 0; l < LANE_COUNT; l++)
+            {
+                for (int r = 0; r < ROW_COUNT; r++)
+                {
+                    var cell = cells[l, r];
+                    if (cell == null) continue;
+                    var art=cell.transform.Find("GroundArt");
+                    var sr = art ? art.GetComponent<SpriteRenderer>() : cell.GetComponent<SpriteRenderer>();
+                    if (sr != null)
+                    {
+                        // Gray alternating slabs keep the battlefield readable between lane accents.
+                        int index=stonePatches.Length>=6?((r%2==0)?4:(l==4?5:l)):(l+r)%stonePatches.Length;
+                        sr.sprite = stonePatches[index];
+                        sr.color = Color.white;
+                        sr.sortingOrder = -12;
+                        sr.transform.localScale=new Vector3(laneSpacing*.94f/sr.sprite.bounds.size.x,rowSpacing*.91f/sr.sprite.bounds.size.y,1);
+                        if(art)cell.SetVisualState(PlacementCell.CellVisualState.Normal);
+                    }
+                }
+            }
         }
 
         public void EnsureGridGenerated()
         {
             // If already child cells exist, map them
             var existingCells = GetComponentsInChildren<PlacementCell>();
-            if (existingCells != null && existingCells.Length == LANE_COUNT * ROW_COUNT)
+            if (existingCells != null)
             {
                 foreach (var cell in existingCells)
                 {
+                    if(cell.Lane<0||cell.Lane>=LANE_COUNT||cell.Row<0||cell.Row>=ROW_COUNT)continue;
+                    if(cells[cell.Lane,cell.Row]!=null&&cells[cell.Lane,cell.Row]!=cell)continue;
                     cells[cell.Lane, cell.Row] = cell;
+                    cell.transform.position=CalculateCellPosition(cell.Lane,cell.Row);
                 }
-                return;
             }
 
             // Otherwise instantiate them
@@ -81,26 +112,26 @@ namespace SoulCrystalDefense.Grid
         {
             float x = (lane - 2) * laneSpacing;
             float y = gridCenterY + (row - 3.5f) * rowSpacing;
-            return new Vector3(x, y, 0f);
+            return transform.TransformPoint(new Vector3(x, y, 0f));
         }
 
         public float GetLaneX(int lane)
         {
-            return (lane - 2) * laneSpacing;
+            return transform.TransformPoint(new Vector3((lane - 2) * laneSpacing,0,0)).x;
         }
 
         public Vector3 GetPortalPosition(int lane)
         {
-            return new Vector3(GetLaneX(lane), portalY, 0f);
+            return transform.TransformPoint(new Vector3((lane-2)*laneSpacing,portalY,0f));
         }
 
         public Vector3 GetSpawnPosition(int lane)
         {
-            return new Vector3(GetLaneX(lane), spawnY, 0f);
+            return transform.TransformPoint(new Vector3((lane-2)*laneSpacing,spawnY,0f));
         }
 
-        public float CrystalBreachY => crystalBreachY;
-        public float CrystalY => crystalY;
+        public float CrystalBreachY => transform.TransformPoint(new Vector3(0,crystalBreachY,0)).y;
+        public float CrystalY => transform.TransformPoint(new Vector3(0,crystalY,0)).y;
 
         public PlacementCell GetCell(int lane, int row)
         {
@@ -110,23 +141,10 @@ namespace SoulCrystalDefense.Grid
 
         public PlacementCell GetCellAtWorldPosition(Vector3 worldPos)
         {
-            // Find closest cell within threshold
-            float halfLane = laneSpacing * 0.5f;
-            float halfRow = rowSpacing * 0.5f;
-
-            for (int l = 0; l < LANE_COUNT; l++)
-            {
-                for (int r = 0; r < ROW_COUNT; r++)
-                {
-                    Vector3 cellPos = CalculateCellPosition(l, r);
-                    if (Mathf.Abs(worldPos.x - cellPos.x) <= halfLane &&
-                        Mathf.Abs(worldPos.y - cellPos.y) <= halfRow)
-                    {
-                        return cells[l, r];
-                    }
-                }
-            }
-            return null;
+            var local=transform.InverseTransformPoint(worldPos);
+            int lane=Mathf.FloorToInt(local.x/laneSpacing+2.5f);
+            int row=Mathf.FloorToInt((local.y-gridCenterY)/rowSpacing+4f);
+            return GetCell(lane,row);
         }
 
         public void SetHighlightAll(bool active)

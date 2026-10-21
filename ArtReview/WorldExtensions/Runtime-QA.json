@@ -1,0 +1,61 @@
+{
+    "status": "passed",
+    "checks": [
+        {
+            "name": "iPad-Grid-Open",
+            "passed": true,
+            "width": 524,
+            "height": 715,
+            "cameraSize": 14.565359115600586
+        },
+        {
+            "name": "iPad-Grid-Hidden",
+            "passed": true,
+            "width": 624,
+            "height": 329,
+            "cameraSize": 6.462015628814697
+        },
+        {
+            "name": "iPhone-Grid-Open",
+            "passed": true,
+            "width": 1080,
+            "height": 1920,
+            "cameraSize": 10.508596420288086
+        },
+        {
+            "name": "iPhone-Grid-Hidden",
+            "passed": true,
+            "width": 1080,
+            "height": 1920,
+            "cameraSize": 6.482765197753906
+        },
+        {
+            "name": "North area camera reachable",
+            "passed": true,
+            "width": 1080,
+            "height": 1920,
+            "cameraSize": 4.200003623962402
+        },
+        {
+            "name": "South area camera reachable",
+            "passed": true,
+            "width": 524,
+            "height": 715,
+            "cameraSize": 4.200003623962402
+        },
+        {
+            "name": "iPhone-Returned-To-Battle",
+            "passed": true,
+            "width": 1080,
+            "height": 1920,
+            "cameraSize": 10.508593559265137
+        },
+        {
+            "name": "All forty deployment cells retained",
+            "passed": true,
+            "width": 1080,
+            "height": 1920,
+            "cameraSize": 10.508593559265137
+        }
+    ]
+}

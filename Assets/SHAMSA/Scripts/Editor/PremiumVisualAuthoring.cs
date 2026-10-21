@@ -41,8 +41,8 @@ namespace SoulCrystalDefense.EditorTools
             var scaler=go.GetComponent<CanvasScaler>();scaler.uiScaleMode=CanvasScaler.ScaleMode.ScaleWithScreenSize;scaler.referenceResolution=new Vector2(1080,1920);scaler.matchWidthOrHeight=.5f;
             var bg=Img("FullBleedBackdrop",go.transform,AssetDatabase.LoadAssetAtPath<Sprite>("Assets/UI/Background.png"),0,0,1080,1920);Stretch(bg.rectTransform);
             var cover=bg.gameObject.AddComponent<AspectRatioFitter>();cover.aspectMode=AspectRatioFitter.AspectMode.EnvelopeParent;cover.aspectRatio=9f/16;
-            var safe=R("SafeArea",go.transform);Stretch(safe);safe.gameObject.AddComponent<SafeAreaFitter>();
-            var root=R("MenuComposition",safe);root.anchorMin=root.anchorMax=root.pivot=new Vector2(.5f,.5f);root.sizeDelta=new Vector2(1080,1920);root.gameObject.AddComponent<PortraitCanvasLayout>().safeArea=safe;
+            var safe=R("SafeArea",go.transform);Stretch(safe);
+            var root=R("MenuComposition",safe);root.anchorMin=root.anchorMax=root.pivot=new Vector2(.5f,.5f);root.sizeDelta=new Vector2(1080,1920);
             Img("MenuBackground",root,AssetDatabase.LoadAssetAtPath<Sprite>("Assets/UI/Background.png"),0,0,1080,1920);
             Img("Logo",root,AssetDatabase.LoadAssetAtPath<Sprite>("Assets/UI/Logo.png"),125,100,830,395).preserveAspect=false;
             var controller=go.AddComponent<MainMenuController>();
@@ -116,7 +116,7 @@ namespace SoulCrystalDefense.EditorTools
             UnityEngine.Object.FindFirstObjectByType<GameplayHUD>().screenFlow=flow;
             var result=UnityEngine.Object.FindObjectsByType<VictoryDefeatPanel>(FindObjectsInactive.Include,FindObjectsSortMode.None).FirstOrDefault();
             if(result){foreach(var image in result.GetComponentsInChildren<Image>(true).Where(im=>im.name.Contains("Panel")||im.name.Contains("Card"))){image.sprite=S("Frames/Panel");image.type=Image.Type.Sliced;image.preserveAspect=false;image.color=Color.white;}result.transform.SetAsLastSibling();}
-            root.GetComponent<GameplayComposition>().Apply();Canvas.ForceUpdateCanvases();EditorSceneManager.MarkSceneDirty(scene);EditorSceneManager.SaveScene(scene);AssetDatabase.SaveAssets();
+            Canvas.ForceUpdateCanvases();EditorSceneManager.MarkSceneDirty(scene);EditorSceneManager.SaveScene(scene);AssetDatabase.SaveAssets();
             Debug.Log("PREMIUM_UI|Gameplay HUD, portraits, ability icons, pause, settings and tutorial saved.");
         }
         static void StyleCards(Transform tray)

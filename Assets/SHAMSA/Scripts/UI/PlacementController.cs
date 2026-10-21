@@ -24,9 +24,13 @@ namespace SoulCrystalDefense.UI
         private PlacementCell lastHoveredCell = null;
         private Camera mainCamera;
         private readonly List<RaycastResult> pointerUiHits = new List<RaycastResult>();
+        private bool inspectionPending;
+        private Vector2 inspectionStart;
 
         public bool IsDragging => isDragging;
         public DefenderCardUI SelectedCard => selectedCard;
+        public event System.Action<DefenderCardUI> OnCardSelected;
+        public event System.Action<DefenderUnit> OnDefenderPlaced;
 
         private void Awake()
         {
@@ -94,6 +98,10 @@ namespace SoulCrystalDefense.UI
 
         public void SelectCard(DefenderCardUI card)
         {
+            if (card == null || card.Data == null) return;
+            if (FirstWaveTutorial.Instance != null && !FirstWaveTutorial.Instance.AllowsCard(card)) return;
+            if(CinemachineCameraPanController.Instance!=null&&!CinemachineCameraPanController.Instance.IsBattleFraming)
+                CinemachineCameraPanController.Instance.RecenterCamera();
             if (selectedCard != null)
             {
                 selectedCard.SetSelected(false);
@@ -101,6 +109,7 @@ namespace SoulCrystalDefense.UI
 
             selectedCard = card;
             selectedCard.SetSelected(true);
+            OnCardSelected?.Invoke(card);
 
             if (BoardGrid.Instance != null)
             {
@@ -248,6 +257,7 @@ namespace SoulCrystalDefense.UI
 
         public void CancelPlacement()
         {
+            inspectionPending=false;
             if (lastHoveredCell != null)
             {
                 lastHoveredCell.SetVisualState(lastHoveredCell.IsOccupied
@@ -338,8 +348,22 @@ namespace SoulCrystalDefense.UI
                     }
                 }
             }
-            else if (selectedCard == null && !isDragging && pointerDown)
+            else if (selectedCard == null && !isDragging)
             {
+                if (FirstWaveTutorial.Instance != null && FirstWaveTutorial.Instance.HoldsClock) return;
+                if(GameManager.Instance!=null&&GameManager.Instance.IsPaused){inspectionPending=false;return;}
+                if(pointerDown)
+                {
+                    inspectionPending=true;inspectionStart=screenPos;
+                    if(EventSystem.current!=null)
+                    {
+                        pointerUiHits.Clear();EventSystem.current.RaycastAll(new PointerEventData(EventSystem.current){position=screenPos},pointerUiHits);
+                        inspectionPending=pointerUiHits.Count==0;
+                    }
+                }
+                if(UnityEngine.InputSystem.Pointer.current==null||!UnityEngine.InputSystem.Pointer.current.press.wasReleasedThisFrame||!inspectionPending)return;
+                inspectionPending=false;
+                if(Vector2.Distance(inspectionStart,screenPos)>12f||(CinemachineCameraPanController.Instance!=null&&CinemachineCameraPanController.Instance.LastGestureWasDrag))return;
                 // In-Battle Inspection & Upgrade on Tap
                 if (EventSystem.current != null)
                 {
@@ -380,6 +404,7 @@ namespace SoulCrystalDefense.UI
         public bool DeployDefender(DefenderData data, int lane, int row)
         {
             if (data == null || (GameManager.Instance != null && (!GameManager.Instance.IsGameActive || GameManager.Instance.IsPaused))) return false;
+            if (FirstWaveTutorial.Instance != null && !FirstWaveTutorial.Instance.AllowsPlacement(data, lane, row)) return false;
             var cell = BoardGrid.Instance != null ? BoardGrid.Instance.GetCell(lane, row) : null;
             if (cell == null || cell.IsOccupied) return false;
 
@@ -413,6 +438,7 @@ namespace SoulCrystalDefense.UI
 
             StartCoroutine(PlacementBounce(unitObj.transform));
             SoundManager.Instance?.PlayDefenderPlacement();
+            OnDefenderPlaced?.Invoke(defender);
             SoulCrystalDefense.Presentation.GameplayEffects.Instance?.Ring(cell.transform.position, new Color(0.2f, 1f, 0.95f), 0.65f, 0.45f);
             SoulCrystalDefense.Presentation.GameplayEffects.Instance?.Ring(cell.transform.position, new Color(1f, 0.85f, 0.35f), 1.25f, 0.75f);
             SoulCrystalDefense.Systems.MobileSmoothPerformanceSystem.Instance?.TriggerShake(0.045f, 0.15f);
@@ -479,6 +505,7 @@ namespace SoulCrystalDefense.UI
 
         public bool TriggerSoulFusion(DefenderUnit existing, DefenderData incomingData, PlacementCell cell)
         {
+            if (FirstWaveTutorial.Instance != null && FirstWaveTutorial.Instance.HoldsClock) return false;
             if (existing == null || incomingData == null || cell == null) return false;
 
             int fusionCost = 100;

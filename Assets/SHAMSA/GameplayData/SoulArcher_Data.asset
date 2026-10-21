@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SoulArcher_Data
   m_EditorClassIdentifier: Assembly-CSharp::SoulCrystalDefense.Data.DefenderData
   defenderType: 4
-  displayName: SOUL ARCHER
+  displayName: Archer
   cardIcon: {fileID: 21300000, guid: c181acfa5570d5d42b715fb37baf5d89, type: 3}
   unitPrefab: {fileID: 3918287448237456349, guid: 5c45786eb56260c4c9ee171cf6fdebfd, type: 3}
   soulCost: 150

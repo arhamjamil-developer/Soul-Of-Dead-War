@@ -11,9 +11,9 @@ namespace SoulCrystalDefense.Grid
 
         [Header("Visual Components")]
         [SerializeField] private SpriteRenderer cellRenderer;
-        [SerializeField] private Color normalColor = new Color(1f, 1f, 1f, 0.08f);
-        [SerializeField] private Color validColor = new Color(0.1f, 0.9f, 1f, 0.45f);
-        [SerializeField] private Color invalidColor = new Color(1f, 0.2f, 0.2f, 0.5f);
+        [SerializeField] private Color normalColor = Color.white;
+        [SerializeField] private Color validColor = new Color(0.4f, 1f, 0.6f, 1f);
+        [SerializeField] private Color invalidColor = new Color(1f, 0.35f, 0.35f, 1f);
 
         private DefenderUnit occupant;
 

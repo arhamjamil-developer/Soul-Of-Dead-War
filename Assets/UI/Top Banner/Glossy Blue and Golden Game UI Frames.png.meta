@@ -1,0 +1,386 @@
+fileFormatVersion: 2
+guid: 8f30b377869e97c4691d21a2ac7f0df0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 169752139807502720
+    second: Glossy Blue and Golden Game UI Frames_0
+  - first:
+      213: 3033198946616505941
+    second: Glossy Blue and Golden Game UI Frames_1
+  - first:
+      213: 2706279223526518541
+    second: Glossy Blue and Golden Game UI Frames_2
+  - first:
+      213: 1113903663978873293
+    second: Glossy Blue and Golden Game UI Frames_3
+  - first:
+      213: -7356507977138990571
+    second: Glossy Blue and Golden Game UI Frames_4
+  - first:
+      213: 3179500882402165086
+    second: Glossy Blue and Golden Game UI Frames_5
+  - first:
+      213: -5278146070090044419
+    second: Glossy Blue and Golden Game UI Frames_6
+  - first:
+      213: 3861921372160959913
+    second: Glossy Blue and Golden Game UI Frames_7
+  - first:
+      213: -1534349410961294725
+    second: Glossy Blue and Golden Game UI Frames_8
+  - first:
+      213: 4187231385527869251
+    second: Glossy Blue and Golden Game UI Frames_9
+  - first:
+      213: -8226668240389235071
+    second: Glossy Blue and Golden Game UI Frames_10
+  - first:
+      213: -2846447870869407976
+    second: Glossy Blue and Golden Game UI Frames_11
+  - first:
+      213: 5215421580052470413
+    second: Glossy Blue and Golden Game UI Frames_12
+  - first:
+      213: 2913746791249174912
+    second: Glossy Blue and Golden Game UI Frames_13
+  - first:
+      213: 1997597326710759951
+    second: Glossy Blue and Golden Game UI Frames_14
+  - first:
+      213: -7255711020034071131
+    second: Glossy Blue and Golden Game UI Frames_15
+  - first:
+      213: 3448493081559279102
+    second: Glossy Blue and Golden Game UI Frames_16
+  - first:
+      213: -4980583857690921708
+    second: Glossy Blue and Golden Game UI Frames_17
+  - first:
+      213: -5356187401243560108
+    second: Glossy Blue and Golden Game UI Frames_18
+  - first:
+      213: -2580405128026817882
+    second: Glossy Blue and Golden Game UI Frames_19
+  - first:
+      213: 1521579737020210252
+    second: Glossy Blue and Golden Game UI Frames_20
+  - first:
+      213: -680991087382287500
+    second: Glossy Blue and Golden Game UI Frames_21
+  - first:
+      213: 6848887504714381677
+    second: Glossy Blue and Golden Game UI Frames_22
+  - first:
+      213: 1279407378948945016
+    second: Glossy Blue and Golden Game UI Frames_23
+  - first:
+      213: -268525186572341374
+    second: Glossy Blue and Golden Game UI Frames_24
+  - first:
+      213: 3050661727839062459
+    second: Glossy Blue and Golden Game UI Frames_25
+  - first:
+      213: 7784638542097857541
+    second: Glossy Blue and Golden Game UI Frames_26
+  - first:
+      213: 6697495385702008433
+    second: Glossy Blue and Golden Game UI Frames_27
+  - first:
+      213: -4567665535733992110
+    second: Glossy Blue and Golden Game UI Frames_28
+  - first:
+      213: -3894583380483366210
+    second: Glossy Blue and Golden Game UI Frames_29
+  - first:
+      213: -5286664510870889764
+    second: Glossy Blue and Golden Game UI Frames_30
+  - first:
+      213: 677468472373061947
+    second: Glossy Blue and Golden Game UI Frames_31
+  - first:
+      213: 7926592305707291966
+    second: Glossy Blue and Golden Game UI Frames_32
+  - first:
+      213: 747409650174443470
+    second: Glossy Blue and Golden Game UI Frames_33
+  - first:
+      213: -5124927747752843037
+    second: Glossy Blue and Golden Game UI Frames_34
+  - first:
+      213: -5643632231242076664
+    second: Glossy Blue and Golden Game UI Frames_35
+  - first:
+      213: 1931110447760374497
+    second: Glossy Blue and Golden Game UI Frames_36
+  - first:
+      213: 3446726131704911940
+    second: Glossy Blue and Golden Game UI Frames_37
+  - first:
+      213: 742286287526434417
+    second: Glossy Blue and Golden Game UI Frames_38
+  - first:
+      213: 5878855790236746678
+    second: Glossy Blue and Golden Game UI Frames_39
+  - first:
+      213: 4058773558892897687
+    second: Glossy Blue and Golden Game UI Frames_40
+  - first:
+      213: 1562874453443455768
+    second: Glossy Blue and Golden Game UI Frames_41
+  - first:
+      213: 2816701936290519686
+    second: Glossy Blue and Golden Game UI Frames_42
+  - first:
+      213: -7647683371919726155
+    second: Glossy Blue and Golden Game UI Frames_43
+  - first:
+      213: -6477084406946714579
+    second: Glossy Blue and Golden Game UI Frames_44
+  - first:
+      213: -6997812273771843888
+    second: Glossy Blue and Golden Game UI Frames_45
+  - first:
+      213: 7715979123940844759
+    second: Glossy Blue and Golden Game UI Frames_46
+  - first:
+      213: 2036696438077147811
+    second: Glossy Blue and Golden Game UI Frames_47
+  - first:
+      213: -638343873603762603
+    second: Glossy Blue and Golden Game UI Frames_48
+  - first:
+      213: 937524294087512455
+    second: Glossy Blue and Golden Game UI Frames_49
+  - first:
+      213: -4374546093628859604
+    second: Glossy Blue and Golden Game UI Frames_50
+  - first:
+      213: -4315852262770725572
+    second: Glossy Blue and Golden Game UI Frames_51
+  - first:
+      213: -6373248093455040328
+    second: Glossy Blue and Golden Game UI Frames_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Glossy Blue and Golden Game UI Frames_0
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 181
+        width: 711
+        height: 384
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 081b619fba41b5200800000000000000
+      internalID: 169752139807502720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Blue and Golden Game UI Frames_1
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 186
+        width: 740
+        height: 384
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af09fd7da7a7d643a8a002023c6418d
+      internalID: 3033198946616505941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Blue and Golden Game UI Frames_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 181
+        width: 704
+        height: 384
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d98ec1c4295f624e8cff608896838ac
+      internalID: 2706279223526518541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 86f65f4e225bfb84e97184dc6917758e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":2167.0,"y":726.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Glossy Blue and Golden Game UI Frames_0: 169752139807502720
+      Glossy Blue and Golden Game UI Frames_1: 3033198946616505941
+      Glossy Blue and Golden Game UI Frames_2: 2706279223526518541
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

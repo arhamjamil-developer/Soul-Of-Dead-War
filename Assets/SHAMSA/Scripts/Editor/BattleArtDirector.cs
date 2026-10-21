@@ -80,10 +80,7 @@ namespace SoulCrystalDefense.EditorTools
             Atmosphere(); HudEvents(top);
             var camera=Camera.main;
             camera.transform.position=new Vector3(0,-.4f,-10);
-            var cameraData=new SerializedObject(camera.GetComponent<ResponsiveCamera>());
-            cameraData.FindProperty("baseOrthographicSize").floatValue=7.15f;
-            cameraData.ApplyModifiedPropertiesWithoutUndo();
-            camera.GetComponent<ResponsiveCamera>().ApplyResponsiveSize();
+            camera.orthographicSize=7.15f;
             foreach(var text in Find("HUDCanvas").GetComponentsInChildren<Text>(true)) text.raycastTarget=false;
             EditorSceneManager.MarkSceneDirty(scene); EditorSceneManager.SaveScene(scene); AssetDatabase.SaveAssets();
             Debug.Log("[Art Direction] Moonlit presentation authored and saved; gameplay data untouched.");

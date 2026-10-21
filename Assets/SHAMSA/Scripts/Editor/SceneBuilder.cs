@@ -29,7 +29,6 @@ namespace SoulCrystalDefense.EditorTools
             cam.clearFlags = CameraClearFlags.SolidColor;
             cam.backgroundColor = new Color(0.04f, 0.05f, 0.08f, 1f);
             camObj.AddComponent<AudioListener>();
-            var respCam = camObj.AddComponent<ResponsiveCamera>();
 
             // 2. Event System with InputSystemUIInputModule
             var eventObj = new GameObject("EventSystem");
@@ -191,7 +190,6 @@ namespace SoulCrystalDefense.EditorTools
             safeAreaRect.anchorMax = Vector2.one;
             safeAreaRect.offsetMin = Vector2.zero;
             safeAreaRect.offsetMax = Vector2.zero;
-            safeAreaObj.AddComponent<SafeAreaFitter>();
 
             // Top HUD
             var topHudObj = new GameObject("TopHUD");

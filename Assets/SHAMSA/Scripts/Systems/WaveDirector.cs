@@ -58,7 +58,11 @@ namespace SoulCrystalDefense.Systems
         private void Awake()
         {
             if (Instance == null) Instance = this;
-            else Destroy(gameObject);
+            else if (Instance != this)
+            {
+                Destroy(this);
+                return;
+            }
 
             #if UNITY_EDITOR
             if (boneRaiderPrefab == null)
@@ -92,6 +96,9 @@ namespace SoulCrystalDefense.Systems
             totalSpawnsInWave = waveData.spawns.Count;
             completedSpawnsCount = 0;
             waveTimer = 0f;
+
+            int waveNum = waveData != null ? waveData.waveNumber : 1;
+            maxActiveEnemies = Mathf.Clamp(16 + (waveNum / 5) * 2, 16, 32);
 
             StartCoroutine(CountdownRoutine(2.0f));
         }
@@ -246,6 +253,11 @@ namespace SoulCrystalDefense.Systems
             isWaveActive = false;
             isCountingDown = false;
             StopAllCoroutines();
+        }
+
+        private void OnDestroy()
+        {
+            if (Instance == this) Instance = null;
         }
     }
 }

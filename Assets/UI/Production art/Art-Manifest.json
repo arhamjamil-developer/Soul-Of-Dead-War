@@ -1,0 +1,42 @@
+[
+  {
+    "file": "01-Sunstone-Path.png",
+    "size": [
+      1430,
+      1100
+    ],
+    "mode": "RGBA"
+  },
+  {
+    "file": "02-Moss-Slate-Path.png",
+    "size": [
+      1429,
+      1101
+    ],
+    "mode": "RGBA"
+  },
+  {
+    "file": "03-Amethyst-Path.png",
+    "size": [
+      1430,
+      1100
+    ],
+    "mode": "RGBA"
+  },
+  {
+    "file": "04-Soul-Defence-Home-1080x1920.png",
+    "size": [
+      1080,
+      1920
+    ],
+    "mode": "RGB"
+  },
+  {
+    "file": "05-Battlefield-1080x1920.png",
+    "size": [
+      1080,
+      1920
+    ],
+    "mode": "RGB"
+  }
+]

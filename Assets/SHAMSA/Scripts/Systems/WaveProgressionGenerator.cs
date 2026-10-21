@@ -105,32 +105,33 @@ namespace SoulCrystalDefense.Systems
         }
 
         /// <summary>
-        /// Threat budget formula: budget(n) = round(8 + 2.5 * pow(n, 0.62))
+        /// Threat budget formula ramping smoothly for unlimited waves
         /// </summary>
         public static int CalculateBaseThreatBudget(int waveNumber)
         {
             if (waveNumber <= 1) return TUTORIAL_BUDGET_FLOOR;
-            return Mathf.RoundToInt(8f + 2.5f * Mathf.Pow(waveNumber, 0.62f));
+            float n = waveNumber - 1;
+            return Mathf.RoundToInt(10f + 3.2f * n + 0.07f * n * n);
         }
 
         /// <summary>
-        /// HP scaling curve capped at 4.5x base health
+        /// HP scaling curve scaling into later waves (e.g. ~2.6x at wave 20, ~4.8x at wave 40)
         /// </summary>
         public static float CalculateHpMultiplier(int waveNumber)
         {
             if (waveNumber <= 1) return 1.0f;
-            float t = Mathf.Clamp01((waveNumber - 1f) / 998f);
-            return Mathf.Min(MAX_HP_MULTIPLIER, 1.0f + 3.5f * Mathf.Pow(t, 0.75f));
+            float n = waveNumber - 1;
+            return 1.0f + 0.075f * n + 0.0018f * Mathf.Pow(n, 1.65f);
         }
 
         /// <summary>
-        /// Movement speed scaling curve capped at 1.6x base speed
+        /// Movement speed scaling curve capped at 1.55x base speed
         /// </summary>
         public static float CalculateSpeedMultiplier(int waveNumber)
         {
             if (waveNumber <= 1) return 1.0f;
-            float t = Mathf.Clamp01((waveNumber - 1f) / 998f);
-            return Mathf.Min(MAX_SPEED_MULTIPLIER, 1.0f + 0.6f * Mathf.Pow(t, 0.75f));
+            float n = waveNumber - 1;
+            return 1.0f + Mathf.Min(0.55f, 0.012f * n + 0.0003f * Mathf.Pow(n, 1.4f));
         }
 
         /// <summary>
@@ -139,16 +140,12 @@ namespace SoulCrystalDefense.Systems
         public static WavePattern DeterminePattern(int waveNumber)
         {
             if (waveNumber == 1) return WavePattern.Tutorial;
-            if (waveNumber == 20 || waveNumber == 999) return WavePattern.GuardedBoss;
-            if (waveNumber % 20 == 0 && waveNumber > 20) return WavePattern.GuardedBoss;
-            if (waveNumber == 6 || waveNumber == 11 || waveNumber == 16 || (waveNumber > 20 && waveNumber % 10 == 1)) return WavePattern.RecoveryWave;
-            if (waveNumber == 2) return WavePattern.CrossLane;
-            if (waveNumber == 3) return WavePattern.RangedPressure;
-            if (waveNumber == 4) return WavePattern.SplitPortals;
-            if (waveNumber == 5 || waveNumber == 14 || (waveNumber > 5 && waveNumber % 7 == 0)) return WavePattern.Rush;
-            if (waveNumber == 8 || (waveNumber % 4 == 0)) return WavePattern.CrossLane;
-            if (waveNumber == 9 || waveNumber == 12) return WavePattern.SplitPortals;
-            return WavePattern.RangedPressure;
+            if (waveNumber % 10 == 0) return WavePattern.GuardedBoss;
+            if (waveNumber % 5 == 0) return WavePattern.Rush;
+            if (waveNumber % 6 == 0) return WavePattern.RecoveryWave;
+            if (waveNumber % 3 == 0) return WavePattern.RangedPressure;
+            if (waveNumber % 4 == 0) return WavePattern.SplitPortals;
+            return WavePattern.CrossLane;
         }
 
         /// <summary>
@@ -244,10 +241,10 @@ namespace SoulCrystalDefense.Systems
                 return wave;
             }
 
-            if (waveNumber == 20)
+            if (waveNumber % 10 == 0)
             {
-                // Chapter 1 Climax Boss Wave
-                wave.spawns = BuildWave20BossSpawns(effectiveBudget, rng);
+                // Milestone Boss Waves (10, 20, 30, 40, etc.)
+                wave.spawns = BuildBossWaveSpawns(waveNumber, effectiveBudget, rng);
                 return wave;
             }
 
@@ -263,8 +260,8 @@ namespace SoulCrystalDefense.Systems
             {
                 var entry=wave.spawns[i];
                 if(entry.enemyType!=EnemyType.BoneRaider||entry.isElite)continue;
-                if(waveNumber>=7&&i%7==0)entry.enemyType=EnemyType.ShieldBearer;
-                else if(waveNumber>=3&&i%5==0)entry.enemyType=EnemyType.SkeletonRunner;
+                if(waveNumber>=4 && (i % 3 == 0)) entry.enemyType=EnemyType.SkeletonRunner;
+                else if(waveNumber>=6 && (i % 4 == 1)) entry.enemyType=EnemyType.ShieldBearer;
             }
             return wave;
         }
@@ -283,30 +280,106 @@ namespace SoulCrystalDefense.Systems
             };
         }
 
-        private List<EnemySpawnEntry> BuildWave20BossSpawns(int budget, System.Random rng)
+        private List<EnemySpawnEntry> BuildBossWaveSpawns(int waveNumber, int budget, System.Random rng)
         {
-            // Armored Elephant Boss (12) + 1 Elite Reaper (4) + 4 Soul Reapers (8) = 24 threat points
             var list = new List<EnemySpawnEntry>();
 
-            // Opening skirmish to build tension
-            list.Add(new EnemySpawnEntry { spawnTime = 3.0f, laneIndex = 1, enemyType = EnemyType.BoneRaider, notes = "Boss vanguard" });
-            list.Add(new EnemySpawnEntry { spawnTime = 5.0f, laneIndex = 3, enemyType = EnemyType.BoneRaider, notes = "Boss vanguard" });
-            list.Add(new EnemySpawnEntry { spawnTime = 9.0f, laneIndex = 2, enemyType = EnemyType.SoulReaper, notes = "Ranged scouting" });
+            // Vanguard to open the boss wave
+            list.Add(new EnemySpawnEntry { spawnTime = 2.0f, laneIndex = 1, enemyType = EnemyType.SkeletonRunner, notes = "Boss vanguard" });
+            list.Add(new EnemySpawnEntry { spawnTime = 3.2f, laneIndex = 3, enemyType = EnemyType.SkeletonRunner, notes = "Boss vanguard" });
+            list.Add(new EnemySpawnEntry { spawnTime = 5.0f, laneIndex = 2, enemyType = EnemyType.ShieldBearer, notes = "Boss vanguard tank" });
 
-            // Mid-wave Boss Entrance in Center Lane (Lane 2)
-            list.Add(new EnemySpawnEntry { spawnTime = 16.0f, laneIndex = 2, enemyType = EnemyType.ArmoredElephant, isElite = true, notes = "Armored Elephant Boss" });
+            if (waveNumber == 10)
+            {
+                // Wave 10 Mini-Boss
+                list.Add(new EnemySpawnEntry { spawnTime = 12.0f, laneIndex = 2, enemyType = EnemyType.ArmoredElephant, isElite = true, notes = "Wave 10 Colossus" });
+                list.Add(new EnemySpawnEntry { spawnTime = 14.5f, laneIndex = 1, enemyType = EnemyType.SoulReaper, notes = "Flank reaper" });
+                list.Add(new EnemySpawnEntry { spawnTime = 15.0f, laneIndex = 3, enemyType = EnemyType.SoulReaper, notes = "Flank reaper" });
+                list.Add(new EnemySpawnEntry { spawnTime = 20.0f, laneIndex = 0, enemyType = EnemyType.BoneRaider, notes = "Outer scout" });
+                list.Add(new EnemySpawnEntry { spawnTime = 20.5f, laneIndex = 4, enemyType = EnemyType.BoneRaider, notes = "Outer scout" });
+                list.Add(new EnemySpawnEntry { spawnTime = 25.0f, laneIndex = 2, enemyType = EnemyType.SoulReaper, isElite = true, notes = "Elite artillery" });
+            }
+            else if (waveNumber == 20)
+            {
+                // Wave 20 Milestone Boss
+                list.Add(new EnemySpawnEntry { spawnTime = 7.0f, laneIndex = 0, enemyType = EnemyType.BoneRaider, notes = "Left probe" });
+                list.Add(new EnemySpawnEntry { spawnTime = 7.5f, laneIndex = 4, enemyType = EnemyType.BoneRaider, notes = "Right probe" });
+                list.Add(new EnemySpawnEntry { spawnTime = 9.5f, laneIndex = 2, enemyType = EnemyType.ShieldBearer, notes = "Center blocker" });
 
-            // Flanking escorts
-            list.Add(new EnemySpawnEntry { spawnTime = 18.0f, laneIndex = 1, enemyType = EnemyType.SoulReaper, notes = "Boss left flank" });
-            list.Add(new EnemySpawnEntry { spawnTime = 18.5f, laneIndex = 3, enemyType = EnemyType.SoulReaper, notes = "Boss right flank" });
+                // Mid-wave Boss Entrance in Center Lane (Lane 2)
+                list.Add(new EnemySpawnEntry { spawnTime = 14.0f, laneIndex = 2, enemyType = EnemyType.ArmoredElephant, isElite = true, notes = "Armored Elephant Boss" });
 
-            // Elite Reaper behind boss
-            list.Add(new EnemySpawnEntry { spawnTime = 24.0f, laneIndex = 2, enemyType = EnemyType.SoulReaper, isElite = true, notes = "Elite Reaper artillery" });
+                // Heavy flanking escorts
+                list.Add(new EnemySpawnEntry { spawnTime = 16.0f, laneIndex = 1, enemyType = EnemyType.ShieldBearer, notes = "Boss left shield" });
+                list.Add(new EnemySpawnEntry { spawnTime = 16.5f, laneIndex = 3, enemyType = EnemyType.ShieldBearer, notes = "Boss right shield" });
+                list.Add(new EnemySpawnEntry { spawnTime = 18.0f, laneIndex = 1, enemyType = EnemyType.SoulReaper, notes = "Boss left flank" });
+                list.Add(new EnemySpawnEntry { spawnTime = 18.5f, laneIndex = 3, enemyType = EnemyType.SoulReaper, notes = "Boss right flank" });
 
-            // Outer lane pressure
-            list.Add(new EnemySpawnEntry { spawnTime = 29.0f, laneIndex = 0, enemyType = EnemyType.BoneRaider, notes = "Outer split" });
-            list.Add(new EnemySpawnEntry { spawnTime = 29.5f, laneIndex = 4, enemyType = EnemyType.BoneRaider, notes = "Outer split" });
-            list.Add(new EnemySpawnEntry { spawnTime = 35.0f, laneIndex = 2, enemyType = EnemyType.SoulReaper, notes = "Final ranged wave" });
+                // Elite Reaper behind boss
+                list.Add(new EnemySpawnEntry { spawnTime = 22.0f, laneIndex = 2, enemyType = EnemyType.SoulReaper, isElite = true, notes = "Elite Reaper artillery" });
+
+                // Runner rush on outer lanes
+                list.Add(new EnemySpawnEntry { spawnTime = 26.0f, laneIndex = 0, enemyType = EnemyType.SkeletonRunner, notes = "Outer rush left" });
+                list.Add(new EnemySpawnEntry { spawnTime = 26.5f, laneIndex = 4, enemyType = EnemyType.SkeletonRunner, notes = "Outer rush right" });
+                list.Add(new EnemySpawnEntry { spawnTime = 30.0f, laneIndex = 2, enemyType = EnemyType.SoulReaper, notes = "Final ranged wave" });
+                list.Add(new EnemySpawnEntry { spawnTime = 32.0f, laneIndex = 1, enemyType = EnemyType.BoneRaider, notes = "Cleanup swarm" });
+                list.Add(new EnemySpawnEntry { spawnTime = 32.5f, laneIndex = 3, enemyType = EnemyType.BoneRaider, notes = "Cleanup swarm" });
+            }
+            else if (waveNumber == 30)
+            {
+                // Wave 30 Twin Boss Siege
+                list.Add(new EnemySpawnEntry { spawnTime = 6.0f, laneIndex = 1, enemyType = EnemyType.ShieldBearer, notes = "Left tank" });
+                list.Add(new EnemySpawnEntry { spawnTime = 6.5f, laneIndex = 3, enemyType = EnemyType.ShieldBearer, notes = "Right tank" });
+                list.Add(new EnemySpawnEntry { spawnTime = 10.0f, laneIndex = 2, enemyType = EnemyType.SoulReaper, isElite = true, notes = "Center Elite artillery" });
+
+                // Dual Elephants
+                list.Add(new EnemySpawnEntry { spawnTime = 15.0f, laneIndex = 1, enemyType = EnemyType.ArmoredElephant, isElite = true, notes = "Twin Boss Left" });
+                list.Add(new EnemySpawnEntry { spawnTime = 18.0f, laneIndex = 3, enemyType = EnemyType.ArmoredElephant, isElite = true, notes = "Twin Boss Right" });
+
+                list.Add(new EnemySpawnEntry { spawnTime = 21.0f, laneIndex = 0, enemyType = EnemyType.SkeletonRunner, notes = "Flank rush" });
+                list.Add(new EnemySpawnEntry { spawnTime = 21.5f, laneIndex = 4, enemyType = EnemyType.SkeletonRunner, notes = "Flank rush" });
+                list.Add(new EnemySpawnEntry { spawnTime = 24.0f, laneIndex = 2, enemyType = EnemyType.SoulReaper, isElite = true, notes = "Elite Artillery 2" });
+                list.Add(new EnemySpawnEntry { spawnTime = 28.0f, laneIndex = 1, enemyType = EnemyType.ShieldBearer, notes = "Heavy escort" });
+                list.Add(new EnemySpawnEntry { spawnTime = 28.5f, laneIndex = 3, enemyType = EnemyType.ShieldBearer, notes = "Heavy escort" });
+            }
+            else
+            {
+                // Wave 40+ Milestone Boss: Multi-Colossus Invasion
+                int elephantCount = Mathf.Clamp(waveNumber / 15, 2, 4);
+                for (int e = 0; e < elephantCount; e++)
+                {
+                    int lane = (e % 2 == 0) ? 1 + (e % 3) : 3 - (e % 3);
+                    lane = Mathf.Clamp(lane, 0, 4);
+                    list.Add(new EnemySpawnEntry
+                    {
+                        spawnTime = 12.0f + e * 5.0f,
+                        laneIndex = lane,
+                        enemyType = EnemyType.ArmoredElephant,
+                        isElite = true,
+                        notes = $"Colossus Behemoth {e + 1}"
+                    });
+                }
+
+                // Escalating escorts
+                for (int s = 0; s < 6; s++)
+                {
+                    list.Add(new EnemySpawnEntry
+                    {
+                        spawnTime = 6.0f + s * 4.0f,
+                        laneIndex = s % 5,
+                        enemyType = (s % 2 == 0) ? EnemyType.ShieldBearer : EnemyType.SoulReaper,
+                        isElite = (s % 3 == 0),
+                        notes = "Grand Phalanx"
+                    });
+                    list.Add(new EnemySpawnEntry
+                    {
+                        spawnTime = 8.0f + s * 4.5f,
+                        laneIndex = (s + 2) % 5,
+                        enemyType = EnemyType.SkeletonRunner,
+                        notes = "Speed flanker"
+                    });
+                }
+            }
 
             return list;
         }

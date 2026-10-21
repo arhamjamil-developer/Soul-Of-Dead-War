@@ -19,7 +19,6 @@ namespace SoulCrystalDefense.EditorTools
             try
             {
                 camera.targetTexture=rt;
-                camera.GetComponent<ResponsiveCamera>().ApplyResponsiveSize();
                 canvas.renderMode=RenderMode.ScreenSpaceCamera;canvas.worldCamera=camera;canvas.planeDistance=1;
                 Canvas.ForceUpdateCanvases();camera.Render();RenderTexture.active=rt;
                 texture.ReadPixels(new Rect(0,0,width,height),0,0);texture.Apply();

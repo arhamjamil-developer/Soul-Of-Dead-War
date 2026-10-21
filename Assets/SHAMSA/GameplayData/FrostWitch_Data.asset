@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FrostWitch_Data
   m_EditorClassIdentifier: Assembly-CSharp::SoulCrystalDefense.Data.DefenderData
   defenderType: 7
-  displayName: FROST WITCH
+  displayName: Witch
   cardIcon: {fileID: 21300000, guid: bdc2312a2c885b441878c5e3a4abd8cf, type: 3}
   unitPrefab: {fileID: 8969333627157172652, guid: bb80c4bf0adac204e951cf27cdeb5a6e, type: 3}
   soulCost: 160

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DwarfGuardian_Data
   m_EditorClassIdentifier: Assembly-CSharp::SoulCrystalDefense.Data.DefenderData
   defenderType: 0
-  displayName: Dwarf Guardian
+  displayName: Dwarf
   cardIcon: {fileID: -786724977399321365, guid: fc42f7c901e81244c914ff79c632a700, type: 3}
   unitPrefab: {fileID: 3988263755522584316, guid: dba873cf2ebf78e4eb400d70a89582bd, type: 3}
   soulCost: 100

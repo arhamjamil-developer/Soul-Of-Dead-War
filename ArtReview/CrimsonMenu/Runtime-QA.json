@@ -1,0 +1,89 @@
+{
+    "status": "failed",
+    "checks": [
+        {
+            "name": "Phone: all controls on screen",
+            "passed": true,
+            "width": 1080,
+            "height": 1920
+        },
+        {
+            "name": "Phone: white text fits",
+            "passed": true,
+            "width": 1080,
+            "height": 1920
+        },
+        {
+            "name": "Phone: all five buttons receive raycasts",
+            "passed": true,
+            "width": 1080,
+            "height": 1920
+        },
+        {
+            "name": "Dynamic highest wave and ranks fit, including large values",
+            "passed": true,
+            "width": 1080,
+            "height": 1920
+        },
+        {
+            "name": "Native press animation contracts visual to 97 percent",
+            "passed": false,
+            "width": 1080,
+            "height": 1920
+        },
+        {
+            "name": "Native hover animation expands visual to 102 percent",
+            "passed": false,
+            "width": 1080,
+            "height": 1920
+        },
+        {
+            "name": "iPad: all controls on screen",
+            "passed": true,
+            "width": 1536,
+            "height": 2048
+        },
+        {
+            "name": "iPad: white text fits",
+            "passed": true,
+            "width": 1536,
+            "height": 2048
+        },
+        {
+            "name": "iPad: all five buttons receive raycasts",
+            "passed": true,
+            "width": 1536,
+            "height": 2048
+        },
+        {
+            "name": "Settings retained navigation",
+            "passed": true,
+            "width": 1536,
+            "height": 2048
+        },
+        {
+            "name": "Shop retained navigation",
+            "passed": true,
+            "width": 1536,
+            "height": 2048
+        },
+        {
+            "name": "HowToPlay retained navigation",
+            "passed": true,
+            "width": 1536,
+            "height": 2048
+        },
+        {
+            "name": "Exit retained navigation",
+            "passed": true,
+            "width": 1536,
+            "height": 2048
+        },
+        {
+            "name": "Play retained persistent scene-loading callback",
+            "passed": true,
+            "width": 1536,
+            "height": 2048
+        }
+    ]
+}

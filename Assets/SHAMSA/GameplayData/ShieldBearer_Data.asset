@@ -19,7 +19,7 @@ MonoBehaviour:
   moveSpeed: 0.32
   damage: 12
   attackCooldown: 1.8
-  attackRange: 0.8
+  attackRange: 1.05
   crystalBreachDamage: 3
   soulReward: 30
   isRanged: 0

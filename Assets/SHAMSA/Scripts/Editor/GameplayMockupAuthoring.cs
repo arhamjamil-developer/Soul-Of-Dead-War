@@ -56,8 +56,6 @@ namespace SoulCrystalDefense.EditorTools
             }
             var viewport=GetRect("BattlefieldViewport",composition);Place(viewport,0,205,1080,1350);
             var camera=Camera.main;camera.transform.position=new Vector3(0,.05f,-10);camera.orthographicSize=6.05f;
-            var responsive=camera.GetComponent<ResponsiveCamera>();if(responsive)responsive.enabled=false;
-            var layout=composition.GetComponent<GameplayComposition>()??composition.gameObject.AddComponent<GameplayComposition>();layout.safeArea=safe;layout.battlefield=viewport;layout.gameplayCamera=camera;
             var backdropCamera=Find("GameplayBackdropCamera");
             if(!backdropCamera){var go=new GameObject("GameplayBackdropCamera",typeof(Camera));var c=go.GetComponent<Camera>();c.cullingMask=0;c.clearFlags=CameraClearFlags.SolidColor;c.backgroundColor=Ink;c.depth=-100;}
             camera.depth=0;camera.clearFlags=CameraClearFlags.SolidColor;camera.backgroundColor=Ink;
@@ -124,7 +122,7 @@ namespace SoulCrystalDefense.EditorTools
             if(!barrier){barrier=new GameObject("DivineBarrierVisual",typeof(SpriteRenderer)).transform;barrier.position=new Vector3(0,-4.5f,0);barrier.localScale=new Vector3(3,2.1f,1);}
             var br=barrier.GetComponent<SpriteRenderer>();br.sprite=AssetDatabase.LoadAssetAtPath<Sprite>("Assets/SHAMSA/Visuals/Polish/EnergyQuad.png");br.sharedMaterial=AssetDatabase.LoadAssetAtPath<Material>("Assets/SHAMSA/Visuals/Polish/CrystalEnergy.mat");br.sortingOrder=7;br.enabled=false;arts.barrierVisual=br;
             var fx=UnityEngine.Object.FindFirstObjectByType<GameplayEffects>();if(!fx)fx=new GameObject("GameplayEffects").AddComponent<GameplayEffects>();fx.lineMaterial=LineMaterial();fx.damageFont=font;
-            layout.Apply();Canvas.ForceUpdateCanvases();EditorSceneManager.MarkSceneDirty(scene);EditorSceneManager.SaveScene(scene);AssetDatabase.SaveAssets();
+            Canvas.ForceUpdateCanvases();EditorSceneManager.MarkSceneDirty(scene);EditorSceneManager.SaveScene(scene);AssetDatabase.SaveAssets();
             Debug.Log("GAMEPLAY_MOCKUP|AUTHORED|4 defenders, 3 crystal arts, corruption, responsive canvas and separate artwork.");
         }
         static Sprite Import(string name,float ppu,bool alpha)

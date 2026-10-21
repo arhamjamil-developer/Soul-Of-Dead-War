@@ -1,0 +1,194 @@
+[
+  {
+    "name": "GoldPanel",
+    "path": "Assets\\UI\\Final\\Production\\Frames\\GoldPanel.png",
+    "size": [
+      626,
+      249
+    ]
+  },
+  {
+    "name": "CardHolder",
+    "path": "Assets\\UI\\Final\\Production\\Frames\\CardHolder.png",
+    "size": [
+      291,
+      395
+    ]
+  },
+  {
+    "name": "CostPill",
+    "path": "Assets\\UI\\Final\\Production\\Frames\\CostPill.png",
+    "size": [
+      570,
+      154
+    ]
+  },
+  {
+    "name": "Tray",
+    "path": "Assets\\UI\\Final\\Production\\Frames\\Tray.png",
+    "size": [
+      545,
+      232
+    ]
+  },
+  {
+    "name": "Inset",
+    "path": "Assets\\UI\\Final\\Production\\Frames\\Inset.png",
+    "size": [
+      367,
+      131
+    ]
+  },
+  {
+    "name": "HintBanner",
+    "path": "Assets\\UI\\Final\\Production\\Frames\\HintBanner.png",
+    "size": [
+      751,
+      174
+    ]
+  },
+  {
+    "name": "Crystal",
+    "path": "Assets\\UI\\Final\\Production\\Icons\\Crystal.png",
+    "size": [
+      418,
+      410
+    ]
+  },
+  {
+    "name": "Pulse",
+    "path": "Assets\\UI\\Final\\Production\\Icons\\Pulse.png",
+    "size": [
+      377,
+      359
+    ]
+  },
+  {
+    "name": "Storm",
+    "path": "Assets\\UI\\Final\\Production\\Icons\\Storm.png",
+    "size": [
+      349,
+      381
+    ]
+  },
+  {
+    "name": "Barrier",
+    "path": "Assets\\UI\\Final\\Production\\Icons\\Barrier.png",
+    "size": [
+      340,
+      393
+    ]
+  },
+  {
+    "name": "Pause",
+    "path": "Assets\\UI\\Final\\Production\\Icons\\Pause.png",
+    "size": [
+      315,
+      393
+    ]
+  },
+  {
+    "name": "Gem",
+    "path": "Assets\\UI\\Final\\Production\\Icons\\Gem.png",
+    "size": [
+      355,
+      308
+    ]
+  },
+  {
+    "name": "Elephant",
+    "path": "Assets\\UI\\Final\\Production\\Icons\\Elephant.png",
+    "size": [
+      470,
+      405
+    ]
+  },
+  {
+    "name": "Train",
+    "path": "Assets\\UI\\Final\\Production\\Icons\\Train.png",
+    "size": [
+      430,
+      358
+    ]
+  },
+  {
+    "name": "Dwarf",
+    "path": "Assets\\UI\\Final\\Production\\Portraits\\Dwarf.png",
+    "size": [
+      494,
+      476
+    ]
+  },
+  {
+    "name": "Chef",
+    "path": "Assets\\UI\\Final\\Production\\Portraits\\Chef.png",
+    "size": [
+      512,
+      503
+    ]
+  },
+  {
+    "name": "Archer",
+    "path": "Assets\\UI\\Final\\Production\\Portraits\\Archer.png",
+    "size": [
+      511,
+      480
+    ]
+  },
+  {
+    "name": "Mage",
+    "path": "Assets\\UI\\Final\\Production\\Portraits\\Mage.png",
+    "size": [
+      484,
+      470
+    ]
+  },
+  {
+    "name": "Paladin",
+    "path": "Assets\\UI\\Final\\Production\\Portraits\\Paladin.png",
+    "size": [
+      512,
+      471
+    ]
+  },
+  {
+    "name": "Witch",
+    "path": "Assets\\UI\\Final\\Production\\Portraits\\Witch.png",
+    "size": [
+      508,
+      471
+    ]
+  },
+  {
+    "name": "StonePatch_0",
+    "path": "Assets\\UI\\Final\\Production\\World\\StonePatch_0.png",
+    "size": [
+      126,
+      98
+    ]
+  },
+  {
+    "name": "StonePatch_1",
+    "path": "Assets\\UI\\Final\\Production\\World\\StonePatch_1.png",
+    "size": [
+      126,
+      98
+    ]
+  },
+  {
+    "name": "StonePatch_2",
+    "path": "Assets\\UI\\Final\\Production\\World\\StonePatch_2.png",
+    "size": [
+      127,
+      98
+    ]
+  },
+  {
+    "name": "StonePatch_3",
+    "path": "Assets\\UI\\Final\\Production\\World\\StonePatch_3.png",
+    "size": [
+      127,
+      98
+    ]
+  }
+]

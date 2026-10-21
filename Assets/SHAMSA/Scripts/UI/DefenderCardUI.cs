@@ -31,6 +31,8 @@ namespace SoulCrystalDefense.UI
         public bool IsLocked => isLocked;
         private bool isSelected = false;
         private bool scrollingCards;
+        [SerializeField] private Color affordableTextColor = new Color(.55f,.94f,1f);
+        [SerializeField] private Color unaffordableTextColor = new Color(1f,.52f,.36f);
         private Vector3 restingScale;
         private Vector3 targetScale;
 
@@ -115,7 +117,7 @@ namespace SoulCrystalDefense.UI
             if (isLocked || defenderData == null) return;
 
             bool canAfford = currentEnergy >= defenderData.soulCost;
-            if (costText != null) costText.color = canAfford ? new Color(.55f, .94f, 1f) : new Color(1f, .52f, .36f);
+            if (costText != null) costText.color = canAfford ? affordableTextColor : unaffordableTextColor;
             if (unaffordableOverlay != null)
             {
                 unaffordableOverlay.SetActive(!canAfford);
@@ -158,3 +160,4 @@ namespace SoulCrystalDefense.UI
         }
     }
 }
+

@@ -1,0 +1,17 @@
+{
+  "mode": "Built-in image generation",
+  "prompts": [
+    [
+      "buttons",
+      "Production Unity cartoon fantasy mobile-game UI sprite atlas. EXACT 2 columns by 2 rows, each cell identical scale, generous transparent gutters. TOP LEFT: small wide rounded rectangular collapse tab with one bold white UP chevron. TOP RIGHT: identical tab with bold white DOWN chevron. BOTTOM LEFT: pressed/darker version of UP tab. BOTTOM RIGHT: pressed/darker version of DOWN tab. Style: glossy royal/cobalt blue center, thin rounded golden rim, white/cyan inner edge, soft chunky hand-painted bevel, friendly clean mobile-game look matching Soul Crystal blue/gold HUD. Button shape ratio 2:1 width to height, simple restrained ornament, no crystals or extra symbols. Chevrons centered and extremely readable at phone size. Whole buttons fully inside each cell, actual transparent alpha outside. No words, labels, numbers, checkerboard, extra pieces or UI mockup. Exactly four complete individual button plates."
+    ],
+    [
+      "left",
+      "Create ONE simple neighboring-home environment plate for a Unity five-lane graveyard defense game. Reference image is STYLE and edge-continuity reference. Portrait 9:16, full bleed. This plate sits immediately to the LEFT of the reference battlefield when camera pans horizontally. SAME bright cartoon fantasy rendering, same upper horizon blue castle towers and sky, same gentle sunlight, same green lawn and stone path scale. A cozy small blue-roof stone GUARDIAN COTTAGE in the upper-left/middle area, modest wood door, warm little lantern, blue pennant, flower bed, and small wood bench; no characters. Lower half grassy garden and a simple paved walkway. RIGHT edge stays mostly matching dense green shrubs/gray stone fence/blue banners, matching the battlefield's left boundary as naturally as possible; no tall cliff or hard frame. The house should feel like a basic decorative neighbor, not a new gameplay feature. Keep architecture modest, scene calm readable, no UI, no signs, no text, no enemy gates, no giant crystal, no giant structures. Gorgeous polished friendly 2D cartoon game art, actual game atmosphere not photorealistic. Full image without black bars, margins or transparency."
+    ],
+    [
+      "right",
+      "Create ONE simple neighboring-home environment plate for Unity five-lane graveyard defense game. Reference image is STYLE and edge-continuity reference. Portrait 9:16 full bleed. This plate sits immediately to the RIGHT of the reference battlefield when camera pans horizontally. SAME bright cartoon fantasy graveyard garden world, blue castle skyline in top 10 percent, same upper horizon scale, same daylight, lush green lawn and paving stone scale. A cozy small WARM COTTAGE with blue/slate roof in the upper-right/middle area, a tiny sheltered cooking nook with kettle and wood basket, lantern by round wooden door, flower pots, small ordinary path to foreground. Basic decorative neighbor only, no new game feature implied. LEFT edge mostly matching dense green shrubs, gray stone fence and blue banners to connect naturally with battlefield's right edge, not a hard vertical frame. Lower half calm garden with paving and flowers. No figures or characters, no text, no UI, no signs, no portals or giant crystal, no threatening enemies. Polished welcoming 2D cartoon mobile-game environment, same camera and materials as reference, not realistic. No black bars, margins or transparency."
+    ]
+  ]
+}

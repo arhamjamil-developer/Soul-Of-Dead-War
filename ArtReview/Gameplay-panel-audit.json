@@ -1,0 +1,278 @@
+{
+  "success": true,
+  "result": [
+    {
+      "path": "HUDCanvas/SafeAreaRoot/GameplayComposition/BattleSettingsScreen/EffectsVolume",
+      "size": {
+        "x": 700,
+        "y": 58
+      },
+      "anchors": [
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 1
+        }
+      ],
+      "position": {
+        "x": 190,
+        "y": -1185
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "active": true,
+      "sprite": "Resources/unity_builtin_extra",
+      "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "Image",
+        "Slider",
+        "Outline"
+      ]
+    },
+    {
+      "path": "HUDCanvas/SafeAreaRoot/GameplayComposition/BattleSettingsScreen/MasterVolume",
+      "size": {
+        "x": 700,
+        "y": 58
+      },
+      "anchors": [
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 1
+        }
+      ],
+      "position": {
+        "x": 190,
+        "y": -705
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "active": true,
+      "sprite": "Resources/unity_builtin_extra",
+      "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "Image",
+        "Slider",
+        "Outline"
+      ]
+    },
+    {
+      "path": "HUDCanvas/SafeAreaRoot/GameplayComposition/BattleSettingsScreen/SettingsFrame",
+      "size": {
+        "x": 900,
+        "y": 1290
+      },
+      "anchors": [
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 1
+        }
+      ],
+      "position": {
+        "x": 90,
+        "y": -300
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "active": true,
+      "sprite": "Assets/UI/Final/Production/Frames/GoldPanel.png",
+      "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "Image"
+      ]
+    },
+    {
+      "path": "HUDCanvas/SafeAreaRoot/GameplayComposition/BattleSettingsScreen/MusicVolume",
+      "size": {
+        "x": 700,
+        "y": 58
+      },
+      "anchors": [
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 1
+        }
+      ],
+      "position": {
+        "x": 190,
+        "y": -945
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "active": true,
+      "sprite": "Resources/unity_builtin_extra",
+      "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "Image",
+        "Slider",
+        "Outline"
+      ]
+    },
+    {
+      "path": "HUDCanvas/SafeAreaRoot/GameplayComposition/BattleTutorialScreen/TutorialFrame",
+      "size": {
+        "x": 960,
+        "y": 1510
+      },
+      "anchors": [
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 1
+        }
+      ],
+      "position": {
+        "x": 60,
+        "y": -180
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "active": true,
+      "sprite": "Assets/UI/Final/Production/Frames/GoldPanel.png",
+      "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "Image"
+      ]
+    },
+    {
+      "path": "HUDCanvas/SafeAreaRoot/GameplayComposition/BottomTray",
+      "size": {
+        "x": 1080,
+        "y": 580
+      },
+      "anchors": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "active": true,
+      "sprite": "Assets/UI/Final/Production/Frames/Tray.png",
+      "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "Image",
+        "PlacementController",
+        "CanvasGroup"
+      ]
+    },
+    {
+      "path": "HUDCanvas/SafeAreaRoot/GameplayComposition/PauseScreen/PauseFrame",
+      "size": {
+        "x": 900,
+        "y": 1290
+      },
+      "anchors": [
+        {
+          "x": 0.5,
+          "y": 0.5
+        },
+        {
+          "x": 0.5,
+          "y": 0.5
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "active": true,
+      "sprite": "Assets/UI/Final/Production/Frames/GoldPanel.png",
+      "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "Image"
+      ]
+    },
+    {
+      "path": "HUDCanvas/SafeAreaRoot/GameplayComposition/BossPanel",
+      "size": {
+        "x": 630,
+        "y": 80
+      },
+      "anchors": [
+        {
+          "x": 0.5,
+          "y": 1
+        },
+        {
+          "x": 0.5,
+          "y": 1
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": -200
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "active": false,
+      "sprite": "Assets/SHAMSA/Visuals/Polish/RoundedPanel.png",
+      "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "Image"
+      ]
+    }
+  ],
+  "count": 8
+}

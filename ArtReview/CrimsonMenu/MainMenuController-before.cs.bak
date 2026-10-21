@@ -1,0 +1,243 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using SoulCrystalDefense.Systems;
+
+namespace SoulCrystalDefense.UI
+{
+    // All artwork, controls, panels and events are authored in MainMenu.unity.
+    public sealed class MainMenuController : MonoBehaviour
+    {
+        [Header("Panels")]
+        public GameObject settingsPanel;
+        public GameObject shopPanel;
+        public GameObject howToPlayPanel;
+        public GameObject exitPanel;
+
+        [Header("Controls")]
+        public Button playButton;
+        public Text exitMessage;
+        public Text highestWaveText;
+
+        [Header("Audio Controls")]
+        public Slider volumeSlider;
+        public Text volumeLabel;
+        public Slider musicSlider;
+        public Text musicLabel;
+        public Slider sfxSlider;
+        public Text sfxLabel;
+
+        private bool loading;
+
+        private void Start()
+        {
+            ClosePanels(playSound: false);
+
+            // Load and apply Master volume
+            float masterVol = PlayerPrefs.GetFloat("MainMenu.MasterVolume", 1f);
+            if (volumeSlider != null) volumeSlider.SetValueWithoutNotify(masterVol);
+            AudioListener.volume = masterVol;
+            UpdateVolumeLabel(masterVol);
+
+            // Load and apply Music volume
+            float musicVol = PlayerPrefs.GetFloat("Audio.Music", 0.7f);
+            if (musicSlider != null) musicSlider.SetValueWithoutNotify(musicVol);
+            UpdateMusicLabel(musicVol);
+
+            // Load and apply Effects volume
+            float sfxVol = PlayerPrefs.GetFloat("Audio.Effects", 1f);
+            if (sfxSlider != null) sfxSlider.SetValueWithoutNotify(sfxVol);
+            UpdateSfxLabel(sfxVol);
+
+            SoundManager.Instance?.ApplySavedVolumes();
+            SoundManager.Instance?.PlayMusic();
+
+            UpdateHighestWaveDisplay();
+        }
+
+        private void Update()
+        {
+#if ENABLE_INPUT_SYSTEM
+            if (UnityEngine.InputSystem.Keyboard.current != null && UnityEngine.InputSystem.Keyboard.current.escapeKey.wasPressedThisFrame)
+            {
+                HandleBackOrEscape();
+            }
+#elif ENABLE_LEGACY_INPUT_MANAGER
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                HandleBackOrEscape();
+            }
+#endif
+        }
+
+        public void HandleBackOrEscape()
+        {
+            if (IsAnyPanelOpen())
+            {
+                ClosePanels();
+            }
+            else
+            {
+                OpenExit();
+            }
+        }
+
+        public bool IsAnyPanelOpen()
+        {
+            return (settingsPanel != null && settingsPanel.activeSelf) ||
+                   (shopPanel != null && shopPanel.activeSelf) ||
+                   (howToPlayPanel != null && howToPlayPanel.activeSelf) ||
+                   (exitPanel != null && exitPanel.activeSelf);
+        }
+
+        public void UpdateHighestWaveDisplay()
+        {
+            if (highestWaveText == null) return;
+
+            int highestWave = PlayerPrefs.GetInt("HighestWaveReached", 0);
+            if (highestWave >= 40)
+            {
+                highestWaveText.text = $"★ HIGHEST WAVE: {highestWave} ★  [LEGENDARY]";
+                highestWaveText.color = new Color(1f, 0.85f, 0.2f);
+            }
+            else if (highestWave >= 20)
+            {
+                highestWaveText.text = $"★ HIGHEST WAVE: {highestWave} ★  [CITADEL DEFENDER]";
+                highestWaveText.color = new Color(0.4f, 0.9f, 1f);
+            }
+            else if (highestWave > 0)
+            {
+                highestWaveText.text = $"HIGHEST WAVE: {highestWave}";
+                highestWaveText.color = new Color(1f, 0.92f, 0.72f);
+            }
+            else
+            {
+                highestWaveText.text = "HIGHEST WAVE: 0";
+                highestWaveText.color = new Color(0.7f, 0.75f, 0.85f);
+            }
+        }
+
+        public void Play()
+        {
+            if (loading) return;
+            loading = true;
+            SoundManager.Instance?.PlayUIClick();
+            if (playButton != null) playButton.interactable = false;
+            Time.timeScale = 1f;
+            SceneManager.LoadSceneAsync("SoulCrystalDefenseGameplay");
+        }
+
+        public void ClosePanels(bool playSound = true)
+        {
+            bool wasOpen = IsAnyPanelOpen();
+            if (settingsPanel != null) settingsPanel.SetActive(false);
+            if (shopPanel != null) shopPanel.SetActive(false);
+            if (howToPlayPanel != null) howToPlayPanel.SetActive(false);
+            if (exitPanel != null) exitPanel.SetActive(false);
+            if (playSound && wasOpen)
+            {
+                SoundManager.Instance?.PlayUIPanelClose();
+            }
+        }
+
+        public void ClosePanels() => ClosePanels(playSound: true);
+
+        public void OpenSettings()
+        {
+            ClosePanels(playSound: false);
+            if (settingsPanel != null) settingsPanel.SetActive(true);
+            SoundManager.Instance?.PlayUIPanelOpen();
+        }
+
+        public void OpenShop()
+        {
+            ClosePanels(playSound: false);
+            if (shopPanel != null) shopPanel.SetActive(true);
+            SoundManager.Instance?.PlayUIPanelOpen();
+        }
+
+        public void OpenHowToPlay()
+        {
+            ClosePanels(playSound: false);
+            if (howToPlayPanel != null) howToPlayPanel.SetActive(true);
+            SoundManager.Instance?.PlayUIPanelOpen();
+        }
+
+        public void OpenExit()
+        {
+            ClosePanels(playSound: false);
+            if (exitPanel != null) exitPanel.SetActive(true);
+            SoundManager.Instance?.PlayUIPanelOpen();
+        }
+
+        public void SetVolume(float value)
+        {
+            float v = Mathf.Clamp01(value);
+            AudioListener.volume = v;
+            PlayerPrefs.SetFloat("MainMenu.MasterVolume", v);
+            PlayerPrefs.Save();
+            UpdateVolumeLabel(v);
+            SoundManager.Instance?.ApplySavedVolumes();
+        }
+
+        public void SetMusicVolume(float value)
+        {
+            float v = Mathf.Clamp01(value);
+            PlayerPrefs.SetFloat("Audio.Music", v);
+            PlayerPrefs.Save();
+            UpdateMusicLabel(v);
+            SoundManager.Instance?.ApplySavedVolumes();
+        }
+
+        public void SetEffectsVolume(float value)
+        {
+            float v = Mathf.Clamp01(value);
+            PlayerPrefs.SetFloat("Audio.Effects", v);
+            PlayerPrefs.Save();
+            UpdateSfxLabel(v);
+            SoundManager.Instance?.ApplySavedVolumes();
+        }
+
+        private void UpdateVolumeLabel(float value)
+        {
+            if (volumeLabel != null)
+            {
+                volumeLabel.text = $"MASTER: {Mathf.RoundToInt(value * 100f)}%";
+            }
+        }
+
+        private void UpdateMusicLabel(float value)
+        {
+            if (musicLabel != null)
+            {
+                musicLabel.text = $"MUSIC: {Mathf.RoundToInt(value * 100f)}%";
+            }
+        }
+
+        private void UpdateSfxLabel(float value)
+        {
+            if (sfxLabel != null)
+            {
+                sfxLabel.text = $"SFX: {Mathf.RoundToInt(value * 100f)}%";
+            }
+        }
+
+        public void ConfirmExit()
+        {
+            SoundManager.Instance?.PlayUIClick();
+            if (Application.platform == RuntimePlatform.IPhonePlayer)
+            {
+                if (exitMessage != null)
+                {
+                    exitMessage.text = "To leave the game, swipe up to return to your Home Screen.";
+                }
+                return;
+            }
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#else
+            Application.Quit();
+#endif
+        }
+    }
+}

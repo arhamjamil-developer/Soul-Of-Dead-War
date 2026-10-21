@@ -27,6 +27,8 @@ namespace SoulCrystalDefense.Units
         public DefenderData Data => defenderData;
         public int LaneIndex => cell != null ? cell.Lane : 0;
         public int RowIndex => cell != null ? cell.Row : 0;
+        // Landing/punch visuals must not move the logical combat anchor off its grid cell.
+        public Vector3 CombatPosition => cell != null ? cell.transform.position : transform.position;
         public float CurrentHealth => currentHealth;
         public bool IsDead => isDead;
         public UnitAnimationPlayer AnimPlayer => animPlayer;
@@ -172,14 +174,14 @@ namespace SoulCrystalDefense.Units
 
             foreach (var enemy in enemies)
             {
-                if (enemy == null || enemy.IsDead || enemy.LaneIndex != LaneIndex) continue;
+                if (enemy == null || enemy.IsDead || enemy.HasBreached || enemy.LaneIndex != LaneIndex) continue;
 
-                float dy = enemy.transform.position.y - transform.position.y;
-                if (dy > 0f && dy <= defenderData.attackRange)
+                float dy = enemy.transform.position.y - CombatPosition.y;
+                if (dy >= -0.45f && dy <= defenderData.attackRange)
                 {
-                    if (dy < closestDist)
+                    if (Mathf.Abs(dy) < closestDist)
                     {
-                        closestDist = dy;
+                        closestDist = Mathf.Abs(dy);
                         closestEnemy = enemy;
                     }
                 }
@@ -207,7 +209,7 @@ namespace SoulCrystalDefense.Units
             SoundManager.Instance?.PlayDwarfImpact();
 
             float effectiveDmg = defenderData.damage * DamageMultiplier;
-            float effectiveKnockback = defenderData.knockback;
+            float effectiveKnockback = Mathf.Min(defenderData.knockback, 0.16f);
 
             if (defenderData.defenderType == DefenderType.ThunderGuardian)
             {
@@ -242,23 +244,27 @@ namespace SoulCrystalDefense.Units
 
         private System.Collections.IEnumerator PunchAnimation(float duration)
         {
-            Vector3 origin = transform.position;
+            var visual=animPlayer != null && animPlayer.TargetRenderer != null ? animPlayer.TargetRenderer.transform : (spriteRenderer != null ? spriteRenderer.transform : null);
+            if(visual==null || visual==transform)yield break;
+            Vector3 origin = visual.localPosition;
             Vector3 target = origin + Vector3.up * 0.18f;
             float elapsed = 0f;
             while (elapsed < duration * 0.5f)
             {
                 elapsed += Time.deltaTime;
-                transform.position = Vector3.Lerp(origin, target, elapsed / (duration * 0.5f));
+                if(!visual)yield break;
+                visual.localPosition = Vector3.Lerp(origin, target, elapsed / (duration * 0.5f));
                 yield return null;
             }
             elapsed = 0f;
             while (elapsed < duration * 0.5f)
             {
                 elapsed += Time.deltaTime;
-                transform.position = Vector3.Lerp(target, origin, elapsed / (duration * 0.5f));
+                if(!visual)yield break;
+                visual.localPosition = Vector3.Lerp(target, origin, elapsed / (duration * 0.5f));
                 yield return null;
             }
-            transform.position = origin;
+            if(visual)visual.localPosition = origin;
         }
 
         private void LaunchRangedAttack(EnemyUnit target)
@@ -332,11 +338,22 @@ namespace SoulCrystalDefense.Units
                 var proj = projObj.AddComponent<Projectile>();
                 proj.Initialize(defenderData.damage * DamageMultiplier, defenderData.projectileSpeed, 0.65f, Vector3.up, target);
                 proj.SetChillOnHit(0.40f, 3.5f);
-                SoundManager.Instance?.PlayChefFireImpact();
+                SoundManager.Instance?.PlayMagicAttack();
                 return;
             }
 
-            SoundManager.Instance?.PlayChefFireImpact();
+            if (defenderData.defenderType == DefenderType.SoulArcher)
+            {
+                SoundManager.Instance?.PlayArcherAttack();
+            }
+            else if (defenderData.defenderType == DefenderType.BoneMage || defenderData.defenderType == DefenderType.FrostWitch)
+            {
+                SoundManager.Instance?.PlayMagicAttack();
+            }
+            else
+            {
+                SoundManager.Instance?.PlayChefFireImpact();
+            }
 
             Vector3 projSpawnPos = attackOrigin != null ? attackOrigin.position : transform.position + Vector3.up * 0.3f;
 

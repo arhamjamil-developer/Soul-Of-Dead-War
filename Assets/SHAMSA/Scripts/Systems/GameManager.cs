@@ -23,6 +23,7 @@ namespace SoulCrystalDefense.Systems
 
         [Header("Procedural Progression & Balancing")]
         [SerializeField] private bool useProceduralProgression = true;
+        [SerializeField] private bool unlimitedWaves = true;
         [SerializeField] private int totalWavesInRun = 20;
 
         [Header("Session Tracking")]
@@ -42,6 +43,7 @@ namespace SoulCrystalDefense.Systems
         public bool IsPaused => isPaused;
         public int CurrentWaveIndex => currentWaveIndex;
         public int TotalWavesInRun => totalWavesInRun;
+        public bool IsUnlimited => unlimitedWaves;
 
         public event Action<int> OnDefendersCountChanged;
 
@@ -49,7 +51,12 @@ namespace SoulCrystalDefense.Systems
         {
             Application.runInBackground = true;
             if (Instance == null) Instance = this;
-            else Destroy(gameObject);
+            else if (Instance != this) Destroy(this);
+        }
+
+        private void OnDestroy()
+        {
+            if (Instance == this) Instance = null;
         }
 
         private void Start()
@@ -93,7 +100,7 @@ namespace SoulCrystalDefense.Systems
                 waveDirector.OnWaveCompleted -= HandleWaveCompleted;
                 waveDirector.OnWaveCompleted += HandleWaveCompleted;
 
-                int totalWaves = useProceduralProgression ? totalWavesInRun : currentLevelData.waves.Count;
+                int totalWaves = unlimitedWaves ? -1 : (useProceduralProgression ? totalWavesInRun : currentLevelData.waves.Count);
                 if (gameplayHUD != null)
                 {
                     gameplayHUD.SetWaveText(1, totalWaves);
@@ -106,7 +113,7 @@ namespace SoulCrystalDefense.Systems
         private void StartNextWave()
         {
             int waveNumber = currentWaveIndex + 1;
-            int totalWaves = useProceduralProgression ? totalWavesInRun : currentLevelData.waves.Count;
+            int totalWaves = unlimitedWaves ? -1 : (useProceduralProgression ? totalWavesInRun : currentLevelData.waves.Count);
 
             waveStartCrystalHealth = soulCrystal != null ? soulCrystal.CurrentHealth : 20;
             waveStartTime = levelElapsedTime;
@@ -189,9 +196,21 @@ namespace SoulCrystalDefense.Systems
             }
 
             currentWaveIndex++;
-            int totalWaves = useProceduralProgression ? totalWavesInRun : currentLevelData.waves.Count;
+            int waveNumberCompleted = currentWaveIndex;
 
-            if (currentWaveIndex < totalWaves)
+            // Immediately save highest wave reached to PlayerPrefs
+            int currentHighest = PlayerPrefs.GetInt("HighestWaveReached", 0);
+            if (waveNumberCompleted > currentHighest)
+            {
+                PlayerPrefs.SetInt("HighestWaveReached", waveNumberCompleted);
+                PlayerPrefs.Save();
+            }
+
+            CheckWaveMilestone(waveNumberCompleted);
+
+            bool shouldContinue = unlimitedWaves || (useProceduralProgression ? currentWaveIndex < totalWavesInRun : currentWaveIndex < currentLevelData.waves.Count);
+
+            if (shouldContinue)
             {
                 StartNextWave();
             }
@@ -199,6 +218,25 @@ namespace SoulCrystalDefense.Systems
             {
                 // All waves completed! Player won!
                 TriggerVictory();
+            }
+        }
+
+        private void CheckWaveMilestone(int wave)
+        {
+            if (wave == 20)
+            {
+                FindFirstObjectByType<Presentation.BattlePresentation>()?.Show("CITADEL DEFENDER!", "WAVE 20 SURPASSED! MILESTONE RECORDED!");
+                SoundManager.Instance?.PlayCrystalDamage();
+            }
+            else if (wave == 40)
+            {
+                FindFirstObjectByType<Presentation.BattlePresentation>()?.Show("LEGENDARY CONQUEROR!", "WAVE 40 SURPASSED! LEGENDARY MILESTONE!");
+                SoundManager.Instance?.PlayCrystalDamage();
+            }
+            else if (wave % 20 == 0 && wave > 40)
+            {
+                FindFirstObjectByType<Presentation.BattlePresentation>()?.Show("UNSTOPPABLE FORCE!", $"WAVE {wave} SURPASSED! NEW RECORD!");
+                SoundManager.Instance?.PlayCrystalDamage();
             }
         }
 
@@ -217,6 +255,15 @@ namespace SoulCrystalDefense.Systems
 
             if (energyWallet != null)
                 energyWallet.SetAutoGenerate(false);
+
+            // Record highest wave reached
+            int highest = PlayerPrefs.GetInt("HighestWaveReached", 0);
+            if (currentWaveIndex > highest)
+            {
+                highest = currentWaveIndex;
+                PlayerPrefs.SetInt("HighestWaveReached", highest);
+                PlayerPrefs.Save();
+            }
 
             // Calculate stars
             int stars = 1; // base 1 star for winning
@@ -256,9 +303,27 @@ namespace SoulCrystalDefense.Systems
             if (energyWallet != null)
                 energyWallet.SetAutoGenerate(false);
 
+            // Record highest wave reached
+            int highest = PlayerPrefs.GetInt("HighestWaveReached", 0);
+            if (currentWaveIndex > highest)
+            {
+                highest = currentWaveIndex;
+                PlayerPrefs.SetInt("HighestWaveReached", highest);
+                PlayerPrefs.Save();
+            }
+
             if (victoryDefeatPanel != null)
             {
-                victoryDefeatPanel.ShowDefeat("Tip: Place Blood Chef behind Dwarf Guardian to splash grouped enemies!");
+                string hint = $"Defeated on Wave {currentWaveIndex + 1}. Highest Wave: {highest}";
+                if (currentWaveIndex >= 40)
+                {
+                    hint = $"Incredible Run! Wave {currentWaveIndex} Cleared! (Legendary 40+ Milestone)";
+                }
+                else if (currentWaveIndex >= 20)
+                {
+                    hint = $"Citadel Defender! Wave {currentWaveIndex} Cleared! (20+ Milestone Surpassed)";
+                }
+                victoryDefeatPanel.ShowDefeat(hint);
             }
 
             SoundManager.Instance?.PlayDefeat();

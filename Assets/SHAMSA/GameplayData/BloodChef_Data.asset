@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BloodChef_Data
   m_EditorClassIdentifier: Assembly-CSharp::SoulCrystalDefense.Data.DefenderData
   defenderType: 1
-  displayName: Blood Chef
+  displayName: Chef
   cardIcon: {fileID: 8614212073925619220, guid: 3c5ed11d8aa41fd47bd7a37f66284455, type: 3}
   unitPrefab: {fileID: 6466907849108623043, guid: b544e3852dd469e439e4632448793bba, type: 3}
   soulCost: 125

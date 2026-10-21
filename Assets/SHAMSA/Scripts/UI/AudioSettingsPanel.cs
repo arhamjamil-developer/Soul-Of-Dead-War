@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using SoulCrystalDefense.Systems;
 namespace SoulCrystalDefense.UI
 {
@@ -7,6 +8,7 @@ namespace SoulCrystalDefense.UI
     {
         public Slider master,music,effects;
         public Text masterValue,musicValue,effectsValue;
+        public TextMeshProUGUI masterValueTMP,musicValueTMP,effectsValueTMP;
         private void OnEnable()
         {
             if(!master||!music||!effects)return;
@@ -19,6 +21,11 @@ namespace SoulCrystalDefense.UI
         public void Music(float value){PlayerPrefs.SetFloat("Audio.Music",value);Apply();}
         public void Effects(float value){PlayerPrefs.SetFloat("Audio.Effects",value);Apply();}
         private void Apply(){PlayerPrefs.Save();AudioListener.volume=master.value;SoundManager.Instance?.ApplySavedVolumes();Refresh();}
-        private void Refresh(){masterValue.text=Mathf.RoundToInt(master.value*100)+"%";musicValue.text=Mathf.RoundToInt(music.value*100)+"%";effectsValue.text=Mathf.RoundToInt(effects.value*100)+"%";}
+        private void Refresh()
+        {
+            string a=Mathf.RoundToInt(master.value*100)+"%",b=Mathf.RoundToInt(music.value*100)+"%",c=Mathf.RoundToInt(effects.value*100)+"%";
+            if(masterValue)masterValue.text=a;if(musicValue)musicValue.text=b;if(effectsValue)effectsValue.text=c;
+            if(masterValueTMP)masterValueTMP.text=a;if(musicValueTMP)musicValueTMP.text=b;if(effectsValueTMP)effectsValueTMP.text=c;
+        }
     }
 }

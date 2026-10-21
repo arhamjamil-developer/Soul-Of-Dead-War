@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IronPaladin_Data
   m_EditorClassIdentifier: Assembly-CSharp::SoulCrystalDefense.Data.DefenderData
   defenderType: 6
-  displayName: IRON PALADIN
+  displayName: Paladin
   cardIcon: {fileID: 21300000, guid: 7cd511b8c8557794caaac77b754cc612, type: 3}
   unitPrefab: {fileID: 677211018653192078, guid: e5564d4160a2a694aa8c2a8f1d4e62b6, type: 3}
   soulCost: 200

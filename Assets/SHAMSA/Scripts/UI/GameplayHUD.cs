@@ -77,7 +77,14 @@ namespace SoulCrystalDefense.UI
         {
             if (waveText != null)
             {
-                waveText.text = $"WAVE {currentWave}/{totalWaves}";
+                if (totalWaves <= 0)
+                {
+                    waveText.text = $"WAVE {currentWave}";
+                }
+                else
+                {
+                    waveText.text = $"WAVE {currentWave}/{totalWaves}";
+                }
             }
         }
 

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using SoulCrystalDefense.Systems;
 
 namespace SoulCrystalDefense.UI
@@ -25,6 +26,7 @@ namespace SoulCrystalDefense.UI
         [SerializeField] private Text defeatTitleText;
         [SerializeField] private Text defeatHintText;
         [SerializeField] private Button defeatRetryButton;
+        [SerializeField] private TextMeshProUGUI rewardFragmentTMP,totalFragmentsTMP,defeatHintTMP;
 
         private void Awake()
         {
@@ -68,6 +70,8 @@ namespace SoulCrystalDefense.UI
             {
                 totalFragmentsText.text = $"Total Fragments: {totalFragments} (Forged: {totalFragments / 3})";
             }
+            if (rewardFragmentTMP != null) rewardFragmentTMP.text = $"+{fragmentReward} CRYSTAL FRAGMENTS";
+            if (totalFragmentsTMP != null) totalFragmentsTMP.text = $"TOTAL FRAGMENTS: {totalFragments} / FORGED: {totalFragments / 3}";
         }
 
         public void ShowDefeat(string hint)
@@ -80,6 +84,7 @@ namespace SoulCrystalDefense.UI
             {
                 defeatHintText.text = hint;
             }
+            if (defeatHintTMP != null) defeatHintTMP.text = hint;
         }
 
         private void OnReplayClicked()

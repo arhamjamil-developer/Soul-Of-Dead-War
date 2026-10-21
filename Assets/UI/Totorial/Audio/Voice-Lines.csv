@@ -1,0 +1,8 @@
+id,speaker,portrait,text,voice_direction,audio_file,advance_condition
+welcome,GUARDIAN,Dwarf,"Protect our soul crystal! Let's prepare for wave one.","Warm confident warrior; friendly and clear",01_Guardian_Welcome.wav,continue
+select_guardian,GUARDIAN,Dwarf,"Tap the glowing guardian card. I'll hold the front line!","Strong cheerful warrior; short encouraging delivery",02_Guardian_Select.wav,correct_card_selected
+place_guardian,GUARDIAN,Dwarf,"Tap the glowing center patch to place your guardian.","Confident supportive warrior; clear helpful delivery",03_Guardian_Place.wav,successful_center_lane_placement
+place_archer,ARCHER,Archer,"Select the archer card. Place your archer on the glowing left patch.","Bright confident archer; clear helpful delivery",04_Archer_Place.wav,successful_left_lane_archer_placement
+cover_flank,CHEF,Chef,"Select the chef card. Defend the glowing right patch. Check your souls!","Warm upbeat chef; playful but easy to understand",05_Chef_Flank.wav,successful_right_lane_guardian_placement
+hold_line,GUARDIAN,Dwarf,"Hold the line! Defeat the remaining enemies to clear wave one.","Confident supportive warrior; energetic finish",06_Guardian_Hold.wav,wave_one_completed
+tutorial_complete,MAGE,Mage,"Wave one cleared! Keep defending. The waves are endless!","Playful mystical mage; celebratory and clear",07_Mage_Complete.wav,continue_then_resume_endless

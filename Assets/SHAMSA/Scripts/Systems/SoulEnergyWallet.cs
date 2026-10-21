@@ -14,6 +14,8 @@ namespace SoulCrystalDefense.Systems
         [SerializeField] private bool autoGenerate = true;
 
         public event Action<int> OnEnergyChanged;
+        // New event for gaining energy (positive delta)
+        public event Action<int> OnEnergyGained;
 
         public int CurrentEnergy => currentEnergy;
 
@@ -22,7 +24,16 @@ namespace SoulCrystalDefense.Systems
         private void Awake()
         {
             if (Instance == null) Instance = this;
-            else Destroy(gameObject);
+            else if (Instance != this)
+            {
+                Destroy(this);
+                return;
+            }
+        }
+
+        private void OnDestroy()
+        {
+            if (Instance == this) Instance = null;
         }
 
         public void Initialize(int startingEnergy, int pAmount, float pInterval)
@@ -56,6 +67,8 @@ namespace SoulCrystalDefense.Systems
             if (amount <= 0) return;
             currentEnergy += amount;
             OnEnergyChanged?.Invoke(currentEnergy);
+            OnEnergyGained?.Invoke(amount);
+            SoundManager.Instance?.PlaySoulEnergyGain();
         }
 
         public bool CanAfford(int cost)

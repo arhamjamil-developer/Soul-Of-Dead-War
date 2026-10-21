@@ -1,0 +1,1846 @@
+fileFormatVersion: 2
+guid: dc508e529cb8af74fb34dbc3c3a80e32
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7413874758241133603
+    second: Audio-Atlas_0
+  - first:
+      213: 110463964288254665
+    second: Audio-Atlas_1
+  - first:
+      213: 6435484585057148712
+    second: Audio-Atlas_2
+  - first:
+      213: -6574689530777196216
+    second: Audio-Atlas_3
+  - first:
+      213: 7007620044679966167
+    second: Audio-Atlas_4
+  - first:
+      213: -5823104759752011261
+    second: Audio-Atlas_5
+  - first:
+      213: 2839946913831838872
+    second: Audio-Atlas_6
+  - first:
+      213: -6692010638008090094
+    second: Audio-Atlas_7
+  - first:
+      213: -1467891810411035729
+    second: Audio-Atlas_8
+  - first:
+      213: -3053937707301439410
+    second: Audio-Atlas_9
+  - first:
+      213: -1777580977509202144
+    second: Audio-Atlas_10
+  - first:
+      213: -8210039971531175881
+    second: Audio-Atlas_11
+  - first:
+      213: -8409377702140556405
+    second: Audio-Atlas_12
+  - first:
+      213: -6694551060982548646
+    second: Audio-Atlas_13
+  - first:
+      213: -2553948932081253581
+    second: Audio-Atlas_14
+  - first:
+      213: 1784822962408295298
+    second: Audio-Atlas_15
+  - first:
+      213: -5352928925633747963
+    second: Audio-Atlas_16
+  - first:
+      213: 1051563785212838949
+    second: Audio-Atlas_17
+  - first:
+      213: -8687859620553655159
+    second: Audio-Atlas_18
+  - first:
+      213: 7553615972176438051
+    second: Audio-Atlas_19
+  - first:
+      213: -7804246227061799103
+    second: Audio-Atlas_20
+  - first:
+      213: -8674341093664403954
+    second: Audio-Atlas_21
+  - first:
+      213: 3323448768826710482
+    second: Audio-Atlas_22
+  - first:
+      213: 7426554421077356057
+    second: Audio-Atlas_23
+  - first:
+      213: -217841828419262469
+    second: Audio-Atlas_24
+  - first:
+      213: 1048864918082182376
+    second: Audio-Atlas_25
+  - first:
+      213: -698375118142084247
+    second: Audio-Atlas_26
+  - first:
+      213: -6641076125761765760
+    second: Audio-Atlas_27
+  - first:
+      213: -6843593043642058878
+    second: Audio-Atlas_28
+  - first:
+      213: 4931982217648191669
+    second: Audio-Atlas_29
+  - first:
+      213: -8308700064636051154
+    second: Audio-Atlas_30
+  - first:
+      213: 8231336250805970870
+    second: Audio-Atlas_31
+  - first:
+      213: -7062657340512170242
+    second: Audio-Atlas_32
+  - first:
+      213: -3994951446446761753
+    second: Audio-Atlas_33
+  - first:
+      213: 45225123128594258
+    second: Audio-Atlas_34
+  - first:
+      213: 4081291639978205939
+    second: Audio-Atlas_35
+  - first:
+      213: 35315517180032410
+    second: Audio-Atlas_36
+  - first:
+      213: -787628825067970428
+    second: Audio-Atlas_37
+  - first:
+      213: 8107381125294768821
+    second: Audio-Atlas_38
+  - first:
+      213: -3110802453929796922
+    second: Audio-Atlas_39
+  - first:
+      213: -8381069622844478923
+    second: Audio-Atlas_40
+  - first:
+      213: -7586721689694406808
+    second: Audio-Atlas_41
+  - first:
+      213: -2158520202792462840
+    second: Audio-Atlas_42
+  - first:
+      213: -6829195680965905665
+    second: Audio-Atlas_43
+  - first:
+      213: 7079145188433056117
+    second: Audio-Atlas_44
+  - first:
+      213: -2490118845101521547
+    second: Audio-Atlas_45
+  - first:
+      213: -2805885818813342739
+    second: Audio-Atlas_46
+  - first:
+      213: -1118764705867320159
+    second: Audio-Atlas_47
+  - first:
+      213: 5037567803751800561
+    second: Audio-Atlas_48
+  - first:
+      213: -9170160219301309996
+    second: Audio-Atlas_49
+  - first:
+      213: 4694279803171465024
+    second: Audio-Atlas_50
+  - first:
+      213: 6465754889527984000
+    second: Audio-Atlas_51
+  - first:
+      213: 8406319850562910914
+    second: Audio-Atlas_52
+  - first:
+      213: -6413836272465626837
+    second: Audio-Atlas_53
+  - first:
+      213: 4989935677446989311
+    second: Audio-Atlas_54
+  - first:
+      213: -4089630597875665469
+    second: Audio-Atlas_55
+  - first:
+      213: -2284084525111659501
+    second: Audio-Atlas_56
+  - first:
+      213: 1653632694822242623
+    second: Audio-Atlas_57
+  - first:
+      213: 2216777797520165415
+    second: Audio-Atlas_58
+  - first:
+      213: 4688354720113837216
+    second: Audio-Atlas_59
+  - first:
+      213: 8749245609751160856
+    second: Audio-Atlas_60
+  - first:
+      213: -2435073954623157812
+    second: Audio-Atlas_61
+  - first:
+      213: -3188593825757339229
+    second: Audio-Atlas_62
+  - first:
+      213: 8191399539490108443
+    second: Audio-Atlas_63
+  - first:
+      213: -2457253388504155798
+    second: Audio-Atlas_64
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Audio-Atlas_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 607
+        width: 1579
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 324a23eefcf53e660800000000000000
+      internalID: 7413874758241133603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_1
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 871
+        width: 41
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c202e7e362788100800000000000000
+      internalID: 110463964288254665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_2
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 865
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f55d9222f6f4950800000000000000
+      internalID: 6435484585057148712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_3
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 845
+        width: 324
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 849ab89b4b202c4a0800000000000000
+      internalID: -6574689530777196216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_4
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 906
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dd6e0c7d41104160800000000000000
+      internalID: 7007620044679966167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_5
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 899
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3025819b21d203fa0800000000000000
+      internalID: -5823104759752011261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_6
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 884
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 894e9e3eba4896720800000000000000
+      internalID: 2839946913831838872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_7
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 903
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2128460d7c33123a0800000000000000
+      internalID: -6692010638008090094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_8
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 889
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa3ceb7fc2001abe0800000000000000
+      internalID: -1467891810411035729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_9
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 890
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e48702ee5db3e95d0800000000000000
+      internalID: -3053937707301439410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_10
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 879
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 027821cd483c457e0800000000000000
+      internalID: -1777580977509202144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_11
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 887
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73840210524101e80800000000000000
+      internalID: -8210039971531175881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_12
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 871
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b42d1e883eb4b80800000000000000
+      internalID: -8409377702140556405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_13
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 861
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a57bb6f774d2813a0800000000000000
+      internalID: -6694551060982548646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_14
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 889
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3330fc84afc8e8cd0800000000000000
+      internalID: -2553948932081253581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_15
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 891
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28b8e452707f4c810800000000000000
+      internalID: 1784822962408295298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_16
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 863
+        width: 38
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 504efafc08396b5b0800000000000000
+      internalID: -5352928925633747963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_17
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 891
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 524c644f0b7e79e00800000000000000
+      internalID: 1051563785212838949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_18
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 869
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98c707294b58e6780800000000000000
+      internalID: -8687859620553655159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_19
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 891
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3232b47b4b5d3d860800000000000000
+      internalID: 7553615972176438051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_20
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 874
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1478c48b76fb1b390800000000000000
+      internalID: -7804246227061799103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_21
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 891
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e4f83ebbc8e9780800000000000000
+      internalID: -8674341093664403954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_22
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 891
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d9102ffb034f1e20800000000000000
+      internalID: 3323448768826710482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_23
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 882
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e2c6df5eb601760800000000000000
+      internalID: 7426554421077356057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_24
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 861
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf729dfd2021afcf0800000000000000
+      internalID: -217841828419262469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_25
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 869
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ec58abf5115e8e00800000000000000
+      internalID: 1048864918082182376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_26
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 855
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b6b2bb78fde46f0800000000000000
+      internalID: -698375118142084247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_27
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 865
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08e74a5137826d3a0800000000000000
+      internalID: -6641076125761765760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_28
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 859
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 287716eb26ca601a0800000000000000
+      internalID: -6843593043642058878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_29
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 869
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8b67932bbe17440800000000000000
+      internalID: 4931982217648191669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_30
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 861
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e216a16005191bc80800000000000000
+      internalID: -8308700064636051154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_31
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 873
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b7e51865b49b3270800000000000000
+      internalID: 8231336250805970870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_32
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 851
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efe877081966cfd90800000000000000
+      internalID: -7062657340512170242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_33
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 842
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e89b9b53d41f88c0800000000000000
+      internalID: -3994951446446761753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_34
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 845
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25fc007820ca0a000800000000000000
+      internalID: 45225123128594258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_35
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 842
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f22ca97f19a3a830800000000000000
+      internalID: 4081291639978205939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_36
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 853
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a95339896477d7000800000000000000
+      internalID: 35315517180032410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_37
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 849
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48027f2b1c7c115f0800000000000000
+      internalID: -787628825067970428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_38
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 849
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2c6efbd24338070800000000000000
+      internalID: 8107381125294768821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_39
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 845
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cad91f56a534d4d0800000000000000
+      internalID: -3110802453929796922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_40
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 828
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53aa984359570bb80800000000000000
+      internalID: -8381069622844478923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_41
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 828
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8677304c1dc86b690800000000000000
+      internalID: -7586721689694406808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 125
+        width: 1625
+        height: 488
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8061d08df456b02e0800000000000000
+      internalID: -2158520202792462840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_43
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 612
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff23566f5b2d931a0800000000000000
+      internalID: -6829195680965905665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_44
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 604
+        width: 43
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 571d7fdba0d2e3260800000000000000
+      internalID: 7079145188433056117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_45
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 601
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 575c7358a12517dd0800000000000000
+      internalID: -2490118845101521547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_46
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 607
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deb1359c6bd7f09d0800000000000000
+      internalID: -2805885818813342739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_47
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 599
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a4b88f6d695970f0800000000000000
+      internalID: -1118764705867320159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_48
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 593
+        width: 54
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fe12923a3909e540800000000000000
+      internalID: 5037567803751800561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_49
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 583
+        width: 68
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1902bbddb0db080800000000000000
+      internalID: -9170160219301309996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_50
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 597
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04763501c9e652140800000000000000
+      internalID: 4694279803171465024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_51
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 584
+        width: 57
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08f7f03a0d9fab950800000000000000
+      internalID: 6465754889527984000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_52
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 569
+        width: 56
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cafd119d5f39a470800000000000000
+      internalID: 8406319850562910914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_53
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 606
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b29bb2464e97df6a0800000000000000
+      internalID: -6413836272465626837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_54
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 607
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff5a6429f00df3540800000000000000
+      internalID: 4989935677446989311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_55
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 599
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c57d0793a6be37c0800000000000000
+      internalID: -4089630597875665469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_56
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 603
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 314b0cbd93d4d40e0800000000000000
+      internalID: -2284084525111659501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_57
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 595
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f390ad3bc22e2f610800000000000000
+      internalID: 1653632694822242623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_58
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 25
+        width: 358
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a892f69a393ce10800000000000000
+      internalID: 2216777797520165415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_59
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 323
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a4496927c1601140800000000000000
+      internalID: 4688354720113837216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_60
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 293
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8182dddc6809b6970800000000000000
+      internalID: 8749245609751160856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_61
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 275
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc981ecc321e43ed0800000000000000
+      internalID: -2435073954623157812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_62
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 283
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a1eab23fc6dfb3d0800000000000000
+      internalID: -3188593825757339229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_63
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 257
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b143b943b72bda170800000000000000
+      internalID: 8191399539490108443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Audio-Atlas_64
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 261
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a69b51fef0516edd0800000000000000
+      internalID: -2457253388504155798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Audio-Atlas_0: 7413874758241133603
+      Audio-Atlas_1: 110463964288254665
+      Audio-Atlas_10: -1777580977509202144
+      Audio-Atlas_11: -8210039971531175881
+      Audio-Atlas_12: -8409377702140556405
+      Audio-Atlas_13: -6694551060982548646
+      Audio-Atlas_14: -2553948932081253581
+      Audio-Atlas_15: 1784822962408295298
+      Audio-Atlas_16: -5352928925633747963
+      Audio-Atlas_17: 1051563785212838949
+      Audio-Atlas_18: -8687859620553655159
+      Audio-Atlas_19: 7553615972176438051
+      Audio-Atlas_2: 6435484585057148712
+      Audio-Atlas_20: -7804246227061799103
+      Audio-Atlas_21: -8674341093664403954
+      Audio-Atlas_22: 3323448768826710482
+      Audio-Atlas_23: 7426554421077356057
+      Audio-Atlas_24: -217841828419262469
+      Audio-Atlas_25: 1048864918082182376
+      Audio-Atlas_26: -698375118142084247
+      Audio-Atlas_27: -6641076125761765760
+      Audio-Atlas_28: -6843593043642058878
+      Audio-Atlas_29: 4931982217648191669
+      Audio-Atlas_3: -6574689530777196216
+      Audio-Atlas_30: -8308700064636051154
+      Audio-Atlas_31: 8231336250805970870
+      Audio-Atlas_32: -7062657340512170242
+      Audio-Atlas_33: -3994951446446761753
+      Audio-Atlas_34: 45225123128594258
+      Audio-Atlas_35: 4081291639978205939
+      Audio-Atlas_36: 35315517180032410
+      Audio-Atlas_37: -787628825067970428
+      Audio-Atlas_38: 8107381125294768821
+      Audio-Atlas_39: -3110802453929796922
+      Audio-Atlas_4: 7007620044679966167
+      Audio-Atlas_40: -8381069622844478923
+      Audio-Atlas_41: -7586721689694406808
+      Audio-Atlas_42: -2158520202792462840
+      Audio-Atlas_43: -6829195680965905665
+      Audio-Atlas_44: 7079145188433056117
+      Audio-Atlas_45: -2490118845101521547
+      Audio-Atlas_46: -2805885818813342739
+      Audio-Atlas_47: -1118764705867320159
+      Audio-Atlas_48: 5037567803751800561
+      Audio-Atlas_49: -9170160219301309996
+      Audio-Atlas_5: -5823104759752011261
+      Audio-Atlas_50: 4694279803171465024
+      Audio-Atlas_51: 6465754889527984000
+      Audio-Atlas_52: 8406319850562910914
+      Audio-Atlas_53: -6413836272465626837
+      Audio-Atlas_54: 4989935677446989311
+      Audio-Atlas_55: -4089630597875665469
+      Audio-Atlas_56: -2284084525111659501
+      Audio-Atlas_57: 1653632694822242623
+      Audio-Atlas_58: 2216777797520165415
+      Audio-Atlas_59: 4688354720113837216
+      Audio-Atlas_6: 2839946913831838872
+      Audio-Atlas_60: 8749245609751160856
+      Audio-Atlas_61: -2435073954623157812
+      Audio-Atlas_62: -3188593825757339229
+      Audio-Atlas_63: 8191399539490108443
+      Audio-Atlas_64: -2457253388504155798
+      Audio-Atlas_7: -6692010638008090094
+      Audio-Atlas_8: -1467891810411035729
+      Audio-Atlas_9: -3053937707301439410
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
